@@ -17,6 +17,19 @@ ____
 ## Contents
 * [Project Goals](#project-goals)
 * [User Stories](#user-stories)
+* [Agile Development](#agile-development)
+* [UX](#ux)
+  * [Strategy](#strategy)
+  *	[Scope](#scope)
+  * [Structure](#structure)
+  * [Skeleton](#skeleton)
+    * [Wireframes](#wireframes)
+  * [Surface](#surface)
+* [Design](#design)
+  * [Colour Scheme](#colour-scheme)
+  * [Logo](#logo)
+  * [Typography](#typography)
+  * [Imagery](#imagery)
 
 
 ____
@@ -202,3 +215,94 @@ As a **Registered User:**
 <br>
 
 ____
+
+### Agile Development
+
+<br>
+
+____
+
+### UX
+
+#### Strategy
+
+* **User Engagement:** The website will prioritize a user-friendly interface with simple navigation and clear CTAs encouraging users to explore products, read blog posts, and make purchases. Features such as quick access to product descriptions, easy-to-use search functionality, and a streamlined checkout process will enhance user interaction and increase conversion rates.
+
+* **Brand Positioning:** The Skin Guru will be positioned as a go-to destination for young skincare enthusiasts, emphasizing its commitment to education and quality products. The website will showcase a curated selection of skincare items, complemented by informative content, creating an emotional connection with the target audience.
+
+
+#### Scope
+
+* **User Types:** The site will cater to two primary user groups: unregistered users who can browse products, read blog posts, and make purchases, and registered users who can save their information, view order history, and access personalized features.
+
+* **Core Features:** Key functionalities will include a comprehensive product catalog with detailed descriptions and pricing, an intuitive search and filter system, an informative blog section, a simple account registration process, and a secure checkout system for both guest and registered users.
+
+
+#### Structure
+
+* **Information Hierarchy:** The site's information architecture will prioritize essential content. The homepage will feature direct links to popular product categories, latest blog posts, and login/register options, ensuring users can easily find what they need. As well as a newsletter sign up form to encourage users to keep informed of new launched, discounts and promotions, as well as receiving monthly skin tips.
+
+* **Content Strategy:** Engaging blog article content will be developed that highlights product benefits, ingredients, and usage tips. The blog will feature skincare advice, trends, and educational content, building trust and encouraging product exploration.
+
+
+#### Skeleton
+
+##### Wireframes
+Wireframes will be created for key pages including:
+* **Homepage** (featuring bestsellers and latest blog posts)
+* **Product catalog** (with filter and sort options)
+* **Product detail page** (with comprehensive information and reviews)
+* **Blog section** (with categorized articles)
+* **User account dashboard** (showing order history and saved items)
+* **Checkout process** (streamlined for both guest and registered users)
+
+
+#### Surface
+
+* **Visual Identity:** A fresh and vibrant color palette will be chosen to appeal to the young target audience. Typography will be selected for readability while reflecting a modern, trendy aesthetic that aligns with The Skin Guru's brand identity.
+
+* **Responsive Design:** The website design will be fully responsive, ensuring optimal functionality across all devices - smartphones, tablets, and desktops. This is crucial for the target demographic who are likely to shop on mobile devices.
+
+* **Accessibility Features:** Features like alt text for images, keyboard navigation options, and screen reader compatibility will be implemented to ensure inclusivity.
+
+* **Feedback Mechanisms:** Visual feedback mechanisms in the form of confirmation messages for added products, successful purchases, and account actions will be implemented to enhance user experience and build trust.
+
+<br>
+
+____
+
+### Design
+
+#### Color Scheme
+For The Skin Guru, the color palette was chosen to capture the essence of youthful energy and showcase brigh attractive colors:
+
+* **Hot Pink** (#FFAEBC): Radiating vibrant energy, this bold shade embodies the spirited and confident nature of our young target audience.
+* **Tiffany Blue** (#A0E7E5): A sophisticated yet playful hue that bridges elegance with youthful freshness. 
+* **Mint** (#B4F8C8): A refreshing shade that evokes the clean, pure essence of skincare. It symbolizes the brand's focus on natural, gentle products that nurture young skin, creating a sense of calm and rejuvenation.
+* **Soft Yellow** (#FBE7C6): Bringing warmth and optimism, this gentle tone represents the joy and positivity of effective skincare. It adds a cheerful, welcoming element that resonates with our young, enthusiastic audience.
+
+![Screenshot of The Skin Guru colour palette](documentation/the-skin-guru-color-palette.png) 
+
+<br>
+
+#### Logo
+
+I created my logo for The Skin Guru on [Logo.com](https://logo.com)
+
+![Screenshot of The Skin Guru Logo](documentation/the-skin-guru-logo-no-bg.png) 
+
+<br>
+
+#### Typography
+
+I chose the following typography for The Skin Guru on [Fontjoy.com](https://fontjoy.com/):
+* **Chango** - as it’s a bold font to grab attention, but with a young and groovy vibe matching the font in my Logo.
+* **Poppins** - for a modern vibe that keeps a clean aesthetic look to the site.
+
+![Screenshot of The Skin Guru font pairing](documentation/the-skin-guru-font-pairing.png) 
+
+<br>
+
+#### Imagery
+
+The Images for this project were sourced from [SkinShop.ie](https://skinshop.ie/)
