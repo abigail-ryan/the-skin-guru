@@ -1,131 +1,204 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# The Skin Guru
+[View my live site here](https://)
 
-Welcome USER_NAME,
+The Skin Guru is an e-commerce platform designed for teens and young adults to explore and purchase skincare products. The website offers a comprehensive online shopping experience tailored to young skincare enthusiasts. Unregistered users can browse the entire store catalog, explore a variety of skincare products, read informative blog posts about skincare tips and trends, and view detailed product information. The site provides full access to product descriptions, pricing, purchasing and general site content without requiring account creation. Registered users gain additional benefits by creating a personal account. 
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+These users can:
+* View and track their complete order history
+* Save favorite products to a wishlist for future reference
+* Write reviews under the products they have purchased
+* Update their details from their personalised account dashboard.
 
-You can safely delete this README.md file or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **June 18, 2024**
+The Skin Guru aims to be a user-friendly, educational, and accessible platform for young people looking to develop and maintain their skincare routines. By offering both guest browsing and enhanced registered user features, the site caters to different levels of user engagement and skincare knowledge.
 
-## Gitpod Reminders
+____
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
 
-`python3 -m http.server`
+## Contents
+* [Project Goals](#project-goals)
+* [User Stories](#user-stories)
 
-A blue button should appear to click: _Make Public_,
 
-Another blue button should appear to click: _Open Browser_.
+____
 
-To run a backend Python file, type `python3 app.py` if your Python file is named `app.py`, of course.
+### Project Goals
 
-A blue button should appear to click: _Make Public_,
+The goal of The Skin Guru project is to establish a vibrant and user-friendly online platform where teens and young adults can easily explore a wide variety of skincare products. The site encourages visitors to engage with its content, including informative blog posts about skincare routines and tips, while also providing a seamless shopping experience. All users can browse the store, read insightful articles, and complete their purchases without needing to create an account. However, registered users enjoy additional features that enhance their shopping experience. The Skin Guru is dedicated to making skincare accessible and enjoyable for all, fostering a community of informed and empowered young consumers.
 
-Another blue button should appear to click: _Open Browser_.
+____
 
-By Default, Gitpod gives you superuser security privileges. Therefore, you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+### User Stories
 
-To log into the Heroku toolbelt CLI:
+**Epic - Home Page and Navigation**
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+As a **Site User**(all users):
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you, so do not share it. If you accidentally make it public, you can create a new one with _Regenerate API Key_.
+* I can **view the site's home page** so that I can **understand what the site is for.** - **MUST HAVE**
+* I can **use the navigation menu** so that I can **easily make my way around the site.**	- **MUST HAVE**
+* I can **use the search bar** so that I can **search for a specific item.** - **MUST HAVE**
+* I can **shop products by “Skin Type” or “Product Type”** so that I can **view all available products in that category.** - **MUST HAVE**
+* I can **create an account easily from the navbar** so that I can **log in to the site.** - **MUST HAVE**
+* I can **log in to my account easily from the navbar** so that I can **manage my account.** - **MUST HAVE**
+* I can **click the Cart button in the navbar** so that I can **view the products in my cart.** - **MUST HAVE**
 
-### Connecting your Mongo database
 
-- **Connect to Mongo CLI on a IDE**
-- navigate to your MongoDB Clusters Sandbox
-- click **"Connect"** button
-- select **"Connect with the MongoDB shell"**
-- select **"I have the mongo shell installed"**
-- choose **mongosh (2.0 or later)** for : **"Select your mongo shell version"**
-- choose option: **"Run your connection string in your command line"**
-- in the terminal, paste the copied code `mongo "mongodb+srv://<CLUSTER-NAME>.mongodb.net/<DBname>" --apiVersion 1 --username <USERNAME>`
-  - replace all `<angle-bracket>` keys with your own data
-- enter password _(will not echo **\*\*\*\*** on screen)_
+As a **Registered User:**
 
-------
+* I can **access my Wishlist from the navbar** so that I can **view the products in my wishlist.** - **COULD HAVE**
 
-## Release History
+<br>
+<br>
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+**Epic - Registration**
 
-**June 18, 2024,** Add Mongo back into template
+As a **Site User** (all users):
 
-**June 14, 2024,** Temporarily remove Mongo until the key issue is resolved
+* I can **register an account** so that I can **manage my order history, add products to my wishlist, save my personal details for faster checkout, leave a review on products I’ve purchased, add comments to blogs.** - **MUST HAVE**
 
-**May 28 2024:** Fix Mongo and Links installs
 
-**April 26 2024:** Update node version to 16
+As a **Registered User:**
 
-**September 20 2023:** Update Python version to 3.9.17.
+* I can **edit my personal details on my account** so that I can **keep them up to date.** - **MUST HAVE**
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+<br>
+<br>
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+**Epic - Products**
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+As a **Site User** (all users):
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+* I can **sort the products displayed on each product page** so that I can **filter the products to improve my search criteria.** - **MUST HAVE**
+* I can **click an individual product** so that I can **view its details.** - **MUST HAVE**
+* I can **click a -/+ button on a products details page** so that I can **manage the quantity of the product I want to add to the cart.** - **MUST HAVE**
+* I can **click “Add to cart” button on a products details page** so that I can **add to the product to the cart to purchase.** - **MUST HAVE**
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+As a **Site Admin:**
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+* I can **add a product to my site** so that I can **increase the range of products available on the site.** - **MUST HAVE**
+* I can **edit existing products** so that I can **change the products description, price or image etc.**	- **MUST HAVE**
+* I can **delete a product from my site** so that I can **remove it from sale.** - **MUST HAVE**
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+<br>
+<br>
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+**Epic - Cart**
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+As a **Site User** (all users):
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+* I can **adjust quantities of products in my cart** so that I can **change the quantity of the product that I wish to purchase.** - **MUST HAVE**
+* I can **click "remove" on a product in my cart** so that I can **remove a product from my cart before checkout.** - **MUST HAVE**
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+<br>
+<br>
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+**Epic - Checkout**
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+As a **Site User** (all users):
 
-------
+* I can **go to checkout** so that I can **complete my purchase.** - **MUST HAVE**
+* I can **view my order before checkout** so that I can **confirm my items for purchase.** - **MUST HAVE**
+* I can **enter/update my delivery details** so that I can **provide the correct delivery and contact information.** - **MUST HAVE**
+* I can **view my order summary details** so that I can **review my order after it is placed.** - **MUST HAVE**
+* I can **receive an email after purchase** so that I can **have confirmation and record of my purchase.** - **MUST HAVE**
 
-## FAQ about the uptime script
 
-**Why have you added this script?**
+As a **Registered User:**
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+* I can **see my previously saved details already populated at checkout** so that I can **complete my purchases faster.** - **MUST HAVE**
 
-**How will this affect me?**
+<br>
+<br>
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+**Epic - Blog Articles**
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+As a **Site User** (all users):
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+* I can **read blog articles** so that I can **stay up to date with the latest skincare information.** - **SHOULD HAVE**
+* I can **view comments on articles** so that I can **see the conversation around the articles subject.** - **SHOULD HAVE**
 
-**So….?**
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+As a **Registered User:**
 
-**Can I opt out?**
+* I can **add comments to articles** so that I can **join in the conversation.** - **SHOULD HAVE**
+* I can **edit/update/delete my comments** so that I can **manage my comments on blog articles.** - **SHOULD HAVE**
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+As a **Site Admin:**
 
-**Anything more?**
+* I can **create, read, update, delete Blog Articles** so that I can **manage my content.** - **SHOULD HAVE**
+* I can **approve/decline comments** so that I can **manage the comments section.** - **SHOULD HAVE**
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+<br>
+<br>
 
----
+**Epic - Contact Form**
 
-Happy coding!
+As a **Site User** (all users):
+
+* I can **fill out a contact form** so that I can **contact the business with any queries I may have.** - **COULD HAVE**
+
+
+As a **Site Admin:**
+
+* I can **store contact form submissions** so that I can **review them.** - **COULD HAVE**
+* I can **mark contact form submissions as read** so that I can see **how many I still need to process.** - **COULD HAVE**
+
+<br>
+<br>
+
+**Epic - Product Reviews**
+
+As a **Site User** (all users):
+
+* I can **view reviews on a product** so that I can **see other users feedback.** - **SHOULD HAVE**
+
+
+As a **Registered User:**
+
+* I can **create a review on a product I have purchased** so that I can **give feedback to the site owners and other users.** - **SHOULD HAVE**
+* I can **edit/update/delete my review** so that I can **manage my reviews.** - **SHOULD HAVE**
+
+
+As a **Site Admin:**
+
+* I can **approve/decline reviews** so that I can **filter out negative reviews.** - **SHOULD HAVE**
+
+<br>
+<br>
+
+**Epic - Wishlist**
+
+As a **Registered User:**
+
+* I can **click the 'Add to Wishlist' button** so that I can **keep a record of my favourite items.** - **COULD HAVE**
+* I can **click the 'Wishlist’ heart icon** so that I can **see all the products in my Wishlist.** - **COULD HAVE**
+* I can **click the 'Remove' button** so that I can **remove a product from my Wishlist.** - **COULD HAVE**
+* I can **click the 'Add to cart' button** so that I can **add the product to my cart from in my Wishlist.** - **COULD HAVE**
+
+<br>
+<br>
+
+**Epic - Newsletter**
+
+As a **Site User** (all users):
+
+* I can **enter my email into the newsletter form** so that I can **receive marketing emails about new products, promotions and skincare tips.** - **MUST HAVE**
+
+<br>
+<br>
+
+**Epic - Emails**
+
+As a **Site User** (all users):
+
+* I can **receive an email after purchase** so that I can **view my order summary.** - **MUST HAVE**
+
+
+As a **Registered User:**
+
+* I can **receive a confirmation email upon registering an account** so that I can **verify my account.** - **MUST HAVE**
+
+<br>
+
+____
