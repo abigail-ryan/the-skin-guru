@@ -37,6 +37,7 @@ ____
 	* [Content Marketing](#content-marketing)
   * [SEO](#seo)
   * [Social Media](#social-media)
+  * [Email](#email)
 * [Technologies Used](#technologies-used)
   * [Languages](#languages)
   * [Frameworks, Libraries, Technologies and Programs used](#frameworks-libraries-technologies-and-programs-used)
@@ -352,9 +353,60 @@ ____
 
 ### Marketing
 
+
+* **Business Model:**
+The Skin Guru operates on a Business-to-Consumer (B2C) model, selling skincare products directly to individual customers.
+* **Target Audience:**
+Our customers are teens and young adults seeking their first skincare products or looking to expand their knowledge about products suitable for their skin type.
+* **Online Platforms:**
+Our target audience primarily engages on TikTok, Instagram & with less usage across Facebook.
+* **User Needs and Content Strategy:**
+We aim to provide skincare products specifically designed for young skin. To address the trend of young people using products meant for mature skin, we'll create easily digestible blog articles highlighting the benefits of The Skin Guru's products and educating users on proper skincare routines.
+* **Sales and Promotions:**
+We'll offer seasonal sales and discounts, communicating these offers through social media posts and our newsletter.
+* **Marketing Budget and Approach:**
+Initially, The Skin Guru will invest in paid content marketing on social media to build brand awareness. According to research carried out by [Skin Health Alliance](https://professionalbeauty.co.uk/gen-z-skincare-study-influencers-trends), 71% of Gen Z buy skincare based on influencer recommendations, and so Influencer marketing will be a key strategy to reach our young target audience. Simultaneously, we'll develop organic content to grow our social media following and build community engagement. As the brand expands, we'll incorporate user-generated content (UGC) into our social media and newsletter marketing efforts.
+
+<br>
+
 #### Content Marketing
+
+The Blog feature of The Skin Guru project is used to create additional content aimed at customer engagement and retention. By publishing articles related to skincare and products available on the website, this feature encourages customers to return for informational purposes, potentially browsing products mentioned in the articles during their visit. These efforts help establish The Skin Guru as an expert in the skincare industry, building trust and credibility with the audience.
+
+The blog includes a comment section for customer interaction and engagement, allows registered customers to submit their own skincare tips or routines, fostering community engagement and further solidifying The Skin Guru's position as a go-to resource for skincare knowledge.
+
+Future expansions could include a skincare Q&A section or video tutorials demonstrating product usage. While these features require additional content creation from The Skin Guru team, they significantly contribute to customer education and brand loyalty, reinforcing the brand's expertise in the field
+
+<br>
+
 #### SEO
+
+<br>
+
 #### Social Media
+
+According to research from [Pew Research Center](https://www.pewresearch.org/short-reads/2023/04/24/teens-and-social-media-key-findings-from-pew-research-center-surveys/) on Teens and Social Media usage, the most popular Social Media platforms are as follows:
+* TikTok: About 67% of teens use TikTok, with a significant portion (16%) stating they use it almost constantly. It has rapidly gained popularity, especially among younger audiences.
+* Instagram: Around 62% of teens use Instagram, with half of them visiting the platform at least once a day. It is particularly popular among teen girls.
+* Facebook: Only 32% of teens report using Facebook, a significant drop from previous years, indicating a decline in its popularity among younger users.
+
+Given the target audience's primary use of TikTok and Instagram, The Skin Guru's marketing strategy will prioritize video content on these platforms. While Facebook will serve as a valuable channel for paid advertising, the core marketing approach will focus on creating engaging, platform-specific video content.
+
+The strategy involves:
+* Developing short-form video content tailored to TikTok and Instagram
+* Repurposing content across platforms with platform-specific adaptations
+* Utilizing Facebook for targeted paid advertising campaigns
+* Creating unique content strategies for each platform to maximize engagement
+
+Below is a screenshot of The Skin Guru’s Facebook page.
+
+![Screenshot of The Skin Guru Facebook page](documentation/) 
+
+<br>
+
+#### Email
+
+Through a subscription form in the footer, the website implements a newsletter sign up CTA using Mailchimp. The intention with the newsletter would be to update customers when new products are added to the site and new skincare articles are published, and also to send discount codes to newsletter subscribers.
 
 <br>
 
