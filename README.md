@@ -30,6 +30,28 @@ ____
   * [Logo](#logo)
   * [Typography](#typography)
   * [Imagery](#imagery)
+* [Database ERD](#database-erd)
+* [Project Features](#project-features)
+* [Future Features](#future-features)
+* [Marketing](#marketing)
+	* [Content Marketing](#content-marketing)
+  * [SEO](#seo)
+  * [Social Media](#social-media)
+* [Technologies Used](#technologies-used)
+  * [Languages](#languages)
+  * [Frameworks, Libraries, Technologies and Programs used](#frameworks-libraries-technologies-and-programs-used)
+* [Testing](#testing)
+* [Deployment](#deployment)
+  * [Forking the GitHub Repository](#forking-the-github-repository)
+  * [Clone the GitHub Repository](#clone-the-github-repository)
+  * [Django Project Setup](#django-project-setup)
+  * [Database Creation](#database-creation)
+  * [Cloudinary](#cloudinary)
+  * [Deploying to Heroku](#Deploying-to-heroku)
+* [Credits](#credits)
+  * [Code References](#code-references)
+  * [Content and Media References](#content-and-media-references)
+* [Acknowledgements](#acknowledgements)  
 
 
 ____
@@ -306,3 +328,74 @@ I chose the following typography for The Skin Guru on [Fontjoy.com](https://font
 #### Imagery
 
 The Images for this project were sourced from [SkinShop.ie](https://skinshop.ie/)
+
+<br>
+
+____
+
+### Database ERD
+
+<br>
+
+____
+
+### Project Features
+
+<br>
+
+____
+### Future Features
+
+<br>
+
+____
+
+### Marketing
+
+#### Content Marketing
+#### SEO
+#### Social Media
+
+<br>
+
+____
+
+### Technologies Used
+#### Languages
+#### Frameworks, Libraries, Technologies and Programs used
+
+<br>
+
+____
+
+### Testing
+
+<br>
+
+____
+
+### Deployment
+#### Forking the GitHub Repository
+#### Clone the GitHub Repository
+#### Django Project Setup
+#### Database Creation
+#### Cloudinary
+#### Deploying to Heroku
+
+<br>
+
+____
+
+### Credits
+#### Code References
+#### Content and Media References
+
+<br>
+
+____
+
+###Acknowledgements
+
+<br>
+
+____
