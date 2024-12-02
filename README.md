@@ -271,13 +271,59 @@ ____
 #### Skeleton
 
 ##### Wireframes
-Wireframes will be created for key pages including:
-* **Homepage** (featuring bestsellers and latest blog posts)
-* **Product catalog** (with filter and sort options)
-* **Product detail page** (with comprehensive information and reviews)
+Wireframes have been created for key pages including:
+
+<details>
+<summary>Home</summary>
+<br>
+Homepage(featuring shop by skin type and latest blog posts)
+
+| Mobile View | Desktop View |
+| ---| ---|
+| ![Screenshot of The Skin Guru mobile view wireframe - index page](documentation/) | ![Screenshot of The Skin Guru desktop view wireframe - index page](documentation/the-skin-guru-wf-home-desktop.png) |
+</details>
+
+
+<details>
+<summary>Product catalog</summary>
+<br>
+Product catalog (with filter and sort options)
+
+| Mobile View | Desktop View |
+| ---| ---|
+| ![Screenshot of The Skin Guru mobile view wireframe - product catalog](documentation/) | ![Screenshot of The Skin Guru desktop view wireframe - product catalog](documentation/the-skin-guru-wf-home-all-products.png) |
+</details>
+
+
+<details>
+<summary>Product detail page</summary>
+<br>
+Product detail page(with comprehensive information and reviews)
+
+| Mobile View | Desktop View |
+| ---| ---|
+| ![Screenshot of The Skin Guru mobile view wireframe - Product detail page](documentation/) | ![Screenshot of The Skin Guru desktop view wireframe - Product detail page](documentation/the-skin-guru-wf-product-details-desktop.png) |
+</details>
+
+
+
 * **Blog section** (with categorized articles)
+
+
+
 * **User account dashboard** (showing order history and saved items)
-* **Checkout process** (streamlined for both guest and registered users)
+
+
+
+<details>
+<summary>Checkout Page</summary>
+<br>
+Checkout Page (streamlined for both guest and registered users)
+
+| Mobile View | Desktop View |
+| ---| ---|
+| ![Screenshot of The Skin Guru mobile view wireframe - Product detail page](documentation/) | ![Screenshot of The Skin Guru desktop view wireframe - Product detail page](documentation/the-skin-guru-wf-checkout-desktop.png) |
+</details>
 
 
 #### Surface
