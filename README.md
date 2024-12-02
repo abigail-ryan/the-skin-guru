@@ -306,13 +306,26 @@ Product detail page(with comprehensive information and reviews)
 </details>
 
 
+<details>
+<summary>Blog</summary>
+<br>
+Blog (with categorized articles)
 
-* **Blog section** (with categorized articles)
+| Mobile View | Desktop View |
+| ---| ---|
+| ![Screenshot of The Skin Guru mobile view wireframe - Blog page](documentation/) | ![Screenshot of The Skin Guru desktop view wireframe - Blog page](documentation/the-skin-guru-wf-blog-desktop.png) |
+</details>
 
 
+<details>
+<summary>User account dashboard</summary>
+<br>
+User account dashboard (showing order history and saved details)
 
-* **User account dashboard** (showing order history and saved items)
-
+| Mobile View | Desktop View |
+| ---| ---|
+| ![Screenshot of The Skin Guru mobile view wireframe - User account dashboard](documentation/) | ![Screenshot of The Skin Guru desktop view wireframe - User account dashboard](documentation/the-skin-guru-wf-account-dashboard-desktop.png) |
+</details>
 
 
 <details>
