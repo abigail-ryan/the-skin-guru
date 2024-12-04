@@ -280,7 +280,7 @@ Homepage(featuring shop by skin type and latest blog posts)
 
 | Mobile View | Desktop View |
 | ---| ---|
-| ![Screenshot of The Skin Guru mobile view wireframe - index page](documentation/) | ![Screenshot of The Skin Guru desktop view wireframe - index page](documentation/the-skin-guru-wf-home-desktop.png) |
+| ![Screenshot of The Skin Guru mobile view wireframe - index page](documentation/the-skin-guru-wf-home-pt1-mobile.png)  ![Screenshot of The Skin Guru mobile view wireframe - index page](documentation/the-skin-guru-wf-home-pt2-mobile.png) | ![Screenshot of The Skin Guru desktop view wireframe - index page](documentation/the-skin-guru-wf-home-desktop.png) |
 </details>
 
 
@@ -291,7 +291,7 @@ Product catalog (with filter and sort options)
 
 | Mobile View | Desktop View |
 | ---| ---|
-| ![Screenshot of The Skin Guru mobile view wireframe - product catalog](documentation/) | ![Screenshot of The Skin Guru desktop view wireframe - product catalog](documentation/the-skin-guru-wf-home-all-products.png) |
+| ![Screenshot of The Skin Guru mobile view wireframe - product catalog](documentation/the-skin-guru-wf-all-products-mobile.png) | ![Screenshot of The Skin Guru desktop view wireframe - product catalog](documentation/the-skin-guru-wf-home-all-products.png) |
 </details>
 
 
@@ -302,7 +302,7 @@ Product detail page(with comprehensive information and reviews)
 
 | Mobile View | Desktop View |
 | ---| ---|
-| ![Screenshot of The Skin Guru mobile view wireframe - Product detail page](documentation/) | ![Screenshot of The Skin Guru desktop view wireframe - Product detail page](documentation/the-skin-guru-wf-product-details-desktop.png) |
+| ![Screenshot of The Skin Guru mobile view wireframe - Product detail page](documentation/the-skin-guru-wf-product-details-mobile.png) | ![Screenshot of The Skin Guru desktop view wireframe - Product detail page](documentation/the-skin-guru-wf-product-details-desktop.png) |
 </details>
 
 
@@ -313,7 +313,7 @@ Blog (with categorized articles)
 
 | Mobile View | Desktop View |
 | ---| ---|
-| ![Screenshot of The Skin Guru mobile view wireframe - Blog page](documentation/) | ![Screenshot of The Skin Guru desktop view wireframe - Blog page](documentation/the-skin-guru-wf-blog-desktop.png) |
+| ![Screenshot of The Skin Guru mobile view wireframe - Blog page](documentation/the-skin-guru-wf-blog-mobile.png) | ![Screenshot of The Skin Guru desktop view wireframe - Blog page](documentation/the-skin-guru-wf-blog-desktop.png) |
 </details>
 
 
@@ -324,7 +324,7 @@ User account dashboard (showing order history and saved details)
 
 | Mobile View | Desktop View |
 | ---| ---|
-| ![Screenshot of The Skin Guru mobile view wireframe - User account dashboard](documentation/) | ![Screenshot of The Skin Guru desktop view wireframe - User account dashboard](documentation/the-skin-guru-wf-account-dashboard-desktop.png) |
+| ![Screenshot of The Skin Guru mobile view wireframe - User account dashboard](documentation/the-skin-guru-wf-user-account-mobile.png) | ![Screenshot of The Skin Guru desktop view wireframe - User account dashboard](documentation/the-skin-guru-wf-account-dashboard-desktop.png) |
 </details>
 
 
@@ -335,7 +335,17 @@ Checkout Page (streamlined for both guest and registered users)
 
 | Mobile View | Desktop View |
 | ---| ---|
-| ![Screenshot of The Skin Guru mobile view wireframe - Product detail page](documentation/) | ![Screenshot of The Skin Guru desktop view wireframe - Product detail page](documentation/the-skin-guru-wf-checkout-desktop.png) |
+| ![Screenshot of The Skin Guru mobile view wireframe - Checkout page](documentation/the-skin-guru-wf-checkout-mobile.png) | ![Screenshot of The Skin Guru desktop view wireframe - Checkout page](documentation/the-skin-guru-wf-checkout-desktop.png) |
+</details>
+
+
+<details>
+<summary>Mobile Menu</summary>
+<br>
+
+| Mobile View |  |
+| ---| ---|
+| ![Screenshot of The Skin Guru mobile view wireframe - mobile menu](documentation/the-skin-guru-wf-menu-mobile.png) |  |
 </details>
 
 
