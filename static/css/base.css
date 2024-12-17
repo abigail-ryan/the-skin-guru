@@ -1,0 +1,97 @@
+html {
+    height: 100%;
+}
+
+.logo-image {
+    display: block;
+    width: 250px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+body {
+    background: no-repeat center center fixed;
+    background-size: cover;
+    height: calc(100vh - 164px);
+    font-family: 'Poppins';
+}
+
+/* from Bulma */
+.icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+
+.main-logo-link {
+    width: fit-content;
+}
+
+.shop-now-button {
+    background: #FFAEBC;
+    color: black;
+    min-width: 260px;
+}
+
+.btn-pink {
+    background: #FFAEBC;
+    color: black;
+}
+
+.shop-now-button:hover,
+.shop-now-button:active,
+.shop-now-button:focus,
+.btn-pink:hover,
+.btn-pink:active,
+.btn-pink:focus {
+    background: #cb7f8c;
+    color: white;
+    font-family: 'Poppins';
+}
+
+.text-black {
+    color: #000 !important;
+}
+
+.border-pink {
+    border: 1px solid #FFAEBC !important;
+}
+
+.hero-tag-line {
+    font-family: 'Chango';
+    color: #FFAEBC !important;
+    text-shadow: 2px 2px 0 #cb7f8c, -2px 2px 0 #A0E7E5, -2px -2px 0 #cb7f8c, 2px -2px 0 #cb7f8c;
+
+}
+
+/* Media Queries */
+
+/* Slightly larger container on xl screens */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 80%;
+  }
+
+  .logo-image {
+    width: 300px;
+  }
+}
+
+/* fixed top navbar on medium screen sizes and up */
+@media (min-width: 992px) {
+    .fixed-top-desktop-only {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+
+    .header-container {
+        padding-top: 164px;
+    }
+}
