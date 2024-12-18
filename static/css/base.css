@@ -68,6 +68,12 @@ body {
 
 }
 
+.bg-tiffany {
+    background: #A0E7E5 !important;
+    font-family: 'Chango';
+    text-transform: uppercase;
+}
+
 /* Media Queries */
 
 /* Slightly larger container on xl screens */
