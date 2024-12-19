@@ -1,9 +1,11 @@
 from django.contrib import admin
+from django_summernote.admin import SummernoteModelAdmin
 from .models import Product, Category, Brand, SkinType
 
 # Register your models here.
 
 class ProductAdmin(admin.ModelAdmin):
+    summernote_fields = ('description', 'key_ingredients', 'ingredients', 'how_to_use')
     list_display = (
         'name',
         'brand',
