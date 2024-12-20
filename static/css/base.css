@@ -75,6 +75,24 @@ body {
 }
 
 /* Media Queries */
+ /* small screens */
+@media (max-width: 320px){
+    .header-container {
+        padding-top: 360px;
+    }
+}
+
+@media (min-width: 375px){
+    .header-container {
+        padding-top: 280px;
+    }
+}
+
+@media (min-width: 768px){
+    .header-container {
+        padding-top: 220px;
+    }
+}
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
@@ -97,7 +115,4 @@ body {
         z-index: 1030;
     }
 
-    .header-container {
-        padding-top: 164px;
-    }
 }
