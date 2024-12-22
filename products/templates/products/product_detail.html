@@ -33,10 +33,125 @@
                     <hr>
                     <h5 class="mb-0 text-muted">BRAND: <strong>{{ product.brand.friendly_name }}</strong></h5>
                     <hr>
-                    <p class="lead mb-0 text-left font-weight-bold">€{{ product.price }}</p>
-                    <p class="mt-3">{{ product.description }}</p>
+                    <p class="lead mb-3 text-left font-weight-bold">€{{ product.price }}</p>
+                    {% if product.product_size_ml %}
+                        <p class="mb-3 text-left">{{ product.product_size_ml }}ml</p>
+                        {% elif product_size_g %}
+                        <p class="mb-3 text-left">{{ product.product_size_g }}g</p>
+                            {% else %}
+                            <p class="mb-3 text-left">One size</p>
+                    {% endif %}
+                    <p class="mt-3 text-left">Vegan: {% if product.vegan %}Yes{% else %}No{% endif %}</p>
                 </div>
             </div>
         </div>
     </div>
+    <hr class="col-12 col-md-10 col-lg-10">
+
+        <div id="description-section" class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-10">
+                    <div class="banner bg-pink py-3">
+                        <h3 class="text-center description mb-0">Description</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center mt-3">
+                <div class="col-12 col-md-10 col-lg-10 text-black">
+                    <p class="mt-3">{{ product.description }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="col-12 col-md-10 col-lg-10">
+
+        <div id="key-ingredients-section" class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-10">
+                    <div class="banner bg-mint py-3">
+                        <h3 class="text-center key-ingredients mb-0">Key Ingredients</h3>
+                    </div>
+                </div>
+            </div>
+            {% if product.key_ingredients %}
+                <div class="row justify-content-center mt-3">
+                    <div class="col-12 col-md-10 col-lg-10 text-black">
+                        <p>{{ product.key_ingredients }}</p>
+                        {% endif %}
+                        {% if product.ingredients %}
+                        <p class="mb-0 text-muted">
+                            <a class="btn btn-link p-0" data-toggle="collapse" href="#ingredientsCollapse" role="button" aria-expanded="false" aria-controls="ingredientsCollapse">
+                                ALL INGREDIENTS <i class="fas fa-chevron-down"></i>
+                            </a>
+                        </p>
+                        <div class="collapse" id="ingredientsCollapse">
+                            <div class="card card-body mt-2">
+                                {{ product.ingredients }}
+                            </div>
+                        </div>
+                        {% else %}
+                        <div class="container-fluid">
+                            <div class="row justify-content-center mt-3">
+                                <div class="col-12 col-md-10 col-lg-10 text-center">
+                                    <p class="text-muted">No ingredients information available.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        <hr class="col-12 col-md-10 col-lg-10">
+
+        <div id="how-to-use-section" class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-10">
+                    <div class="banner bg-yellow py-3">
+                        <h3 class="text-center key-ingredients mb-0">How To Use</h3>
+                    </div>
+                </div>
+            </div>
+            {% if product.how_to_use %}
+            <div class="row justify-content-center mt-3">
+                <div class="col-12 col-md-10 col-lg-10 text-black">
+                    <p class="mt-3">{{ product.how_to_use }}</p>
+                    </div>
+                </div>
+            </div>
+            <hr class="col-12 col-md-10 col-lg-10">
+            {% else %}
+            <div class="container-fluid">
+                <div class="row justify-content-center mt-3">
+                    <div class="col-12 col-md-10 col-lg-10 text-center">
+                        <p class="text-muted">No usage instructions available for this product.</p>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+        </div>
+        <hr class="col-12 col-md-10 col-lg-10 mb-3">
+{% endblock %}
+
+
+
+{% block postloadjs %}
+{{ block.super }}
+<script>
+  $(document).ready(function() {
+    var ingredientsToggle = $('[data-toggle="collapse"]');
+    var chevronIcon = ingredientsToggle.find('i.fas');
+
+    ingredientsToggle.on('click', function() {
+      chevronIcon.toggleClass('fa-chevron-up fa-chevron-down');
+    });
+
+    $('#ingredientsCollapse').on('hidden.bs.collapse', function () {
+      chevronIcon.removeClass('fa-chevron-up').addClass('fa-chevron-down');
+    });
+
+    $('#ingredientsCollapse').on('shown.bs.collapse', function () {
+      chevronIcon.removeClass('fa-chevron-down').addClass('fa-chevron-up');
+    });
+  });
+</script>
 {% endblock %}
