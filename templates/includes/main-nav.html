@@ -6,11 +6,12 @@
                 Shop by Skin Type
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="skin-type-link">
-                <a href="" class="dropdown-item">Dry Skin</a>
-                <a href="" class="dropdown-item">Oily Skin</a>
-                <a href="" class="dropdown-item">Combination Skin</a>
-                <a href="" class="dropdown-item">Normal Skin</a>
-                <a href="" class="dropdown-item">Sensitive Skin</a>
+                <a href="{% url 'products' %}?skin_type=dry_skin" class="dropdown-item">Dry Skin</a>
+                <a href="{% url 'products' %}?skin_type=oily_skin" class="dropdown-item">Oily Skin</a>
+                <a href="{% url 'products' %}?skin_type=combination_skin" class="dropdown-item">Combination Skin</a>
+                <a href="{% url 'products' %}?skin_type=normal_skin" class="dropdown-item">Normal Skin</a>
+                <a href="{% url 'products' %}?skin_type=sensitive_skin" class="dropdown-item">Sensitive Skin</a>
+                <a href="{% url 'products' %}?skin_type=all_skin" class="dropdown-item">All Skin Types</a>
             </div>
         </li>
 
@@ -19,13 +20,13 @@
                 Shop by Product Type
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="product-type-link">
-                <a href="" class="dropdown-item">Cleanser</a>
-                <a href="" class="dropdown-item">Toner</a>
-                <a href="" class="dropdown-item">Moisturiser</a>
-                <a href="" class="dropdown-item">Serums</a>
-                <a href="" class="dropdown-item">Masks</a>
-                <a href="" class="dropdown-item">Scrubs</a>
-                <a href="" class="dropdown-item">Accessories</a>
+                <a href="{% url 'products' %}?category=cleanser" class="dropdown-item">Cleanser</a>
+                <a href="{% url 'products' %}?category=toner" class="dropdown-item">Toner</a>
+                <a href="{% url 'products' %}?category=moisturiser" class="dropdown-item">Moisturiser</a>
+                <a href="{% url 'products' %}?category=serums" class="dropdown-item">Serums</a>
+                <a href="{% url 'products' %}?category=masks" class="dropdown-item">Masks</a>
+                <a href="{% url 'products' %}?category=scrubs" class="dropdown-item">Scrubs</a>
+                <a href="{% url 'products' %}?category=accessories" class="dropdown-item">Accessories</a>
             </div>
         </li>
 
@@ -34,10 +35,13 @@
                 Shop by Brand
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="brands-link">
-                <a href="" class="dropdown-item">#</a>
-                <a href="" class="dropdown-item">#</a>
-                <a href="" class="dropdown-item">#</a>
-                <a href="" class="dropdown-item">#</a>
+                <a href="{% url 'products' %}?brand=bubble" class="dropdown-item">Bubble</a>
+                <a href="{% url 'products' %}?brand=laneige" class="dropdown-item">LANEIGE</a>
+                <a href="{% url 'products' %}?brand=cerave" class="dropdown-item">CeraVe</a>
+                <a href="{% url 'products' %}?brand=q_a" class="dropdown-item">Q+A</a>
+                <a href="{% url 'products' %}?brand=drunk_elephant" class="dropdown-item">Drunk Elephant</a>
+                <a href="{% url 'products' %}?brand=byoma" class="dropdown-item">Byoma</a>
+                <a href="{% url 'products' %}?brand=the_skin_guru" class="dropdown-item">The Skin Guru</a>
             </div>
         </li>
 
