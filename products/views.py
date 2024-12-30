@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
+from django.db.models.functions import Lower
 from .models import Product, Category, Brand, SkinType
 
 # Create your views here.
@@ -29,17 +30,19 @@ def all_products(request):
             if sortkey == 'name':
                 sortkey = 'lower_name'
                 products = products.annotate(lower_name=Lower('name'))
-            if sortkey == 'category':
+            elif sortkey == 'category':
                 sortkey = 'category__name'
-            if sortkey == 'brand':
+            elif sortkey == 'brand':
                 sortkey = 'brand__name'
-            if sortkey == 'skin_type':
+            elif sortkey == 'skin_type':
                 sortkey = 'skin_type__name'
+
 
             if 'direction' in request.GET:
                 direction = request.GET['direction']
                 if direction == 'desc':
                     sortkey = f'-{sortkey}'
+                    
             products = products.order_by(sortkey)
 
             current_sorting = f'{sort}_{direction}'
