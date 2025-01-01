@@ -45,7 +45,7 @@
                                     {% endif %}
                                 </td>
                                 <td class="py-3">
-                                    <p class="my-0"><strong>{{ item.product.name }} - {{ item.product.brand.friendly_name }} </strong></p>
+                                    <p class="my-0"><strong>{{ item.product.brand.friendly_name }} {{ item.product.name }}</strong></p>
                                     <p class="my-0 small text-muted">{% if item.product.product_size_ml %}{{ item.product.product_size_ml }}ml
                                     {% elif item.product.product_size_g %}{{ item.product.product_size_g }}g
                                     {% else %}One size{% endif %}</p>
