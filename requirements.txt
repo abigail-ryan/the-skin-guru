@@ -1,5 +1,9 @@
 asgiref==3.8.1
+bleach==4.1.0
 Django==5.1.4
 django-allauth==65.3.0
+django-crispy-forms==1.14.0
+django-summernote==0.8.20.0
+pillow==11.0.0
 pytz==2024.2
 sqlparse==0.5.2
