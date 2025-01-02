@@ -37,3 +37,19 @@
     color: #000;
     border: 1px solid #7e7c7c;
 }
+
+
+/* Checkout success page */
+.bullet-item {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+.bullet-item::before {
+  content: '•';
+  position: absolute;
+  left: 20px;
+  top: 0;
+  color: black;
+}
