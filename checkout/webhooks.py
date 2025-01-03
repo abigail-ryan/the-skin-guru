@@ -11,6 +11,12 @@ import stripe
 def webhook(request):
     """Listen for webhooks from Stripe
     """
+
+    # Troubleshooting: Print incoming request details
+    print("Webhook received!")
+    print(f"Request method: {request.method}")
+    print(f"Request headers: {request.headers}")
+    
     # Setup
     wh_secret = settings.STRIPE_WH_SECRET
     stripe.api_key = settings.STRIPE_SECRET_KEY
