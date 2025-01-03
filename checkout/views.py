@@ -45,7 +45,11 @@ def checkout(request):
             'country': request.POST['country'],
             'phone_number': request.POST['phone_number'],
         }
+        
         order_form = OrderForm(form_data)
+        print("Choices for country field:", order_form.fields['country'].choices)
+
+        return render(request, 'checkout/checkout.html', {'order_form': order_form})
         if order_form.is_valid():
             order = order_form.save(commit=False)
             pid = request.POST.get('client_secret').split('_secret')[0]
