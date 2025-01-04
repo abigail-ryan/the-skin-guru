@@ -3,6 +3,7 @@ from django.contrib import messages
 from django.db.models import Q
 from django.db.models.functions import Lower
 from .models import Product, Category, Brand, SkinType
+from articles.models import Post
 
 # Create your views here.
 
@@ -22,6 +23,8 @@ def all_products(request):
     sort = None
     direction = None
     current_sorting = None
+
+    related_articles = []
 
     if request.GET:
         if 'sort' in request.GET:
@@ -53,6 +56,9 @@ def all_products(request):
                 products = products.filter(skin_type__name__in=skin_type_names)
                 skin_type = SkinType.objects.filter(name__in=skin_type_names)
 
+                # Retrieve related articles based on the selected skin types
+                related_articles = Post.objects.filter(skin_type__name__in=skin_type_names)
+
         if 'category' in request.GET:
             category_names = request.GET.getlist('category')
             if category_names:
@@ -81,6 +87,9 @@ def all_products(request):
                     Q(key_ingredients__icontains=query) 
                 )
             products = products.filter(queries)
+
+    if not related_articles and not query:  #  gets all articles when no filtering is applied
+        related_articles = Post.objects.all()
         
     current_sorting = f'{sort}_{direction}'
 
@@ -91,6 +100,7 @@ def all_products(request):
         'current_skin_type' : skin_type,
         'current_categories': categories,
         'current_sorting': current_sorting,
+        'related_articles': related_articles,
     }
     
     return render(request, 'products/products.html', context)

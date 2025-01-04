@@ -1,6 +1,10 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'posts/css/posts.css' %}">
+{% endblock %}
+
 {% block page_header %}
     <div class="container header-container">
         <div class="row">
@@ -32,11 +36,11 @@
                                         </div>
                                     </div>
                                     <a href="#" class="post-link">
-                                        <h2 class="card-title">{{ post.title }}</h2>
+                                        <h3 class="card-title">{{ post.title }}</h3>
                                     </a>
 
                                     <hr />
-                                    <p class="card-text text-muted h6">Written by: {{ post.author }} | {{ post.created_on }}</p>
+                                    <p class="card-text text-muted h6 small">{{ post.created_on }}</p>
                                 </div>
                             </div>
                         </div>
