@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse
 from django.views import generic
 from .models import Post
@@ -7,3 +7,18 @@ from .models import Post
 class PostList(generic.ListView):
     queryset = Post.objects.filter(status=1)
     template_name = "articles/posts_list.html"
+
+
+def post_detail(request, slug):
+    """
+    Display an individual Post`.
+    """
+
+    queryset = Post.objects.filter(status=1)
+    post = get_object_or_404(queryset, slug=slug)
+
+    return render(
+        request,
+        "articles/posts_detail.html",
+        {"post": post},
+    )
