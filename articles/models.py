@@ -13,15 +13,18 @@ class Post(models.Model):
     slug = models.SlugField(max_length=200, unique=True)
     author = models.ForeignKey(User, on_delete=models.CASCADE, related_name="article_posts")
     content = SummernoteTextField()
-    excerpt = models.CharField(max_length=250, blank=False)
+    excerpt = models.TextField(max_length=250, blank=False)
     category = models.ForeignKey(Category, on_delete=models.SET_NULL, null=True, related_name='articles')
     skin_type = models.ForeignKey(SkinType, on_delete=models.SET_NULL, null=True, related_name='articles')
     created_on = models.DateTimeField(auto_now_add=True)
     updated_on = models.DateTimeField(auto_now_add=True)
     status = models.IntegerField(choices=STATUS, default=0)
 
+    class Meta:
+        ordering = ["-created_on"]
+
     def __str__(self):
-        return f"{self.name}"
+        return f"Article Title: {self.title} | written by {self.author}"
 
 
 class Comment(models.Model):
@@ -32,5 +35,8 @@ class Comment(models.Model):
     approved = models.BooleanField(default=False)
     updated_on = models.DateTimeField(auto_now_add=True)
 
+    class Meta:
+        ordering = ["created_on"]
+
     def __str__(self):
-        return f"{self.name}"
+        return f"Comment {self.body} by {self.author}"
