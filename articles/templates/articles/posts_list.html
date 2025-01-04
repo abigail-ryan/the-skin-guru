@@ -20,13 +20,32 @@
                 </div>
             </div>
         </div>
-        <div class="col-12">
+        <div class="col-12 col-lg-9 mx-auto"> 
             {% if object_list %}
-                {% for post in object_list %}
-                    <h2>{{post.title}}</h2>
-                    <p>{{post.excerpt}}</p>
-                    <p>Author: {{post.author}}</p>
-                {% endfor %}
+                <div class="row mt-4 justify-content-center"> 
+                    {% for post in post_list %}
+                        <div class="col-md-4 mb-4"> 
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="image-container">
+                                        <div class="image-flash">
+                                        </div>
+                                    </div>
+                                    <a href="#" class="post-link">
+                                        <h2 class="card-title">{{ post.title }}</h2>
+                                    </a>
+
+                                    <hr />
+                                    <p class="card-text text-muted h6">Written by: {{ post.author }} | {{ post.created_on }}</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        {% if forloop.counter|divisibleby:3 and not forloop.last %}
+                            </div><div class="row mt-4 justify-content-center"> 
+                        {% endif %}
+                    {% endfor %}
+                </div>  
             {% else %}
                 <p class="text-center">No related articles found.</p>
             {% endif %}
