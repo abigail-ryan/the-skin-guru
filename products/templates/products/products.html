@@ -159,21 +159,28 @@
       </div>
   
       <!-- New article section -->
-      <div class="col-12 col-lg-3 mt-5 mt-lg-5">
+      <div class="col-12 col-lg-3 col-md-8 mt-5 mt-lg-5 mx-auto">
         <h3 class="text-center mb-4">Related Articles</h3>
         <hr class="w-50 mb-1">
         {% if related_articles %}
-        {% for article in related_articles %}
-            <div class="card mb-3">
-                    <img src="{{ article.image.url }}" class="card-img-top" alt="{{ article.title }}" style="width: 100%; height: auto;">
-                <div class="card-body">
-                    <h5 class="card-title">{{ article.title }}</h5>
-                    <p class="card-text">{{ article.excerpt|truncatewords:10 }}</p>
-                    <a href="{% url 'post_detail' article.slug %}" class="btn btn-pink btn-sm">Read More</a>
+        <div class="d-flex flex-column align-items-center mt-4"></div>
+            {% for article in related_articles %}
+            <div class="d-flex flex-column align-items-center"></div>
+                <div class="card mb-3 shadow">
+                    {% if article.image %}
+                        <img src="{{ article.image.url }}" class="card-img-top" alt="{{ article.title }}" style="width: 100%; height: auto;">
+                    {% else %}
+                        <img src="{% static 'images/default.jpg' %}" class="card-img-top" alt="{{ article.title }}" style="width: 100%; height: auto;">
+                    {% endif %}
+                    <div class="card-body">
+                        <h5 class="card-title">{{ article.title }}</h5>
+                        <p class="card-text">{{ article.excerpt|truncatewords:7 }}</p>
+                        <a href="{% url 'post_detail' article.slug %}" class="btn btn-pink btn-sm">Read More</a>
+                    </div>
                 </div>
-            </div>
-        {% endfor %}
-        <hr class="w-50 mb-1">
+                <hr class="w-50 mb-4">
+            {% endfor %}
+        </div>
     {% else %}
     <p class="text-center">No related articles found.</p>
 {% endif %}

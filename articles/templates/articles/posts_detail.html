@@ -1,6 +1,10 @@
 {% extends 'base.html' %} 
 {% load static %}
 
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'posts/css/posts.css' %}">
+{% endblock %}
+
 {% block page_header %}
     <div class="container header-container">
         <div class="row">
@@ -12,34 +16,28 @@
 {% block content %}
 <div class="container-fluid">
     <div class="row">
-        <div class="col-12">
-            <div class="row">
-                <div class="col-12 text-center mt-3">
-                    <h2 class="logo-font">Articles</h2>
-                    <hr class="w-50 mb-1">
+        <div class="col-12 p-0">
+            <div class="masthead">
+                <div class="masthead-image">
+                    {% if post.image %}
+                        <img src="{{ post.image.url }}" alt="{{ post.title }}">
+                    {% else %}
+                        <img src="{% static 'images/default.jpg' %}" alt="placeholder">
+                    {% endif %}
+                </div>
+                <div class="masthead-text ">
+                    <h2 class="post-title mb-4">{{ post.title }}</h2>
+                    <p class="post-subtitle small">{{ post.author }} | {{ post.created_on }}</p>
                 </div>
             </div>
         </div>
-        <div class="masthead">
-            <div class="container">
-                <div class="row g-0">
-                    <div class="col-md-6 masthead-text">
-                        <h1 class="post-title">{{ post.title }}</h1>
-                        <p class="post-subtitle">{{ post.author }} | {{ post.created_on }}</p>
-                    </div>
-                    <div class="d-none d-md-block col-md-6 masthead-image">
-                        <img src="{% static 'images/default.jpg' %}" class="scale" alt="placeholder">
-                    </div>
-                </div>
-            </div>
-        </div>
+    </div>
 
-        <div class="container">
-            <div class="row">
-                <div class="col card mb-4  mt-3 left  top">
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-12">
+                <div class="card mb-4">
                     <div class="card-body">
-                        <!-- The post content goes inside the card-text. -->
-                        <!-- Use the | safe filter inside the template tags -->
                         <p class="card-text">
                             {{ post.content | safe }}
                         </p>

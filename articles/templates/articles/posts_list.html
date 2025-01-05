@@ -27,25 +27,29 @@
         <div class="col-12 col-lg-9 mx-auto"> 
             {% if object_list %}
                 <div class="row mt-4 justify-content-center"> 
-                    {% for post in post_list %}
-                        <div class="col-md-4 mb-4"> 
-                            <div class="card">
+                    {% for post in object_list %}
+                        <div class="col-md-6 col-lg-6 mb-4"> 
+                            <div class="card mb-4 shadow" role="article">
                                 <div class="card-body">
                                     <div class="image-container">
-                                        <div class="image-flash">
-                                        </div>
+                                        {% if post.image %}
+                                            <a href="{% url 'post_detail' post.slug %}">
+                                                <img class="card-img-top" src="{{ post.image.url }}" alt="{{ post.title }}">
+                                            </a>
+                                        {% else %}
+                                            <img class="card-img-top" src="{% static 'images/default.jpg' %}" alt="placeholder image">
+                                        {% endif %}
                                     </div>
-                                    <a href="{% url 'post_detail' post.slug %}" class="post-link">
-                                        <h3 class="card-title">{{ post.title }}</h3>
-                                    </a>
-
-                                    <hr />
+                                    <h2 class="card-title mt-3">{{ post.title }}</h2>
                                     <p class="card-text text-muted h6 small">{{ post.created_on }}</p>
+                                    <hr>
+                                    <p class="excerpt">{{ post.excerpt }}</p>
+                                    <a href="{% url 'post_detail' post.slug %}" class="btn btn-sm btn btn-pink" role="button" aria-label="View">Read More</a>
                                 </div>
                             </div>
                         </div>
 
-                        {% if forloop.counter|divisibleby:3 and not forloop.last %}
+                        {% if forloop.counter|divisibleby:2 and not forloop.last %}
                             </div><div class="row mt-4 justify-content-center"> 
                         {% endif %}
                     {% endfor %}
