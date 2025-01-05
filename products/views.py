@@ -2,8 +2,10 @@ from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
 from django.db.models.functions import Lower
-from .models import Product, Category, Brand, SkinType
+from .models import Product, Category, Brand, SkinType, Review
+from checkout.models import Order
 from articles.models import Post
+from .forms import ReviewForm
 
 # Create your views here.
 
@@ -112,8 +114,40 @@ def product_detail(request, product_id):
     """
     product = get_object_or_404(Product, pk=product_id)
 
+    reviews = product.reviews.all().order_by("-created_on")
+    review_count = reviews.filter(approved=True).count()
+
+    # Check if the user has purchased this product
+    user_has_purchased = False
+    if request.user.is_authenticated:
+        # Check if any of the user's orders contain this product
+        user_has_purchased = Order.objects.filter(
+            user_profile__user=request.user,
+            lineitems__product=product).exists()
+        
+    if request.method == "POST":
+        review_form = ReviewForm(data=request.POST)
+        if review_form.is_valid():
+            review = review_form.save(commit=False)
+            review.product = product
+            review.user = request.user
+            review.save() 
+            messages.add_message(
+                request, messages.SUCCESS,
+                'Your review is submitted and awaiting approval'
+            )
+
+            return redirect('product_detail', product_id=product.id)  # Redirect to avoid resubmission
+
+    else:
+        review_form = ReviewForm() 
+
     context = {
         'product' : product,
+        'reviews': reviews,
+        'review_count': review_count,
+        "review_form": review_form,
+        'user_has_purchased': user_has_purchased,
     }
     
     return render(request, 'products/product_detail.html', context)

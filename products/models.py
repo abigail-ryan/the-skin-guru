@@ -1,5 +1,6 @@
 from django.db import models
 from django_summernote.fields import SummernoteTextField
+from django.contrib.auth.models import User
 
 # Create your models here.
 
@@ -58,3 +59,15 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class Review(models.Model):
+    product = models.ForeignKey('products.Product', on_delete=models.CASCADE, related_name='reviews')
+    user = models.ForeignKey('auth.User', on_delete=models.CASCADE, related_name='reviewer')
+    rating = models.IntegerField(choices=[(i, str(i)) for i in range(1, 6)])  # Dropdown for 1 to 5 stars
+    comment = models.TextField()
+    approved = models.BooleanField(default=False)
+    created_on = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f'{self.product.name} - {self.rating} Stars'

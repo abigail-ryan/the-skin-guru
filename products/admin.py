@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django_summernote.admin import SummernoteModelAdmin
-from .models import Product, Category, Brand, SkinType
+from .models import Product, Category, Brand, SkinType, Review
 
 # Register your models here.
 
@@ -38,7 +38,15 @@ class SkinTypeAdmin(admin.ModelAdmin):
     )
 
 
+class ReviewAdmin(admin.ModelAdmin):
+    list_display = ('user', 'comment', 'rating', 'approved', 'created_on')
+    list_filter = ('approved',)
+
+    ordering = ('-created_on',)
+
+
 admin.site.register(Product, ProductAdmin)
 admin.site.register(Category, CategoryAdmin)
 admin.site.register(Brand, BrandAdmin)
 admin.site.register(SkinType, SkinTypeAdmin)
+admin.site.register(Review, ReviewAdmin)

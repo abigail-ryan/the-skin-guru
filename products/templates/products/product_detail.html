@@ -1,6 +1,10 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'posts/css/posts.css' %}">
+{% endblock %}
+
 {% block page_header %}
     <div class="container header-container">
         <div class="row">
@@ -88,7 +92,7 @@
             </div>
         </div>
     
-    <hr class="col-12 col-md-10 col-lg-10">
+        <hr class="col-12 col-md-10 col-lg-10">
 
         <div id="description-section" class="container-fluid">
             <div class="row justify-content-center">
@@ -104,7 +108,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+       
         <hr class="col-12 col-md-10 col-lg-10">
 
         <div id="key-ingredients-section" class="container-fluid">
@@ -171,8 +175,100 @@
             </div>
             {% endif %}
         </div>
-        <hr class="col-12 col-md-10 col-lg-10 mb-3">
     </div>
+            <!-- Displaying count of Reviews -->
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-12">
+            <strong class="text-secondary">
+                <i class="fa-solid fa-ranking-star"></i> {{ review_count }} Reviews by verified buyers.
+            </strong>
+            </div>
+            <div class="col-12">
+            <hr>
+            </div>
+        </div>
+        <!-- Displaying Reviews -->
+        <div class="row">
+            <div class="col-md-8 card mb-4 mt-3">
+                <h3>Reviews:</h3>
+                <div class="card-body">
+                    {% for review in reviews %}
+                        <div class="p-2 comments {% if not review.approved %}faded{% endif %}">
+                            <p class="font-weight-bold">
+                                {{ review.user.username }} 
+                                <span class="font-weight-normal">{{ review.created_on }}</span> wrote:
+                            </p>
+                            <!-- Display Star Rating -->
+                            <div class="star-rating">
+                                {% for i in "12345" %}
+                                    {% if i|add:0 <= review.rating %}
+                                        <span class="star filled">★</span>  <!-- Filled star -->
+                                    {% else %}
+                                        <span class="star">☆</span>  <!-- Empty star -->
+                                    {% endif %}
+                                {% endfor %}
+                            </div>
+                            <div id="comment{{ review.id }}">
+                                {{ review.comment | linebreaks }}
+                            </div>
+
+                            {% if not review.approved %}
+                                <p class="approval">This review is awaiting approval</p>
+                            {% endif %}
+
+                            {% if user.is_authenticated and review.user == user %}
+                                <button class="btn btn-edit btn-oultine-tiffany" comment_id="{{ review.id }}">Edit</button>
+                                <button class="btn btn-delete" comment_id="{{ review.id }}">Delete</button>
+                            {% endif %}
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <!-- Creating Reviews -->
+            <div class="col-md-4 card mb-4 mt-3">
+                <div class="card-body">
+                    {% if user.is_authenticated %}
+                        <h3>Leave a Review:</h3>
+                        <p>Posting as: {{ user.username }}</p>
+            
+                        {% if user_has_purchased %}
+                            <form id="reviewForm" method="post" style="margin-top: 1.3em;">
+                                {% csrf_token %}
+                                {{ review_form|crispy }}  <!-- Use crispy filter to render the form -->
+                                <button type="submit" class="btn btn-pink btn-lg">Submit</button>
+                            </form>
+                        {% else %}
+                            <p><i class="fa-solid fa-circle-exclamation"></i> You need to purchase this product before leaving a review.</p>
+                        {% endif %}
+                        
+                    {% else %}
+                        <p><a class="text-info font-weight-bold" href="{% url 'account_login' %}">Sign in</a> or <a class="text-info font-weight-bold" href="{% url 'account_signup' %}">Register an account</a> to leave a comment</p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Delete confirmation modal -->
+<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="deleteModalLabel">Delete review?</h5>
+                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">x</button>
+            </div>
+            <div class="modal-body">
+                Are you sure you want to delete your review? This action cannot be undone.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <a id="deleteConfirm" href="#" class="btn btn-danger">Delete</a>
+            </div>
+        </div>
+    </div>
+</div>
+    
 {% endblock %}
 
 
