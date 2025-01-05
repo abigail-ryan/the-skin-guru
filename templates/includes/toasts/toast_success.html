@@ -15,6 +15,8 @@
             </div>
         </div>
         {% if grand_total and not on_profile_page %}
+            {% if on_posts_detail_page %}
+            {% else %}
             <p class="logo-font bg-white text-black py-1">Your Cart ({{ product_count }})</p>
             <div class="bag-notification-wrapper">
                 {% for item in cart_items %}
@@ -51,6 +53,7 @@
                     </a>
                 </div>
             </div>
+            {% endif %}
         {% endif %}
     </div>
 </div>
