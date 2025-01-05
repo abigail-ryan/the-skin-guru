@@ -100,3 +100,33 @@
 .approval {
     color: rgb(222, 146, 168);
 }
+
+.btn-oultine-tiffany {
+    background: white;
+    color: black !important;
+    border: 4px solid #A0E7E5;
+    padding: 5px 12px;
+}
+
+.btn-oultine-tiffany:hover,
+.btn-oultine-tiffany:active,
+.btn-oultine-tiffany:focus {
+    background: #A0E7E5;
+    color: black !important;
+    font-weight: bold;
+}
+
+.btn-delete {
+    background: red;
+    color: white     !important;
+    border: 4px solid red;
+    padding: 5px 12px;
+}
+
+.btn-delete:hover,
+.btn-delete:active,
+.btn-delete:focus {
+    background: #aa0202;
+    border: 4px solid #aa0202;
+    font-weight: bold;
+}
