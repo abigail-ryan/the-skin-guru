@@ -54,6 +54,7 @@ INSTALLED_APPS = [
     'checkout',
     'profiles',
     'articles',
+    'contact',
     'django_summernote',
     'crispy_forms',
     'django_countries',
