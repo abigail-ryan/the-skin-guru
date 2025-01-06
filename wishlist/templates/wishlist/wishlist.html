@@ -21,11 +21,11 @@
             </div>
         </div>
     
-        <div class="row wishlist-border p-2 mb-4 m-2 shadow">
+        <div class="row p-2 mb-4 m-2">
             <div class="col-12">
                 {% if user_wishlist %}
                     {% for item in user_wishlist %}
-                    <div class="row mb-3"> <!-- Added margin bottom for spacing -->
+                    <div class="row mb-3">
                         <div class="col-6 col-md-2 mb-1">
                             {% if item.product.image %}
                                 <img class="w-100" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
