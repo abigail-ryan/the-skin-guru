@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
+from django.http import HttpResponseRedirect
 from django.contrib import messages
 from django.db.models import Q
 from django.db.models.functions import Lower
@@ -151,3 +152,52 @@ def product_detail(request, product_id):
     }
     
     return render(request, 'products/product_detail.html', context)
+
+
+def review_edit(request, product_id, review_id):
+    """
+    View to edit reviews
+    """
+    # Get the product and the review to be edited
+    product = get_object_or_404(Product, pk=product_id)
+    review = get_object_or_404(Review, pk=review_id)
+
+    if request.method == "POST":
+        review_form = ReviewForm(data=request.POST, instance=review)  
+
+        if review_form.is_valid() and review.user == request.user: 
+            review = review_form.save(commit=False)
+            review.product = product 
+            review.approved = False  
+            review.save()
+            messages.add_message(request, messages.SUCCESS, 'Review updated successfully!')
+            return redirect('product_detail', product_id=product.id)  
+        else:
+            messages.add_message(request, messages.ERROR, 'Error updating review!')
+
+    else:
+        review_form = ReviewForm(instance=review) 
+
+    context = {
+        'product': product,
+        'review_form': review_form,
+        'review': review,
+    }
+
+    return render(request, 'products/review_edit.html', context)  
+
+
+def review_delete(request, product_id, review_id):
+    """
+    View to delete reviews
+    """
+    product = get_object_or_404(Product, pk=product_id)
+    review = get_object_or_404(Review, pk=review_id)
+
+    if review.user == request.user:
+        review.delete()
+        messages.add_message(request, messages.SUCCESS, 'Review deleted!')
+    else:
+        messages.add_message(request, messages.ERROR, 'You can only delete your own reviews!')
+
+    return redirect('product_detail', product_id=product.id)

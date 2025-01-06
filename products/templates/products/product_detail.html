@@ -119,12 +119,12 @@
                     </div>
                 </div>
             </div>
-                {% if product.key_ingredients %}
-                <div class="row justify-content-center mt-3">
-                    <div class="col-12 col-md-10 col-lg-10 text-black">
+            <div class="row justify-content-center mt-3">
+                <div class="col-12 col-md-10 col-lg-10 text-black">
+                    {% if product.key_ingredients %}
                         <p>{{ product.key_ingredients|safe }}</p>
-                        {% endif %}
-                        {% if product.ingredients %}
+                    {% endif %}
+                    {% if product.ingredients %}
                         <p class="mb-0 text-muted">
                             <a class="btn btn-link p-0" data-toggle="collapse" href="#ingredientsCollapse" role="button" aria-expanded="false" aria-controls="ingredientsCollapse">
                                 ALL INGREDIENTS <i class="fas fa-chevron-down"></i>
@@ -135,17 +135,12 @@
                                 {{ product.ingredients|safe }}
                             </div>
                         </div>
-                        {% else %}
-                        <div class="container-fluid">
-                            <div class="row justify-content-center mt-3">
-                                <div class="col-12 col-md-10 col-lg-10 text-center">
-                                    <p class="text-muted">No ingredients information available.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    {% else %}
+                        <p class="text-muted text-center">No ingredients information available.</p>
                     {% endif %}
                 </div>
+            </div>
+        </div>
             
         <hr class="col-12 col-md-10 col-lg-10">
 
@@ -275,23 +270,6 @@
 
 {% block postloadjs %}
 {{ block.super }}
-<script>
-  $(document).ready(function() {
-    var ingredientsToggle = $('[data-toggle="collapse"]');
-    var chevronIcon = ingredientsToggle.find('i.fas');
-
-    ingredientsToggle.on('click', function() {
-      chevronIcon.toggleClass('fa-chevron-up fa-chevron-down');
-    });
-
-    $('#ingredientsCollapse').on('hidden.bs.collapse', function () {
-      chevronIcon.removeClass('fa-chevron-up').addClass('fa-chevron-down');
-    });
-
-    $('#ingredientsCollapse').on('shown.bs.collapse', function () {
-      chevronIcon.removeClass('fa-chevron-down').addClass('fa-chevron-up');
-    });
-  });
-</script>
+<script src="{% static 'products/js/reviews.js' %}"></script>
 {% include 'products/includes/quantity_input_script.html' %}
 {% endblock %}
