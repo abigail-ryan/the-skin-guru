@@ -12,52 +12,52 @@
 
 {% block content %}
 <div class="container-fluid">
-    <div class="row justify-content-center">
-      <div class="col-lg-8 col-md-10 col-12">
-        <div class="row">
-            <div class="col-12 text-center mt-3">
-                <h2 class="logo-font">My Wishlist</h2>
-                <hr class="w-50 mb-1">
+    <div class="row justify-content-center vh-100">
+        <div class="col-lg-8 col-md-10 col-12">
+            <div class="row">
+                <div class="col-12 text-center mt-3">
+                    <h2 class="logo-font">My Wishlist</h2>
+                    <hr class="w-50 mb-1">
+                </div>
             </div>
-        </div>
-    
-        <div class="row p-2 mb-4 m-2">
-            <div class="col-12">
-                {% if user_wishlist %}
-                    {% for item in user_wishlist %}
-                    <div class="row mb-3">
-                        <div class="col-6 col-md-2 mb-1">
-                            {% if item.product.image %}
-                                <img class="w-100" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
-                            {% else %}
-                                <img class="w-100" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.product.name }}">
-                            {% endif %}
-                        </div>
-                        <div class="col-6">
-                            <p class="my-0"><strong>{{ item.product.brand.friendly_name }} {{ item.product.name }}</strong></p>
-                            <p class="my-0 small">{% if item.product.product_size_ml %}{{ item.product.product_size_ml }}ml
-                                {% elif item.product.product_size_g %}{{ item.product.product_size_g }}g
-                                {% else %}One size{% endif %}</p>
-                        </div>
-                        <div class="col-9 col-md-4 col-lg-4 text-right mt-4">
-                            <div class="d-flex justify-content-between">
-                                <a href="{% url 'product_detail' item.product.id %}" class="btn btn-pink btn-sm">View</a>
-                                <a href="{% url 'remove_from_wishlist' item.product.id %}" class="wishlist-delete btn btn-danger btn-sm">
-                                    <i class="fas fa-trash wishlist-icon"></i> Remove
-                                </a>
+        
+            <div class="row p-2 mb-4 m-2">
+                <div class="col-12">
+                    {% if user_wishlist %}
+                        {% for item in user_wishlist %}
+                        <div class="row mb-3">
+                            <div class="col-6 col-md-2 mb-1">
+                                {% if item.product.image %}
+                                    <img class="w-100" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
+                                {% else %}
+                                    <img class="w-100" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.product.name }}">
+                                {% endif %}
+                            </div>
+                            <div class="col-6">
+                                <p class="my-0"><strong>{{ item.product.brand.friendly_name }} {{ item.product.name }}</strong></p>
+                                <p class="my-0 small">{% if item.product.product_size_ml %}{{ item.product.product_size_ml }}ml
+                                    {% elif item.product.product_size_g %}{{ item.product.product_size_g }}g
+                                    {% else %}One size{% endif %}</p>
+                            </div>
+                            <div class="col-9 col-md-4 col-lg-4 text-right mt-4">
+                                <div class="d-flex justify-content-between">
+                                    <a href="{% url 'product_detail' item.product.id %}" class="btn btn-pink btn-sm">View</a>
+                                    <a href="{% url 'remove_from_wishlist' item.product.id %}" class="wishlist-delete btn btn-danger btn-sm">
+                                        <i class="fas fa-trash wishlist-icon"></i> Remove
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <hr>
-                    {% endfor %}
-                {% else %}
-                    <div class="col-12 text-center my-5">
-                        <p class="p-txt">Your wishlist is empty.</p>
-                    </div>
-                {% endif %}
+                        <hr>
+                        {% endfor %}
+                    {% else %}
+                        <div class="col-12 text-center my-5">
+                            <p class="p-txt">Your wishlist is empty.</p>
+                        </div>
+                    {% endif %}
+                </div>
             </div>
         </div>
     </div>
 </div>
-
 {% endblock %}
