@@ -55,6 +55,7 @@ INSTALLED_APPS = [
     'profiles',
     'articles',
     'contact',
+    'wishlist',
     'django_summernote',
     'crispy_forms',
     'django_countries',
@@ -91,6 +92,7 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.media',
                 'cart.contexts.cart_contents',
+                'wishlist.contexts.wishlist_items',
             ],
             'builtins': [
                 'crispy_forms.templatetags.crispy_forms_tags',
