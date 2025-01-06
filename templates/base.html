@@ -155,11 +155,10 @@
                 <div class="col-lg-4 col-md-4 mt-4 mb-4">
                     <h5>Quick Links</h5>
                     <ul class="list-unstyled text-small">
-                    <li>Blog Articles</li>
-                    <li>Contact</li>
-                    <li>Delivery Info</li>
-                    <li>Privacy Policy</li>
-                    <li>Terms & Conditions</li>
+                    <li><a href="{% url 'articles' %}" class="text-black font-weight-bold">Blog Articles</a></li>
+                    <li><a href="" class="text-black font-weight-bold">Delivery Info</a></li>
+                    <li><a href="" class="text-black font-weight-bold">Privacy Policy</a></li>
+                    <li><a href="" class="text-black font-weight-bold">Terms & Conditions</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-4 col-md-4 mt-4 mb-4">
@@ -167,6 +166,7 @@
                     <ul class="list-unstyled text-small">
                     <li>+353 87-4561398</li>
                     <li>theskinguru@gmail.com</li>
+                    <li><a href="{% url 'contact' %}" class="text-black font-weight-bold">Fill out a Contact Form <i class="fa-solid fa-message"></i></a></li>
                     </ul>
                     <p class="list-unstyled">
                         <a href="https://www.tiktok.com/en/" target="_blank" rel="noopener"
