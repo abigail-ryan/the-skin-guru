@@ -1,0 +1,1 @@
+web: gunicorn the_skin_guru.wsgi:application
