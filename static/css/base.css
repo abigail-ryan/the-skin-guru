@@ -82,6 +82,11 @@ body {
 
 }
 
+.shop-by-font,
+.article-font {
+    font-family: 'Chango';
+}
+
 .product-image-container {
     height: 400px;
     display: flex;
