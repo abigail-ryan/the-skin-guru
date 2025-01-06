@@ -39,7 +39,7 @@
                                 {% elif item.product.product_size_g %}{{ item.product.product_size_g }}g
                                 {% else %}One size{% endif %}</p>
                         </div>
-                        <div class="col-6 col-md-4 text-right">
+                        <div class="col-9 col-md-4 col-lg-4 text-right mt-4">
                             <div class="d-flex justify-content-between">
                                 <a href="{% url 'product_detail' item.product.id %}" class="btn btn-pink btn-sm">View</a>
                                 <a href="{% url 'remove_from_wishlist' item.product.id %}" class="wishlist-delete btn btn-danger btn-sm">
