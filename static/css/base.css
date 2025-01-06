@@ -75,6 +75,19 @@ body {
     border: 1px solid #FFAEBC !important;
 }
 
+.hero-section {
+    background-image: url('/media/theskinguru-hero-image.jpg');
+    overlay: rgba(0, 0, 0, .55);
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
 .hero-tag-line {
     font-family: 'Chango';
     color: #FFAEBC !important;
@@ -280,6 +293,7 @@ footer :is(h1, h2, h3, h4, h5, h6) {
     width: 300px;
   }
 }
+
 
 /* fixed top navbar on medium screen sizes and up */
 @media (min-width: 992px) {

@@ -14,15 +14,15 @@
 {% endblock %}
 
 {% block content %}
-<div class="container h-100">
+<div class="container-fluid h-100 hero-section">
     <div class="row h-100">
         <div class="col-7 col-md-6 my-auto">
-            <h1 class="display-4 logo-font hero-tag-line">
+            <h2 class="display-4 logo-font hero-tag-line">
                 Discover Your Beauty
-            </h1>
+            </h2>
             <div class="my-5">
                 <h4>
-                    <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop Now</a>
+                    <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-3 text-uppercase py-3 shadow">Shop Now</a>
                 </h4>
             </div>
         </div>
@@ -41,27 +41,27 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-2 col-md-4 col-6 text-center">
                                     <img class="rounded-circle shadow" src="media/dry-skin-img.png" alt="Dry Skin Type image" width="140" height="140">
-                                    <p><a class="btn btn-pink mt-2" href="{% url 'products' %}?skin_type=dry_skin" role="button">Dry &raquo;</a></p>
+                                    <p><a class="btn btn-pink mt-2 shadow" href="{% url 'products' %}?skin_type=dry_skin" role="button">Dry &raquo;</a></p>
                                 </div>
                                 <div class="col-lg-2 col-md-4 col-6 text-center">
                                     <img class="rounded-circle shadow" src="media/oily-skin-img.png" alt="Oily Skin Type image" width="140" height="140">
-                                    <p><a class="btn btn-pink mt-2" href="{% url 'products' %}?skin_type=oily_skin" role="button">Oily &raquo;</a></p>
+                                    <p><a class="btn btn-pink mt-2 shadow" href="{% url 'products' %}?skin_type=oily_skin" role="button">Oily &raquo;</a></p>
                                 </div>
                                 <div class="col-lg-2 col-md-4 col-6 text-center">
                                     <img class="rounded-circle shadow" src="media/combination-skin-img.png" alt="Combination Skin Type image" width="140" height="140">
-                                    <p><a class="btn btn-pink mt-2" href="{% url 'products' %}?skin_type=combination_skin" role="button">Combo &raquo;</a></p>
+                                    <p><a class="btn btn-pink mt-2 shadow" href="{% url 'products' %}?skin_type=combination_skin" role="button">Combo &raquo;</a></p>
                                 </div>
                                 <div class="col-lg-2 col-md-4 col-6 text-center">
                                     <img class="rounded-circle shadow" src="media/normal-skin-img.png" alt="Normal Skin Type image" width="140" height="140">
-                                    <p><a class="btn btn-pink mt-2" href="{% url 'products' %}?skin_type=normal_skin" role="button">Normal &raquo;</a></p>
+                                    <p><a class="btn btn-pink mt-2 shadow" href="{% url 'products' %}?skin_type=normal_skin" role="button">Normal &raquo;</a></p>
                                 </div>
                                 <div class="col-lg-2 col-md-4 col-6 text-center">
                                     <img class="rounded-circle shadow" src="media/sensitive-skin-img.png" alt="Sensitive Skin Type image" width="140" height="140">
-                                    <p><a class="btn btn-pink mt-2" href="{% url 'products' %}?skin_type=sensitive_skin" role="button">Sensitive &raquo;</a></p>
+                                    <p><a class="btn btn-pink mt-2 shadow" href="{% url 'products' %}?skin_type=sensitive_skin" role="button">Sensitive &raquo;</a></p>
                                 </div>
                                 <div class="col-lg-2 col-md-4 col-6 text-center">
                                     <img class="rounded-circle shadow" src="media/all-skin-img.png" alt="All Skin Types image" width="140" height="140">
-                                    <p><a class="btn btn-pink mt-2" href="{% url 'products' %}?skin_type=all_skin" role="button">All Skin &raquo;</a></p>
+                                    <p><a class="btn btn-pink mt-2 shadow" href="{% url 'products' %}?skin_type=all_skin" role="button">All Skin &raquo;</a></p>
                                 </div>
                             </div>
                         </div>
