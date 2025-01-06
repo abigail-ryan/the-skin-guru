@@ -31,7 +31,7 @@ SECRET_KEY = 'django-insecure-8ay4c+g0$&we+3f7@uf9t2bq%d)k&o!5(_tmp0q(61wxv--)ux
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-abigailryan-theskinguru-yssz3vpl1n6.ws.codeinstitute-ide.net', 'the-skin-guru.herokuapp.com']
+ALLOWED_HOSTS = ['the-skin-guru-6ce126511380.herokuapp.com', 'localhost',]
 
 
 CSRF_TRUSTED_ORIGINS = ['https://8000-abigailryan-theskinguru-yssz3vpl1n6.ws.codeinstitute-ide.net']
