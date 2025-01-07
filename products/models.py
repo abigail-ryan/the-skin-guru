@@ -1,6 +1,7 @@
 from django.db import models
 from django_summernote.fields import SummernoteTextField
 from django.contrib.auth.models import User
+from cloudinary.models import CloudinaryField
 
 # Create your models here.
 
@@ -54,8 +55,7 @@ class Product(models.Model):
     ingredients = SummernoteTextField(null=True, blank=True)
     how_to_use = SummernoteTextField(null=True, blank=True)
     vegan = models.BooleanField(default=False)
-    image_url = models.URLField(max_length=1024, null=True, blank=True)
-    image = models.ImageField(null=True, blank=True)
+    image = CloudinaryField('image', default='placeholder')
 
     def __str__(self):
         return self.name

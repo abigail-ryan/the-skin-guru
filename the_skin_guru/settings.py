@@ -29,9 +29,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-8ay4c+g0$&we+3f7@uf9t2bq%d)k&o!5(_tmp0q(61wxv--)ux'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['the-skin-guru-6ce126511380.herokuapp.com', 'localhost',]
+ALLOWED_HOSTS = ['the-skin-guru-6ce126511380.herokuapp.com', '8000-abigailryan-theskinguru-yssz3vpl1n6.ws.codeinstitute-ide.net',]
 
 
 CSRF_TRUSTED_ORIGINS = ['https://8000-abigailryan-theskinguru-yssz3vpl1n6.ws.codeinstitute-ide.net']
@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'cloudinary_storage',
     'django.contrib.sites',
     'allauth',
     'allauth.account',
@@ -61,6 +62,7 @@ INSTALLED_APPS = [
     'django_summernote',
     'crispy_forms',
     'django_countries',
+    'cloudinary',
 ]
 
 MIDDLEWARE = [
