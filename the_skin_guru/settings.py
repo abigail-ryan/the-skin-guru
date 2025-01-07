@@ -29,7 +29,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-8ay4c+g0$&we+3f7@uf9t2bq%d)k&o!5(_tmp0q(61wxv--)ux'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['the-skin-guru-6ce126511380.herokuapp.com', '8000-abigailryan-theskinguru-yssz3vpl1n6.ws.codeinstitute-ide.net',]
 
