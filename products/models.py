@@ -51,7 +51,7 @@ class Product(models.Model):
         on_delete=models.SET_NULL)
     skin_type = models.ForeignKey(
         'SkinType', null=True, blank=True,
-        on_delet=models.SET_NULL)
+        on_delete=models.SET_NULL)
     name = models.CharField(max_length=254)
     description = SummernoteTextField()
     price = models.DecimalField(max_digits=6, decimal_places=2)
