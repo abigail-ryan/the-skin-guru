@@ -27,13 +27,12 @@ class StripeWH_Handler:
         body = render_to_string(
             'checkout/confirmation_emails/confirmation_email_body.txt',
             {'order': order, 'contact_email': settings.DEFAULT_FROM_EMAIL})
-        
+
         send_mail(
             subject,
             body,
             settings.DEFAULT_FROM_EMAIL,
-            [cust_email]
-        ) 
+            [cust_email])
 
     def handle_event(self, event):
         """
@@ -59,7 +58,7 @@ class StripeWH_Handler:
 
         billing_details = stripe_charge.billing_details
         shipping_details = intent.shipping
-        grand_total = round(stripe_charge.amount / 100, 2) 
+        grand_total = round(stripe_charge.amount / 100, 2)
 
         # Cleans data in the shipping details
         for field, value in shipping_details.address.items():
@@ -72,13 +71,27 @@ class StripeWH_Handler:
         if username != 'AnonymousUser':
             profile = UserProfile.objects.get(user__username=username)
             if save_info:
-                profile.default_phone_number = shipping_details.phone
-                profile.default_street_address1 = shipping_details.address.line1
-                profile.default_street_address2 = shipping_details.address.line2
-                profile.default_town_or_city = shipping_details.address.city
-                profile.default_postcode = shipping_details.address.postal_code
-                profile.default_county = shipping_details.address.state
-                profile.default_country = shipping_details.address.country
+                profile.default_phone_number = (
+                    shipping_details.phone
+                )
+                profile.default_street_address1 = (
+                    shipping_details.address.line1
+                )
+                profile.default_street_address2 = (
+                    shipping_details.address.line2
+                )
+                profile.default_town_or_city = (
+                    shipping_details.address.city
+                )
+                profile.default_postcode = (
+                    shipping_details.address.postal_code
+                )
+                profile.default_county = (
+                    shipping_details.address.state
+                )
+                profile.default_country = (
+                    shipping_details.address.country
+                )
                 profile.save()
 
         order_exists = False
@@ -88,12 +101,24 @@ class StripeWH_Handler:
                 order = Order.objects.get(
                     full_name__iexact=shipping_details.name,
                     email__iexact=billing_details.email,
-                    street_address1__iexact=shipping_details.address.get('line1', ''),
-                    street_address2__iexact=shipping_details.address.get('line2', ''),
-                    town_or_city__iexact=shipping_details.address.get('city', ''),
-                    postcode__iexact=shipping_details.address.get('postal_code', ''),
-                    county__iexact=shipping_details.address.get('state', ''),
-                    country__iexact=shipping_details.address.get('country', ''),
+                    street_address1__iexact=shipping_details.address.get(
+                        'line1', ''
+                    ),
+                    street_address2__iexact=shipping_details.address.get(
+                        'line2', ''
+                    ),
+                    town_or_city__iexact=shipping_details.address.get(
+                        'city', ''
+                    ),
+                    postcode__iexact=shipping_details.address.get(
+                        'postal_code', ''
+                    ),
+                    county__iexact=shipping_details.address.get(
+                        'state', ''
+                    ),
+                    country__iexact=shipping_details.address.get(
+                        'country', ''
+                    ),
                     grand_total=grand_total,
                     phone_number__iexact=shipping_details.phone,
                     original_cart=cart,
@@ -107,7 +132,9 @@ class StripeWH_Handler:
         if order_exists:
             self._send_confirmation_email(order)
             return HttpResponse(
-                content=f'Webhook received: {event["type"]} | SUCCESS: Verified order already in database',
+                content=f'Webhook received: '
+                f'{event["type"]} | SUCCESS: '
+                f'Verified order already in database',
                 status=200)
         else:
             order = None
@@ -116,12 +143,24 @@ class StripeWH_Handler:
                         full_name=shipping_details.name,
                         user_profile=profile,
                         email=billing_details.email,
-                        street_address1=shipping_details.address.get('line1', ''),
-                        street_address2=shipping_details.address.get('line2', ''),
-                        town_or_city=shipping_details.address.get('city', ''),
-                        postcode=shipping_details.address.get('postal_code', ''),
-                        county=shipping_details.address.get('state', ''),
-                        country=shipping_details.address.get('country', ''),
+                        street_address1=shipping_details.address.get(
+                            'line1', ''
+                        ),
+                        street_address2=shipping_details.address.get(
+                            'line2', ''
+                        ),
+                        town_or_city=shipping_details.address.get(
+                            'city', ''
+                        ),
+                        postcode=shipping_details.address.get(
+                            'postal_code', ''
+                        ),
+                        county=shipping_details.address.get(
+                            'state', ''
+                        ),
+                        country=shipping_details.address.get(
+                            'country', ''
+                        ),
                         grand_total=grand_total,
                         phone_number=shipping_details.phone,
                         original_cart=cart,
@@ -143,7 +182,8 @@ class StripeWH_Handler:
                     status=500)
         self._send_confirmation_email(order)
         return HttpResponse(
-            content=f'Webhook received: {event["type"]} | SUCCESS: Created order in webhook',
+            content=f'Webhook received: '
+            f'{event["type"]} | SUCCESS: Created order in webhook',
             status=200)
 
     def handle_payment_intent_payment_failed(self, event):
