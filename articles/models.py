@@ -12,11 +12,18 @@ STATUS = ((0, "Draft"), (1, "Published"))
 class Post(models.Model):
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
-    author = models.ForeignKey(User, on_delete=models.CASCADE, related_name="article_posts")
+    author = models.ForeignKey(User,
+                               on_delete=models.CASCADE,
+                               related_name="article_posts")
     content = SummernoteTextField()
     excerpt = models.TextField(max_length=250, blank=False)
-    category = models.ForeignKey(Category, on_delete=models.SET_NULL, null=True, blank=True, related_name='articles')
-    skin_type = models.ForeignKey(SkinType, on_delete=models.SET_NULL, null=True, blank=True, related_name='articles')
+    category = models.ForeignKey(Category,
+                                 on_delete=models.SET_NULL, null=True,
+                                 blank=True, related_name='articles')
+    skin_type = models.ForeignKey(SkinType,
+                                  on_delete=models.SET_NULL,
+                                  null=True, blank=True,
+                                  related_name='articles')
     created_on = models.DateTimeField(auto_now_add=True)
     updated_on = models.DateTimeField(auto_now_add=True)
     status = models.IntegerField(choices=STATUS, default=0)
@@ -30,8 +37,10 @@ class Post(models.Model):
 
 
 class Comment(models.Model):
-    post = models.ForeignKey(Post, on_delete=models.CASCADE, related_name="comments")
-    author = models.ForeignKey(User, on_delete=models.CASCADE, related_name="commenter")
+    post = models.ForeignKey(Post, on_delete=models.CASCADE,
+                             related_name="comments")
+    author = models.ForeignKey(User, on_delete=models.CASCADE,
+                               related_name="commenter")
     body = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
     approved = models.BooleanField(default=False)
