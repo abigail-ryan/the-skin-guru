@@ -1,8 +1,8 @@
 from django.contrib import admin
 from .models import Wishlist
 
-# Register your models here.
 
+# Register your models here.
 class WishlistAdmin(admin.ModelAdmin):
     """wishlist admin"""
     model = Wishlist

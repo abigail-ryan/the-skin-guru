@@ -6,6 +6,7 @@ from products.models import Product
 from .models import Wishlist
 from profiles.models import UserProfile
 
+
 # Create your views here.
 @login_required
 @login_required
