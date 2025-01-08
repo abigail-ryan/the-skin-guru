@@ -3,8 +3,8 @@ from django_summernote.fields import SummernoteTextField
 from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
 
-# Create your models here.
 
+# Create your models here.
 class Category(models.Model):
 
     class Meta:
@@ -43,9 +43,15 @@ class SkinType(models.Model):
 
 
 class Product(models.Model):
-    category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
-    brand = models.ForeignKey('Brand', null=True, blank=True, on_delete=models.SET_NULL)
-    skin_type = models.ForeignKey('SkinType', null=True, blank=True, on_delete=models.SET_NULL)
+    category = models.ForeignKey(
+        'Category', null=True, blank=True,
+        on_delete=models.SET_NULL)
+    brand = models.ForeignKey(
+        'Brand', null=True, blank=True,
+        on_delete=models.SET_NULL)
+    skin_type = models.ForeignKey(
+        'SkinType', null=True, blank=True,
+        on_delet=models.SET_NULL)
     name = models.CharField(max_length=254)
     description = SummernoteTextField()
     price = models.DecimalField(max_digits=6, decimal_places=2)
@@ -62,9 +68,15 @@ class Product(models.Model):
 
 
 class Review(models.Model):
-    product = models.ForeignKey('products.Product', on_delete=models.CASCADE, related_name='reviews')
-    user = models.ForeignKey('auth.User', on_delete=models.CASCADE, related_name='reviewer')
-    rating = models.IntegerField(choices=[(i, str(i)) for i in range(1, 6)])  # Dropdown for 1 to 5 stars
+    product = models.ForeignKey(
+        'products.Product', on_delete=models.CASCADE, related_name='reviews')
+    user = models.ForeignKey(
+        'auth.User', on_delete=models.CASCADE, related_name='reviewer')
+    rating = models.IntegerField(
+        choices=[
+            (i, str(i)) for i in range(1, 6)
+        ]  # Dropdown for 1 to 5 stars
+    )
     comment = models.TextField()
     approved = models.BooleanField(default=False)
     created_on = models.DateTimeField(auto_now_add=True)
