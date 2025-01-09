@@ -25,7 +25,6 @@ body {
     width: 1.5rem;
 }
 
-
 .main-logo-link {
     width: fit-content;
 }
@@ -91,7 +90,6 @@ body {
 
 .hero-section {
     background-image: url('/media/theskinguru-hero-image.jpg');
-    overlay: rgba(0, 0, 0, .55);
     background-size: cover;
     background-position: center;
     width: 100vw;
@@ -106,7 +104,6 @@ body {
     font-family: 'Chango';
     color: #FFAEBC !important;
     text-shadow: 2px 2px 0 #cb7f8c, -2px 2px 0 #A0E7E5, -2px -2px 0 #cb7f8c, 2px -2px 0 #cb7f8c;
-
 }
 
 .shop-by-font,
@@ -123,7 +120,6 @@ body {
 }
 
 .product-image {
-    /* max-width: 100%; */
     max-height: 350px;
     object-fit: contain;
 }
@@ -149,18 +145,11 @@ body {
     font-family: 'Chango';
 }
 
-a.category-badge > span.badge:hover {
-    background: #212529 !important;
-    color: #fff !important;
-}
-
-
 .cart-image-container {
     width: 100%;
     height: 250px;
     overflow: hidden;
 }
-
 
 .update-link,
 .remove-item {
@@ -270,7 +259,6 @@ footer :is(h1, h2, h3, h4, h5, h6) {
 }
 
 /* Allauth form formatting */
-
 .allauth-form-inner-content p {
     margin-top: 1.5rem; /* mt-4 */
     color: #6c757d; /* text-secondary */
@@ -302,10 +290,10 @@ footer :is(h1, h2, h3, h4, h5, h6) {
 	color: #17a2b8;
 }
 
-
+/* Mailchimp form */
 #mc_embed_signup{
     background: transparent;
-    /* clear:left;  */
+    clear:left; 
     font:14px Helvetica,Arial,sans-serif; 
     width: 300px;
 }
@@ -315,9 +303,7 @@ footer :is(h1, h2, h3, h4, h5, h6) {
     text-align: center !important;
 }
 
-
 /* MEDIA QUERIES */
-
 @media (max-width: 768px) {
     .cart-item th {
         width: 30%;
@@ -326,18 +312,6 @@ footer :is(h1, h2, h3, h4, h5, h6) {
     .cart-item td {
         width: 70%;
     }
-
-}
-
-/* Slightly larger container on xl screens */
-@media (min-width: 1200px) {
-  .container {
-    max-width: 80%;
-  }
-
-  .logo-image {
-    width: 300px;
-  }
 }
 
 
@@ -389,18 +363,7 @@ footer :is(h1, h2, h3, h4, h5, h6) {
 
 }
 
-/* Add padding to top of page when navbar is collapsed on mobile */
-/* @media (max-width: 991px) {
-    /* .header-container {
-        padding-top: 210px;
-    } */
-
-    /* body {
-        height: calc(100vh - 210px);
-    }
-} */ 
-
-/* Hero section */
+/* Hero section & Mailchimp form */
 @media (min-width: 320px) {
     .hero-tag-line {
         margin-top: 120px;
@@ -411,6 +374,9 @@ footer :is(h1, h2, h3, h4, h5, h6) {
     .hero-tag-line {
         margin-top: 140px;
     }
+    #mc_embed_signup {
+        width: 350px;
+    }
 }
 
 @media (min-width: 425px) {
@@ -420,6 +386,9 @@ footer :is(h1, h2, h3, h4, h5, h6) {
     .cart-image {
         max-width: 300px;
         object-fit: cover;
+    }
+    #mc_embed_signup {
+        width: 400px;
     }
 }
 
@@ -432,7 +401,7 @@ footer :is(h1, h2, h3, h4, h5, h6) {
         object-fit: cover;
     }
     #mc_embed_signup{
-        width: 215px;
+        width: 230px;
     }
 }
 
@@ -462,3 +431,14 @@ footer :is(h1, h2, h3, h4, h5, h6) {
         width: 350px;
     }
 }
+
+/* Slightly larger container on xl screens */
+@media (min-width: 1200px) {
+    .container {
+      max-width: 80%;
+    }
+  
+    .logo-image {
+      width: 300px;
+    }
+  }
