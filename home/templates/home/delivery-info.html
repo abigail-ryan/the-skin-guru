@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% load static %}
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mt-5 mb-3">
+                <h2 class="logo-font">Delivery Information</h2>
+                <hr class="w-50 mb-1">
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-6 mb-3">
+                <h3>Delivery in Ireland</h3>
+                <p>All orders for Ireland will be delivered within 2 business days.</p>
+                <hr>
+                <h3>Delivery in Europe</h3>
+                <p>All orders for Europe will be delivered within 7-10 business days.</p>
+                <hr>
+                <h3>Delivery in America & the rest of the World</h3>
+                <p>All orders for America & the rest of the World may take up to 30 business days. Customs charges may be applicable and payable by the reciever.</p>
+                <hr>
+                <p class="font-weight-bold">All orders placed on weekends or Bank Holidays will be processed and shpped on the next working day.</p>
+                <hr class="w-50 mb-4">
+            </div>
+        </div>
+    </div>
+{% endblock %}

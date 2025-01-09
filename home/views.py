@@ -14,3 +14,7 @@ def index(request):
     }
 
     return render(request, 'home/index.html', context)
+
+def delivery_info(request):
+    return render(request, 'home/delivery-info.html')
+
