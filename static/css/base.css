@@ -303,6 +303,19 @@ footer :is(h1, h2, h3, h4, h5, h6) {
 }
 
 
+#mc_embed_signup{
+    background: transparent;
+    /* clear:left;  */
+    font:14px Helvetica,Arial,sans-serif; 
+    width: 300px;
+}
+
+#mc_embed_signup form {
+    padding: 0;
+    text-align: center !important;
+}
+
+
 /* MEDIA QUERIES */
 
 @media (max-width: 768px) {
@@ -418,6 +431,9 @@ footer :is(h1, h2, h3, h4, h5, h6) {
         max-width: 200px;
         object-fit: cover;
     }
+    #mc_embed_signup{
+        width: 215px;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -430,6 +446,9 @@ footer :is(h1, h2, h3, h4, h5, h6) {
     .display-4.logo-font {
         font-size: 4rem;
     }
+    #mc_embed_signup{
+        width: 300px;
+    }
 }
 
 @media (min-width: 1440px) {
@@ -438,5 +457,8 @@ footer :is(h1, h2, h3, h4, h5, h6) {
     }
     .display-4.logo-font {
         font-size: 5rem;
+    }
+    #mc_embed_signup{
+        width: 350px;
     }
 }
