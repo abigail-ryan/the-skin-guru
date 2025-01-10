@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /accounts/
+Disallow: /admin/
+Disallow: /bag/
+Disallow: /checkout/
+Disallow: /profile/
+Sitemap: https://the-skin-guru-6ce126511380.herokuapp.com/sitemap.xml
