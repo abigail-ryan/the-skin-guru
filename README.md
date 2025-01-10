@@ -467,15 +467,23 @@ The strategy involves:
 * Utilizing Facebook for targeted paid advertising campaigns
 * Creating unique content strategies for each platform to maximize engagement
 
-Below is a screenshot of The Skin Guru’s Facebook page.
+Below is a screenshot of a mockup of The Skin Guru’s Facebook page.
 
-![Screenshot of The Skin Guru Facebook page](documentation/) 
+![Screenshot of The Skin Guru Facebook page](documentation/theskinguru-facebook-mockup.png) 
 
 <br>
 
 #### Email
 
-Through a subscription form in the footer, the website implements a newsletter sign up CTA using Mailchimp. The intention with the newsletter would be to update customers when new products are added to the site and new skincare articles are published, and also to send discount codes to newsletter subscribers.
+Through a subscription form in the footer, the website implements a newsletter sign up CTA using Mailchimp which collects users emails. 
+
+![Screenshot of The Skin Guru mailchimp audience](documentation/theskinguru-mailchimp-audience.png) 
+
+The intention with the newsletter would be to update customers when new products are added to the site and new skincare articles are published, and also to send discount codes to newsletter subscribers.
+
+I have not implemented a Thank You email to send once users sign up, howver I have created a template of the email that I would send if The Skin Guru was a real store.
+
+![Screenshot of The Skin Guru Thanks for Subscribing email](documentation/theskinguru-mailchimp-email.png) 
 
 <br>
 
