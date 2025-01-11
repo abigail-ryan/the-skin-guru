@@ -91,7 +91,6 @@ body {
 
 .hero-section {
     background-image: url('https://res.cloudinary.com/dbcfqpaik/image/upload/v1736223433/theskinguru-hero-image_cdyjin.jpg');
-    overlay: rgba(0, 0, 0, .55);
     background-size: cover;
     background-position: center;
     width: 100vw;
