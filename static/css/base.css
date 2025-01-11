@@ -306,11 +306,11 @@ footer :is(h1, h2, h3, h4, h5, h6) {
 /* MEDIA QUERIES */
 @media (max-width: 768px) {
     .cart-item th {
-        width: 30%;
+        width: 20%;
         font-weight: bold;
     }
     .cart-item td {
-        width: 70%;
+        width: 80%;
     }
 }
 

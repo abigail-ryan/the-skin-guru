@@ -21,45 +21,44 @@
         </div>
     </div>
 
-    <div class="row min-vh-100">
-        <div class="col">
+    <div class="row min-vh-100 justify-content-center">
+        <div class="col-lg-10">
             {% if cart_items %}
             <div class="cart-table">
                 {% for item in cart_items %}
                 <div class="cart-item">
                     <table class="table table-borderless">
                         <tr>
-                            <th>Product Info:</th>
+                            <th>Product:</th>
                             <td>
-                                <div class="d-flex align-items-center">
-                                    <div class="image-container mr-3">
+                                <div class="text-left">
+                                    <div class="image-container mb-2">
                                         {% if item.product.image %}
                                             <img class="card-img-top img-fluid cart-image" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
                                         {% else %}
                                             <img class="card-img-top img-fluid cart-image" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.product.name }}">
                                         {% endif %}
                                     </div>
-                                    <div>
-                                        <p class="my-0">{{ item.product.brand.friendly_name }} {{ item.product.name }}</p>
-                                        <p class="my-0 small text-muted">
-                                            {% if item.product.product_size_ml %}{{ item.product.product_size_ml }}ml
-                                            {% elif item.product.product_size_g %}{{ item.product.product_size_g }}g
-                                            {% else %}One size{% endif %}
-                                        </p>
-                                    </div>
+                                    <p class="my-0">{{ item.product.brand.friendly_name }}</p>
+                                    <p class="my-0">{{ item.product.name }}</p>
+                                    <p class="my-0 small text-muted">
+                                        {% if item.product.product_size_ml %}{{ item.product.product_size_ml }}ml
+                                        {% elif item.product.product_size_g %}{{ item.product.product_size_g }}g
+                                        {% else %}One size{% endif %}
+                                    </p>
                                 </div>
                             </td>
                         </tr>
                         
                         <tr>
-                            <th>Price each:</th>
-                            <td>€{{ item.product.price }}</td>
+                            <th>Price:</th>
+                            <td>€{{ item.product.price }} <em>each</em></td>
                         </tr>
                         
                         <tr>
                             <th>Qty:</th>
                             <td>
-                                <div class="col-12 col-lg-6 ">
+                                <div class="col-12 col-lg-6 col-md-5">
                                 <form class="form update-form" method="POST" action="{% url 'adjust_cart' item.item_id %}">
                                     {% csrf_token %}
                                     <div class="form-group">
