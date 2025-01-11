@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_title %}Server Error{% endblock %}
+
+{% block content %}
+<div class="container vh-100 d-flex flex-column justify-content-center align-items-center">
+    <div class="row">
+        <div class="col-12 text-center mt-5 mb-3">
+            <h2 class="logo-font">Server Error</h2>
+            <hr class="w-50 mb-1">
+            <div>
+                <h3>Sorry, the server encountered an error and can't process your request at the moment.</h3>
+                <p><strong><a href="{% url 'home' %}" class="btn btn-pink btn-lg p-2">Home</a></strong></p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
