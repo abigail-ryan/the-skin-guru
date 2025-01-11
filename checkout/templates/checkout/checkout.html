@@ -119,7 +119,7 @@
 							<span class="icon">
                                 <i class="fas fa-chevron-left"></i>
 							</span>
-							<span class="font-weight-bold"></i>Adjust Cart</span>
+							<span class="font-weight-bold">Adjust Cart</span>
 						</a>
 						<button id="submit-button" class="btn btn-pink rounded-3 mt-3 btn-lg">
 							<span class="font-weight-bold">Complete Order</span>
@@ -139,11 +139,12 @@
         </div>
     </div>
     <div id="loading-overlay">
-        <h1 class="text-light logo-font loading-spinner">
-            <span class="icon">
-                <i class="fas fa-3x fa-sync-alt fa-spin"></i>
+        <div class="text-light logo-font loading-spinner">
+            <span class="spinner-icon">
+                <i class="fas fa-3x fa-sync-alt fa-spin" aria-hidden="true"></i>
             </span>
-        </h1>
+            <span class="sr-only">Loading...</span>
+        </div>
     </div>
 {% endblock %}
 

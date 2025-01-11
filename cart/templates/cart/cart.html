@@ -128,7 +128,7 @@
                 </div>
             </div>
             {% else %}
-            <div class="col-12 my-5"></div>
+            <div class="col-12 my-5">
                 <p class="lead mb-5">Your cart is empty.</p>
                 <a href="{% url 'products' %}" class="btn btn-oultine-tiffany rounded-3 btn-lg">
                     <span class="icon">
@@ -148,7 +148,7 @@
 {{ block.super }}
 {% include 'products/includes/quantity_input_script.html' %}
 
-<script type="text/javascript">
+<script>
     // Update quantity on click
     $('.update-link').click(function(e) {
         var form = $(this).prev('.update-form');
