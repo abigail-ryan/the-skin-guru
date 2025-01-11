@@ -1,3 +1,4 @@
+from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, reverse, get_object_or_404
 from django.http import HttpResponse, HttpResponseRedirect
 from django.views import generic
@@ -49,6 +50,7 @@ def post_detail(request, slug):
     return render(request, template, context)
 
 
+@login_required
 def comment_edit(request, slug, comment_id):
     """
     view to edit comments
@@ -73,6 +75,7 @@ def comment_edit(request, slug, comment_id):
     return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
 
+@login_required
 def comment_delete(request, slug, comment_id):
     """
     view to delete comment

@@ -1,3 +1,4 @@
+from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.http import HttpResponseRedirect
 from django.contrib import messages
@@ -158,6 +159,7 @@ def product_detail(request, product_id):
     return render(request, 'products/product_detail.html', context)
 
 
+@login_required
 def review_edit(request, product_id, review_id):
     """
     View to edit reviews
@@ -194,6 +196,7 @@ def review_edit(request, product_id, review_id):
     return render(request, 'products/review_edit.html', context)
 
 
+@login_required
 def review_delete(request, product_id, review_id):
     """
     View to delete reviews

@@ -9,7 +9,6 @@ from profiles.models import UserProfile
 
 # Create your views here.
 @login_required
-@login_required
 def wishlist(request):
     """ A view to return the wishlist page """
     user_profile = UserProfile.objects.get(user=request.user)
