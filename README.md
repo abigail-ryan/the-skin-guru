@@ -412,15 +412,141 @@ ____
 
 ### Database ERD
 
+![Screenshot of The Skin Guru ERD](documentation/theskinguru-erd.png) 
+
 <br>
 
 ____
 
 ### Project Features
 
+#### Home Page
+
+**Hero Section**
+
+The Hero section contains a brand-neutral product image with the main CTA "Discover your Beauty - Shop Now" which takes users directly to the all products page.
+
+![Screenshot of Hero Section](documentation/tsg-home-page-desktop.png)
+
+**Featured Shop By Section**
+
+There is a featured shop by section to prompt users to discover products suited to their skin type.
+
+![Screenshot of Shop By Featured section](documentation/shop-by-featured-desktop.png)
+
+**Latest Articles Section**
+
+The latest articles section features 4 of the latest articles, which will update each time admin adds a new article.
+
+![Screenshot of Latest Article section](documentation/latest-articles-desktop.png)
+
+Although the primary focus for the layout of the entire site was mobile first, the articles and footr sections of home page have been designed to also suit extra large screen sizes.
+
+![Screenshot of Latest Article section xl screens](documentation/xl-desktop-articles-footer.png)
+
+**Footer**
+
+The footer features quick links, get in touch, and the newsletter sign up form.
+
+![Screenshot of Footer section](documentation/footer-desktop.png)
+
+**Navbar**
+
+The Navabr contains menu links for users to shop all products which links directly to the all products page, and dropdown options to shop by skin type, shop by product type and shop by brand. 
+
+![Screenshot of Navbar shop by skin type](documentation/shopbyskintype-desktop.png)
+
+![Screenshot of Navbar shop by product type](documentation/shopbyproduct-desktop.png) 
+
+![Screenshot of Navbar shop by brand](documentation/shopbybrand-desktop.png) 
+
+The Navbar also contains the search box allowing users to search the site using their own search terms with both products names and descriptions being searchable. As well as My Accouunt dropdown and a Cart links.
+
+![Screenshot of search bar](documentation/searchbar-desktop.png) 
+![Screenshot of Navbar shop by brand](documentation/account-cart-desktop.png) 
+
 <br>
 
+#### All Products Page
+
+The all products page showcases all the sites products, with the articles displayed on the right hand side (articles are displayed at the bottom on mobiles).
+
+![Screenshot of Footer section](documentation/all-products-desktop.png)
+
+**Sort by dropdown**
+
+Users can filter their own searches, or the products pages results by the sort by dropdown.
+
+![Screenshot of sort by dropdown](documentation/sort-by-desktop.png)
+
+<br>
+
+#### Product Details Page
+
+Each product details page contains the product image and relevant details, as well and full decsription, key ingredients (incl all ingredient dropdown) and how to use sections.
+
+![Screenshot of product details page](documentation/individual-product-header-desktop.png)
+
+![Screenshot of product description & key ingrredient sections](documentation/individual-product-details-1-desktop.png)
+
+![Screenshot of product all ingrredient dropdown](documentation/all-ingredients-dropdown-desktop.png)
+
+![Screenshot of product hot to use sections](documentation/individual-product-details-2-desktop.png)
+
+**Reviews Section**
+
+Each product includes a product review section, which allows logged in users to leave a review of the product if they have purchased it (see Authenticated Users section further below)
+
+![Screenshot of product reviews section](documentation/product-reviews-desktop.png)
+
+<br>
+
+#### Articles
+
+**All Article Page**
+
+The articles page displays the articles to users, from most recent to oldest.
+
+![Screenshot of all articles page](documentation/all-articles-desktop.png)
+
+**Individual Article Page**
+
+Each article details some product recomendations, skincare routines and links back to the product categories.
+
+![Screenshot of individual article page](documentation/individual-article-desktop.png)
+
+**Comments Section**
+
+Each article includes a comments sections which allows logged in users to leave a comment (see Authenticated Users section further below).
+
+![Screenshot of articles comments section](documentation/article-comments-desktop.png)
+
+<br>
+
+#### Cart & Checkout Pages
+
+**Cart Page**
+
+The cart page can be accessed at any point while browsing the site, and when nothing has been added yet users are brought back to the all products page with the keep shopping CTA.
+
+![Screenshot of all empty cart](documentation/cart-empty-desktop.png)
+
+When users have a product in the cart, they are shown the product details, how many of that product is in their cart with the options to add more using the quantity input, and update or remove, as well as see the price for each item and a subtotal.
+
+Below that, an order total, delivery cost and grand total.
+
+![Screenshot of all empty cart](documentation/cart-desktop.png)
+
+
+**Checkout Page**
+
+After users navigate to the checkout page, they are shons a form to fill out as well as a summary of their order.
+
+![Screenshot of checkout page](documentation/checkout-desktop.png)
+
+<br>
 ____
+
 ### Future Features
 
 <br>
