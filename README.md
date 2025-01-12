@@ -479,6 +479,12 @@ Users can filter their own searches, or the products pages results by the sort b
 
 ![Screenshot of sort by dropdown](documentation/sort-by-desktop.png)
 
+**Coming Soon Page**
+
+I didn't add product to one brand and one category in order to show users that new products would be coming soon, encourageing return visits.
+
+![Screenshot of coming soon page](documentation/products-coming-soon-page-desktop.png)
+
 <br>
 
 #### Product Details Page
@@ -580,17 +586,15 @@ All site users can flll out a contact form accessible in the footer, to get in t
 
 **Verify Account Page**
 
-When users register an account, they must first verify their email adddress (email screenshot below)
+When users register an account, they must first verify their email adddress.
 
 ![Screenshot of verify account page](documentation/verify-email-page-desktop.png)
 
 The user must follow the link in the email which brings them to the confirmation page.
 
-![Screenshot of confirm email page](documentation/confirm-email-page-desktop.png)
-
-**Verify Account Email**
-
 ![Screenshot of verify account email](documentation/account-verification-email.png)
+
+![Screenshot of confirm email page](documentation/confirm-email-page-desktop.png)
 
 <br>
 
@@ -636,7 +640,7 @@ Users can delete their comments, and are presented with a confirmation pop up to
 
 **Adding a review**
 
-Users who have purchased a product can leave a review, but only if they have purchased that specific product. This ensures only ugenuine review can be left under products on the site.
+Users who have purchased a product can leave a review, but only if they have purchased that specific product. This ensures only genuine and verified reviews can be left under products on the site.
 
 ![Screenshot of adding a review if user has not purchased](documentation/add-review-no-purchase-desktop.png)
 
@@ -658,7 +662,7 @@ Uses can delete their reviews, and are presented with a confirmation pop up to c
 
 #### Order Confirmation Emails
 
-I used my own email address - theskinguru.info@gmail.com which was set up for this project, to test recieving order confirmation emails for both guest checkout and logged in user checkouts. I wanted to ensure order confirmations emails were sending to actual real email addresses as well as the account verification emails.
+I used my own email address - theskinguru.info@gmail.com which was set up for this project, to test recieving order confirmation emails for both guest checkout and logged in user checkouts. I wanted to ensure order confirmations emails were sending to actual real email addresses as well as the account verification emails, rather than just testing on tempmail addresses.
 
 **Guest Checkout**
 
@@ -678,65 +682,71 @@ I used my own email address - theskinguru.info@gmail.com which was set up for th
 
 **Log in/Log out**
 
-![Screenshot of log in success message]()
+![Screenshot of log in success message](documentation/sign-in-success-msg.png)
 
-![Screenshot of log out success message]()
+![Screenshot of log out success message](documentation/sign-out-msg.png)
+
+**Accouunt Confirmation**
+
+![Screenshot of sconfirmation email alert message](documentation/confimr-email-alert-msg.png)
+
+![Screenshot of log out success email confirmed message](documentation/success-email-confirmed-msg.png)
 
 **Add to cart success**
 
-![Screenshot of add to cart success message]()
+![Screenshot of add to cart success message](documentation/added-to-cart-msg.png)
 
 **Update cart success**
 
-![Screenshot of update cart success message]()
+![Screenshot of update cart success message](documentation/updated-cart-msg.png)
 
 **Removed from cart success**
 
-![Screenshot of remove from cart success message]()
+![Screenshot of remove from cart success message](documentation/remove-from-cart-mgs.png)
 
 **Profile details updated success**
 
-![Screenshot of contact fomr success message]()
+![Screenshot of profile update success message](documentation/profile-update-msg.png)
 
 **Add to wishlist success**
 
-![Screenshot of add to wishlist success message]()
+![Screenshot of add to wishlist success message](documentation/add-to-wishlist-msg.png)
 
 **Removed from wishlist success**
 
-![Screenshot of remove from wishlist success message]()
+![Screenshot of remove from wishlist success message](documentation/remove-from-wishlist-msg.png)
 
 **Contact form success**
 
-![Screenshot of contact fomr success message]()
+![Screenshot of contact form success message](documentation/contact-form-success-msg.png)
 
 **Comment submitted success**
 
-![Screenshot of Comment submitted success message]()
+![Screenshot of Comment submitted success message](documentation/add-comment-success-msg.png)
 
 **Comment updated success**
 
-![Screenshot of Comment updated success message]()
+![Screenshot of Comment updated success message](documentation/edit-comment-success-mgs.png)
 
 **Comment deleted success**
 
-![Screenshot of Comment deleted success message]()
+![Screenshot of Comment deleted success message](documentation/delete-comment-success-mgs.png)
 
 **Review submitted success**
 
-![Screenshot of review submitted success message]()
+![Screenshot of review submitted success message](documentation/add-review-success-msg.png)
 
 **Review updated success**
 
-![Screenshot of review updated success message]()
+![Screenshot of review updated success message](documentation/edit-review-msg.png)
 
 **Review deleted success**
 
-![Screenshot of review deleted success message]()
+![Screenshot of review deleted success message](documentation/delete-review-success-msg.png)
 
 **Mailchimp Thank you message**
 
-![Screenshot of mailchimp thank you message]()
+![Screenshot of mailchimp thank you message](documentation/mailchimp-subscribe-msg.png)
 
 </details>
 
@@ -763,6 +773,27 @@ In the adminn panel, admin have access to all the orders, contact forms, comment
 ![Screenshot of admin panel page](documentation/admin-panel-desktop.png)
 
 <br>
+
+#### Strripe Webhooks
+
+Throughout development I was having issues with guest checkouts not receiving order confirmation emails and payment_intent_success failuers in my stripe dashboard.
+The issue was fixed and now both guest checkouts and logged in user checkouts are all successfull.
+
+**Guest Checkout**
+
+![Screenshot of guest checkout success page](documentation/guest-checkout-test-success-page.png)
+
+![Screenshot of guest checkout order conf email](documentation/guest-checkout-order-conf-email-2.png)
+
+![Screenshot of guest checkout webhooks success](documentation/guest-checkout-stripe-success.png)
+
+**Logged in User Checkout**
+
+![Screenshot of logged in user checkout success page](documentation/logged-in-checkout-test-success-page.png)
+
+![Screenshot of logged in user checkout order conf email](documentation/logged-in-order-conf-email-2.png)
+
+![Screenshot of logged in user checkout webhooks success](documentation/logged-in-stripe-webhooks-success.png)
 
 ____
 
