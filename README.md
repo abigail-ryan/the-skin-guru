@@ -898,6 +898,8 @@ ____
 
 ### Testing
 
+Please see all testing here: [TESTING.md](TESTING.md)
+
 <br>
 
 ____
@@ -909,6 +911,8 @@ ____
 #### Database Creation
 #### Cloudinary
 #### Deploying to Heroku
+#### Gmail
+#### Stripe
 
 <br>
 
