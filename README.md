@@ -558,7 +558,9 @@ After users have successfully made their order they are brought to the checkout 
 
 #### Contact Page
 
-![Screenshot of contact form page]()
+All site users can flll out a contact form accessible in the footer, to get in touch directly with the business.
+
+![Screenshot of contact form page](documentation/contact-page-desktop.png)
 
 <br>
 
@@ -572,9 +574,19 @@ After users have successfully made their order they are brought to the checkout 
 
 ![Screenshot of sign up page](documentation/signup-desktop.png)
 
+**Sign Out page**
+
+![Screenshot of sign up page](documentation/confirm-sign-out-page.png)
+
 **Verify Account Page**
 
-![Screenshot of verify account page]()
+When users register an account, they must first verify their email adddress (email screenshot below)
+
+![Screenshot of verify account page](documentation/verify-email-page-desktop.png)
+
+The user must follow the link in the email which brings them to the confirmation page.
+
+![Screenshot of confirm email page](documentation/confirm-email-page-desktop.png)
 
 **Verify Account Email**
 
@@ -584,43 +596,63 @@ After users have successfully made their order they are brought to the checkout 
 
 #### Authorised User Pages
 
+**Products**
+
+The product now shows the user the option to add to their wishlist, which is automatically created when a product is added. 
+
+![Screenshot of product att to wishlist](documentation/auth-user-product-view-desktop.png)
+
 **My Profile**
 
-![Screenshot of profile page]()
+Profiles are automatically created for each user upon successful registration. When a user updates their information here, it will be prepopulated in the checkout page when they go to make a purchase. Alternatively, if users visit checkout first, they can save their details to their profile, which will then show up here on the profile page.
+
+![Screenshot of profile page - no orders](documentation/my-profile-no-orders-desktop.png)
 
 **My Wishlist**
 
-![Screenshot of wishlist page]()
+![Screenshot of wishlist page](documentation/wishlist-page-desktop.png)
 
 **Prepopulated Checkout Form**
 
-![Screenshot of prepopulated checkout form]()
+![Screenshot of prepopulated checkout form](documentation/prepop-chechout-form-desktop.png)
 
 **Adding a commment**
 
-![Screenshot of adding a comment]()
+Registered account users can add comments to the blog articles.
+
+![Screenshot of adding a comment](documentation/adding-a-comment-desktop.png)
 
 **Editing a commment**
 
-![Screenshot of editing a comment]()
+Users can edit their comments.
+
+![Screenshot of editing a comment](documentation/editing-comment-desktop.png)
 
 **Deleting a commment**
 
-![Screenshot of deleting a comment]()
+Users can delete their comments, and are presented with a confirmation pop up to confirm the action.
+
+![Screenshot of deleting a comment](documentation/delete-comment-desktop.png)
 
 **Adding a review**
 
-![Screenshot of adding a review if user has not purchased]()
+Users who have purchased a product can leave a review, but only if they have purchased that specific product. This ensures only ugenuine review can be left under products on the site.
 
-![Screenshot of adding a review if user has purchased]()
+![Screenshot of adding a review if user has not purchased](documentation/add-review-no-purchase-desktop.png)
+
+![Screenshot of adding a review if user has purchased](documentation/add-review-with-purchsae-desktop.png)
 
 **Editing a review**
 
-![Screenshot of editing a review]()
+Users can edit their reviews.
+
+![Screenshot of editing a review](documentation/edit-review-desktop.png)
 
 **Deleting a review**
 
-![Screenshot of deleting a review]()
+Uses can delete their reviews, and are presented with a confirmation pop up to confirm the action.
+
+![Screenshot of deleting a review](documentation/delete-review-desktop.png)
 
 <br>
 
@@ -724,9 +756,11 @@ I used my own email address - theskinguru.info@gmail.com which was set up for th
 
 #### Admin Panel
 
-**404 Error**
+**Admin**
 
-![Screenshot of admin panel page]()
+In the adminn panel, admin have access to all the orders, contact forms, comments and reviews from users, and have full CRUD functionlity for all features of the site. All comments and reviews submitted by registered users must be approved by admin.
+
+![Screenshot of admin panel page](documentation/admin-panel-desktop.png)
 
 <br>
 

@@ -36,6 +36,12 @@ ALLOWED_HOSTS = ['the-skin-guru-6ce126511380.herokuapp.com', '8000-abigailryan-t
 
 CSRF_TRUSTED_ORIGINS = ['https://8000-abigailryan-theskinguru-yssz3vpl1n6.ws.codeinstitute-ide.net']
 
+SESSION_COOKIE_SAMESITE = 'None'
+SESSION_COOKIE_SECURE = True
+
+CSRF_COOKIE_SAMESITE = 'None'
+CSRF_COOKIE_SECURE = True
+
 
 # Application definition
 
