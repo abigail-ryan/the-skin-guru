@@ -570,6 +570,14 @@ All site users can flll out a contact form accessible in the footer, to get in t
 
 <br>
 
+#### Delivery Info Page
+
+All site users can visit the delivery informatioon page from the footer to see expected delivery times.
+
+![Screenshot of delivery info page](documentation/delivery-info-page-desktop.png)
+
+<br>
+
 #### Account
 
 **Sign In page**
