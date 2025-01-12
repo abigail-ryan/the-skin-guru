@@ -57,5 +57,5 @@ def remove_from_wishlist(request, product_id):
     wishlist_item = Wishlist.objects.get(user_profile=user_profile,
                                          product=product)
     wishlist_item.delete()
-    messages.success(request, f'{product.name} has been successfully removed.')
+    messages.success(request, f'{product.name} has been successfully removed from your wishlist.')
     return redirect(reverse('wishlist'))
