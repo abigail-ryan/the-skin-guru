@@ -535,16 +535,201 @@ When users have a product in the cart, they are shown the product details, how m
 
 Below that, an order total, delivery cost and grand total.
 
-![Screenshot of all empty cart](documentation/cart-desktop.png)
+![Screenshot of products in cart](documentation/cart-desktop.png)
 
+In the top right of the page, the Cart Icon now displays the cart total. This updates accordingly when items are added/removed and correspons to the cart and checkout pages..
+
+![Screenshot of cart icon](documentation/cart-icon-desktop.png)
 
 **Checkout Page**
 
-After users navigate to the checkout page, they are shons a form to fill out as well as a summary of their order.
+After users navigate to the checkout page, they are shown a form to fill out as well as a summary of their order.
+Users are prompted to sign in or create an account to save their details.
 
 ![Screenshot of checkout page](documentation/checkout-desktop.png)
 
+**Checkout Success Page**
+
+After users have successfully made their order they are brought to the checkout success page which includes a success message at the top of the page and also details their order summary, and enncourages users to stay on the site with the Read our latest articles CTA.
+
+![Screenshot of checkout success page](documentation/checkout-success-desktop.png)
+
 <br>
+
+#### Contact Page
+
+![Screenshot of contact form page]()
+
+<br>
+
+#### Account
+
+**Sign In page**
+
+![Screenshot of sign in page](documentation/signin-desktop.png)
+
+**Sign Up page**
+
+![Screenshot of sign up page](documentation/signup-desktop.png)
+
+**Verify Account Page**
+
+![Screenshot of verify account page]()
+
+**Verify Account Email**
+
+![Screenshot of verify account email](documentation/account-verification-email.png)
+
+<br>
+
+#### Authorised User Pages
+
+**My Profile**
+
+![Screenshot of profile page]()
+
+**My Wishlist**
+
+![Screenshot of wishlist page]()
+
+**Prepopulated Checkout Form**
+
+![Screenshot of prepopulated checkout form]()
+
+**Adding a commment**
+
+![Screenshot of adding a comment]()
+
+**Editing a commment**
+
+![Screenshot of editing a comment]()
+
+**Deleting a commment**
+
+![Screenshot of deleting a comment]()
+
+**Adding a review**
+
+![Screenshot of adding a review if user has not purchased]()
+
+![Screenshot of adding a review if user has purchased]()
+
+**Editing a review**
+
+![Screenshot of editing a review]()
+
+**Deleting a review**
+
+![Screenshot of deleting a review]()
+
+<br>
+
+#### Order Confirmation Emails
+
+I used my own email address - theskinguru.info@gmail.com which was set up for this project, to test recieving order confirmation emails for both guest checkout and logged in user checkouts. I wanted to ensure order confirmations emails were sending to actual real email addresses as well as the account verification emails.
+
+**Guest Checkout**
+
+![Screenshot of guest checkout order conf email](documentation/guest-checkout-order-conf-email.png)
+
+**Logged in User Checkout**
+
+![Screenshot of logged in user checkout order conf email](documentation/logged-in-order-conf-email.png)
+
+<br>
+
+#### Feedback Messages
+
+<details>
+<summary>View all user feedback messages</summary>
+<br>
+
+**Log in/Log out**
+
+![Screenshot of log in success message]()
+
+![Screenshot of log out success message]()
+
+**Add to cart success**
+
+![Screenshot of add to cart success message]()
+
+**Update cart success**
+
+![Screenshot of update cart success message]()
+
+**Removed from cart success**
+
+![Screenshot of remove from cart success message]()
+
+**Profile details updated success**
+
+![Screenshot of contact fomr success message]()
+
+**Add to wishlist success**
+
+![Screenshot of add to wishlist success message]()
+
+**Removed from wishlist success**
+
+![Screenshot of remove from wishlist success message]()
+
+**Contact form success**
+
+![Screenshot of contact fomr success message]()
+
+**Comment submitted success**
+
+![Screenshot of Comment submitted success message]()
+
+**Comment updated success**
+
+![Screenshot of Comment updated success message]()
+
+**Comment deleted success**
+
+![Screenshot of Comment deleted success message]()
+
+**Review submitted success**
+
+![Screenshot of review submitted success message]()
+
+**Review updated success**
+
+![Screenshot of review updated success message]()
+
+**Review deleted success**
+
+![Screenshot of review deleted success message]()
+
+**Mailchimp Thank you message**
+
+![Screenshot of mailchimp thank you message]()
+
+</details>
+
+<br>
+
+#### Custom Error Pages
+
+**404 Error**
+
+![Screenshot of 404 error page](documentation/tsg-404-error-page-desktop.png)
+
+**500 Server Error**
+
+![Screenshot of 500 server error page](documentation/tsg-500-server-error-page-desktop.png)
+
+<br>
+
+#### Admin Panel
+
+**404 Error**
+
+![Screenshot of admin panel page]()
+
+<br>
+
 ____
 
 ### Future Features
