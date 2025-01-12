@@ -704,6 +704,10 @@ I used my own email address - theskinguru.info@gmail.com which was set up for th
 
 ![Screenshot of remove from cart success message](documentation/remove-from-cart-mgs.png)
 
+**Order Confirmation Success**
+
+![Screenshot of order confirmation success message](documentation/order-conf-success-msg.png)
+
 **Profile details updated success**
 
 ![Screenshot of profile update success message](documentation/profile-update-msg.png)
@@ -832,6 +836,18 @@ Future expansions could include a skincare Q&A section or video tutorials demons
 <br>
 
 #### SEO
+
+**Keywords**
+
+I've chosen the following keywords for The Skin Guru, that should be benificial when searching online to find my site easily. This includes short-tail and long-tail keywords: Best teenage skin care products, Skincare for teenagers, Best skincare for teenage skin, Teenage skincare, Teenage skin products, Skincare routine for teenage skin, Oily skin skincare, Dry Skin products, Sensitive skincare products, Best products for combination skin. Although the competition is high for these keywords, the product brands I’ve chosen for The Skin Guru feature in almost every search for teenage skincare. These brand names are present in the product names, in the hope to catch a chance to appear at the top of the users searches.
+These keywords also feature in my articles, which have links back to the product categories within my store.
+I used Word Tracker and Word Stream to check the search volume and competition for these keywords.
+
+![Screenshot of WordTracker keywords 1](documentation/wordtracker-keywords1.png)
+
+![Screenshot of WordTracker keywords 2](documentation/wordtracker-keywords2.png)
+
+![Screenshot of WordStream keywords](media/wordstream-keywords.png)
 
 <br>
 
