@@ -403,7 +403,8 @@ I chose the following typography for The Skin Guru on [Fontjoy.com](https://font
 
 #### Imagery
 
-The Images for this project were sourced from [SkinShop.ie](https://skinshop.ie/)
+All product images for this project were sourced from the brands own sites, along with their own product decriptions and details.
+The article images were sourced from [Pexels.com](https://www.pexels.com/). The hero image and two own brand images were generated using AI image generator [DeepAI](https://deepai.org/machine-learning-model/text2img). The vector image for the featured shop by section of the home page was sourced from [Freepik.com](https://www.freepik.com/), and cropped to create the individual images for each skintype. Links and attributions are placed in the Credits section of this README.
 
 <br>
 
@@ -522,6 +523,41 @@ ____
 ____
 
 ### Credits
+
+<details>
+<summary>Brand Links</summary>
+<br>
+
+* [Bubble](https://hellobubble.com/)
+* [Laneige](https://www.laneige.com/int/en/index.html)
+* [CeraVe](https://www.cerave.com/)
+* [Q+A](https://www.qandaskin.com/)
+* [Drunk Elephant](https://www.drunkelephant.com/)
+* The Skin Guru product images were generated using [DeepAI](https://deepai.org/machine-learning-model/text2img)
+</details>
+
+<details>
+<summary>Article Images</summary>
+<br>
+
+* [3 Step Routine](https://www.pexels.com/photo/happy-woman-removing-face-mask-after-taking-bath-3852159/) | Anna Shvets Mitkina
+* [Sensitive Skin](https://www.pexels.com/photo/woman-removing-her-make-up-9253766/) | Ron Lach
+* [Normal Skin](https://www.pexels.com/photo/calm-woman-with-face-cream-5069395/) | Anna Shvets
+* [Combination Skin](https://www.pexels.com/photo/woman-holding-clear-bottle-of-facial-tonic-8131584/) | Ron Lach
+* [Oily Skin](https://www.pexels.com/photo/woman-in-tank-top-applying-cosmetic-product-under-her-eye-9774839/) | SHVETS production
+* [Dry Skin](https://www.pexels.com/photo/woman-in-white-spaghetti-strap-top-drinking-water-8142233/) | Ron Lach
+</details>
+
+<details>
+<summary>Shop By Skin Type Images</summary>
+<br>
+
+* [Skin Type image](https://www.freepik.com/free-vector/hand-drawn-skin-types-illustration_12429021.htm#fromView=search&page=1&position=4&uuid=1ef7a355-e7af-49f1-9f6e-76ffa5fcd191) | Image by freepik 
+</details>
+
+<br>
+____
+
 #### Code References
 #### Content and Media References
 
@@ -529,7 +565,7 @@ ____
 
 ____
 
-###Acknowledgements
+### Acknowledgements
 
 <br>
 
