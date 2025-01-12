@@ -181,3 +181,184 @@ CI Python Linter was used to validate the Python files. Some minor line lenght i
 </details>
 
 <br>
+
+___
+
+### Manual Testing
+
+#### User Input Testing
+
+**Navbar**
+
+| Page/Section | User Action    | Expected Result    | PASS/FAIL |
+|---------------|---------------|------------------|------------------|
+| Navbar |  |  |  |
+|  | Click on Logo | Redirect to Home Page | PASS |
+|  | Click on ‘Shop by All products’  | Redirect to all products page | PASS |
+| Shop by Skin Type | Click on ‘Shop by Skin Type’ | Dropdown reveals Skin Type menu items  | PASS |
+|  | Click on ‘Dry Skin’ | Redirect to products page showing only dry skin products | PASS |
+|  | Click on ‘Oily Skin’ | Redirect to products page showing only oily skin products | PASS |
+|  | Click on ‘Combination Skin’ | Redirect to products page showing only combination skin products | PASS |
+|  | Click on ‘Normal Skin’ | Redirect to products page showing only normal skin products | PASS |
+|  | Click on ‘Snecitive Skin’ | Redirect to products page showing only sensitive skin products | PASS |
+|  | Click on ‘All Skin Types’ | Redirect to products page showing only all skin types products | PASS |
+| Shop by Product Type | Click on ‘Shop by Product Type’ | Dropdown reveals Product Type menu items  | PASS |
+|  | Click on ‘Cleanser’ | Redirect to products page showing only cleanser category | PASS |
+|  | Click on ‘Toner’ | Redirect to products page showing only toner category | PASS |
+|  | Click on ‘Moisturiser’ | Redirect to products page showing only moisturiser category | PASS |
+|  | Click on ‘Serums’ | Redirect to products page showing only serums category | PASS |
+|  | Click on ‘Masks’ | Redirect to products page showing only masks category | PASS |
+|  | Click on ‘Scrubs’ | Redirect to products page showing coming soon page | PASS |
+|  | Click on ‘SPF’ | Redirect to products page showing only spf category | PASS |
+|  | Click on ‘Accessories’ | Redirect to products page showing only accessories category | PASS |
+| Shop by Brand | Click on ‘Shop by Brand’ | Dropdown reveals Brand menu items  | PASS |
+|  | Click on ‘Bubble’ | Redirect to products page showing only products from Bubble brand | PASS |
+|  | Click on ‘LANEIGE’ | Redirect to products page showing only products from LANEIGE brand | PASS |
+|  | Click on ‘CeraVe’ | Redirect to products page showing only products from CeraVe brand | PASS |
+|  | Click on ‘Q+A’ | Redirect to products page showing only products from Q+A brand | PASS |
+|  | Click on ‘Drunk Elephant’ | Redirect to products page showing only products from Drunk Elephant brand | PASS |
+|  | Click on ‘Byoma’ | Redirect to products page showing coming soon page | PASS |
+|  | Click on ‘The Skin Guru’ | Redirect to products page showing only products from the Skin Guru brand | PASS |
+| Search - Desktop | Click on ‘Search our site’ box | Input box ready for text input | PASS |
+|  | Click on ‘Search’ button | Initilises search - products displayed if relevant to search criteria otherwise no products available coming soon page displays | PASS |
+| Search - Mobile | Click on ‘Search’ icon | Search box appears | PASS |
+| My Account - Logged out | Click on ‘My Account’ icon | Dropdown reveals Register/Sign In options  | PASS |
+|  | Click on ‘Register’ | Redirect to register page | PASS |
+|  | Click on ‘Sign In’ | Redirect to sign in page | PASS |
+| My Account - Logged In | Click on ‘My Account’ icon | Dropdown reveals My profile, My Wishlist & Logout options  | PASS |
+|  | Click on ‘My Profile’ | Redirect to users profile page | PASS |
+|  | Click on ‘My Wishlist’ | Redirect to wishlist page | PASS |
+|  | Click on ‘Log out’ | Redirect to confirm log out page | PASS |
+| Log out Page | Click on ‘Log out’ | Redirect to home page | PASS |
+| Cart | Click on ‘Cart’ icon | Redirect to cart page | PASS |
+
+**Home Page**
+
+| Page/Section | User Action    | Expected Result    | PASS/FAIL |
+|---------------|---------------|------------------|------------------|
+| Home page  |  |  |  |
+| Shop by Skin Type Section | Click on ‘Dry’ button | Redirect to products page showing only dry skin products | PASS |
+|  | Click on ‘Oily’ button | Redirect to products page showing only oily skin products | PASS |
+|  | Click on ‘Combo’ button | Redirect to products page showing only combination skin products | PASS |
+|  | Click on ‘Normal’ button | Redirect to products page showing only normal skin products | PASS |
+|  | Click on ‘Snecitive’ button | Redirect to products page showing only sensitive skin products | PASS |
+|  | Click on ‘All Skin’ button | Redirect to products page showing only all skin types products | PASS |
+| Read our latest Articles Section | Click on article image | Redirect to article | PASS |
+|  | Click on ‘Read More’ button | Redirect to article | PASS |
+| Footer Section | Click on Home link | Redirect to home page | PASS |
+|  | Click on Blog Articles link | Redirect to All Articles page | PASS |
+|  | Click on Delivery info link | Redirect to Delivery info page | PASS |
+|  | Click on Privacy Policy link | Privacy Policy opens in new tab | PASS |
+|  | Click on ‘Fill out a contact form’ link | Redirect to Contact page | PASS |
+|  | Click on Social Media links | Open new tab with appropriate social media site | PASS |
+| Mailchimp | Click on email address box | Input box ready for text input, only accept email formats | PASS |
+|  | Click on Subscribe button | Thank You for subscribing message | PASS |
+
+**Account**
+
+| Page/Section | User Action    | Expected Result    | PASS/FAIL |
+|---------------|---------------|------------------|------------------|
+| Login Page  |  |  |  |
+|  | Input valid username/email | Field accepts username or email format | PASS |
+|  | Input valid password | Field only accepts password formatt | PASS |
+|  |  Click Login button | Logs user in, success message, redirects to home page | PASS |
+| Register Page  |  |  |  |
+|  | Input valid email address (twice) | Field only accepts email format | PASS |
+|  | Input valid password (twice) | Field only accepts password formatt | PASS |
+|  |  Click Sign Up button | Redirects user to verify email page, alert message | PASS |
+| Verify Email Page  |  |  |  |
+|  |  Click Confirm button | Redirects user to sign in page, success message | PASS |
+| My Profile Page  |  |  |  |
+|  |  Click Update information button | Information saved, success message | PASS |
+|  |  Click order History links | Redirect to users past order confirmation, aleert message | PASS |
+| My Wishlist Page  |  |  |  |
+| (empty wishlist) |  Click View Products button | Redirect to all products page | PASS |
+| (with items) |  Click View button | Redirect to specific product details | PASS |
+|  |  Click Remove button | Remove product from wishlist, success message | PASS |
+| Sign out Page  |  |  |  |
+|  |  Click Siign out button | Redirects to home page, success message | PASS |
+
+**Products**
+
+| Page/Section | User Action    | Expected Result    | PASS/FAIL |
+|---------------|---------------|------------------|------------------|
+| All Products Page  |  |  |  |
+|  | Click Sort by dropdown | Shows sorting options for users, sorts products by selected criteria  | PASS |
+| related Articles section | Click on Read More button| Redirects to specific article | PASS |
+|  | Click product image | Redirect to specific product details | PASS |
+| Individual Product Page  |  |  |  |
+|  |  Click on Add to wishlist (loggin in users only) | product added to wishlist, success message | PASS |
+|  |  Click on +/- Qty buttons | Product increments/decrements appropriately with number display, correct qty amount submits to cart.Decrement button disabled when at 1 | PASS |
+|  |  Click on Keep Shopping button | Returns to all products page | PASS |
+|  |  Click on Add to Cart button | Product added to cart, succes message, mini cart displayed | PASS |
+| Key Ingredients section |  Click on All ingredient dropdown | All ingredient display dropdown | PASS |
+| Review section - logged out |  Click on Register/Sign in links | Redirects to register/sign in pages | PASS |
+| Review section - logged in & has purchased |  Click on Rating dropdown | 1-5 selections available | PASS |
+|  |  Click on Review Comment input box | Input box ready for text input | PASS |
+|  |  Click on Submit button | User review submitted, awaiting approval, success message | PASS |
+| Editing Reviews |  Click on Edit button | Form populated with users review ready to be edited | PASS |
+|  |  Click on Update button | Review submitted for approval, success message | PASS |
+| Deleting Reviews |  Click on Delete button | Confirm delete modal pop up requiring delete confirmation | PASS |
+|  |  Click on Delete button | Review deleted, page refresh, success message | PASS |
+
+**Articles**
+
+| Page/Section | User Action    | Expected Result    | PASS/FAIL |
+|---------------|---------------|------------------|------------------|
+| All Articles Page  |  |  |  |
+|  | Click Article image | Redirect to specific article  | PASS |
+|  | Click Read More button | Redirect to specific article  | PASS |
+| Individul Articles | Click on product links in article | Redirects to specific product | PASS |
+| Comment section - logged out |  Click on Register/Sign in links | Redirects to register/sign in pages | PASS |
+| Comment section - logged in |  Click on Comment Input box | Input box ready for input | PASS |
+|  |  Click on Submit button | User comment submitted, awaiting approval, success message | PASS |
+| Editing Comments |  Click on Edit button | Form populated with users comment ready to be edited | PASS |
+|  |  Click on Update button | Comment submitted for approval, success message | PASS |
+| Deleting Comments |  Click on Delete button | Confirm delete modal pop up requiring delete confirmation | PASS |
+|  |  Click on Delete button | Comment deleted, page refresh, success message | PASS |
+
+**Contact Page**
+
+| Page/Section | User Action    | Expected Result    | PASS/FAIL |
+|---------------|---------------|------------------|------------------|
+|  |  |  |  |
+|  |  Input Name | Required | PASS |
+|  |  Input Email | Required, only accepts email format | PASS |
+|  |  Input Message | Required | PASS |
+|  |  Click Send Message button | Form submits, success message | PASS |
+
+**Cart & Checkout Pages**
+
+| Page/Section | User Action    | Expected Result    | PASS/FAIL |
+|---------------|---------------|------------------|------------------|
+| Cart Page  |  |  |  |
+|  |  Click on +/- Qty buttons | Product increments/decrements appropriately with number display, Decrement button disabled when at 1. | PASS |
+|  |  Click Update button | Correct new qty amount displays in qty box, success message | PASS |
+|  |  Click Remove button | Removes product from cart| PASS |
+|  |  Click Keep Shopping button | Redirects back to all products page | PASS |
+|  |  Click Secure Checkout button | Redirects to checkout page | PASS |
+| Checkout Page  |  |  |  |
+|  |  Input Full Name | Required | PASS |
+|  |  Input Email | Required, only accepts email format, prepopulated if logged in & saved | PASS |
+|  |  Input Street Address 1 | Required, prepopulated if logged in & saved | PASS |
+|  |  Input Street Address 2 | Required, prepopulated if logged in & saved | PASS |
+|  |  Input Town or City | Required, prepopulated if logged in & saved | PASS |
+|  |  Input County | Not required, prepopulated if logged in & saved | PASS |
+|  |  Input Postal Code| Not required, prepopulated if logged in & saved | PASS |
+|  |  Input Coutry | Required, prepopulated if logged in & saved, dropdown selection | PASS |
+|  |  Input Phone Number | Required, prepopulated if logged in & saved | PASS |
+|  |  Click Register/Sign in to save info links | Redirects to Register or Sign In pages | PASS |
+|  |  Check Save info box  | Autoselected when logged in, saves details to users profile | PASS |
+|  |  Input Card Details | Required, validates on input | PASS |
+|  |  Click Adjust Cart button  | Redirects back to cart page | PASS |
+|  |  Click Complete Order button  | Checkout completes, redirects to checkout success page, order summary available, success message | PASS |
+| Checkout Success page |  Click Read latest Articles button  | Redrects to all articles page | PASS |
+
+**Admin Functionality**
+
+| Page/Section | Action    | Expected Result    | PASS/FAIL |
+|---------------|---------------|------------------|------------------|
+| Admin Panel  |  |  |  |
+|  | CRUD Functionality |  Admin has full crud functionalit for all feature of the site | PASS |
+|  | Comments & Reviews |  Admin can approve or decline reviews and comments | PASS |
+|  | Contact Forms |  Admin can mark contact fomrs as read | PASS |
