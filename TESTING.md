@@ -184,6 +184,33 @@ CI Python Linter was used to validate the Python files. Some minor line lenght i
 
 ___
 
+### Lighthouse scores using Chrome Dev Tools
+___
+
+### Device Testing and Browser Compatibility Testing
+
+The Skin Guru was tested on the following:
+
+**Devices**
+
+| Device | Features Tested | Issues |
+| ---- | ------ | -------- | 
+| Realme 11 Pro+ | All feeatures tested | None |
+| Huawei P20 Pro | All features tested | None |
+| Acer Laptop | All features tested | None |
+| Koorui Desktop | All features tested | None |
+
+**Browsers**
+| Browser | Features Tested | Issues |
+| ---- | ------ | -------- | 
+| Chrome | All feeatures tested | None |
+| Opera | All features tested | None |
+| Edge | All features tested | None |
+
+<br>
+
+___
+
 ### Manual Testing
 
 #### User Story Testing
@@ -270,7 +297,7 @@ ___
 
 <br>
 
-___
+____
 
 #### User Input Testing
 
@@ -469,5 +496,14 @@ ___
 |  | Click on 'Home' button | Redirects to Home page | PASS |
 
 <br>
+
+___
+
+### Bugs
+
+I had been having issues with Stripe Webhooks not working correctly and order confirmation emails not sending to guest checkouts, however it was a simple error in my code. I'm not actually sure where I got the code that was causing the issue to begin with but it was a simple fix as seen here is this [commit message.](https://github.com/abigail-ryan/the-skin-guru/commit/50442ee177a3aa34b4e20a48dd2020ed9fa6cf5b)
+
+All tests have passed and there are currently no known bugs at the time of final deployment. 
+
 
 ___
