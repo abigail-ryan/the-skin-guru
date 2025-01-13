@@ -915,17 +915,51 @@ ____
 
 ### Technologies Used
 
-<br>
-
-____
-
 #### Languages
 
-<br>
+* HTML
+* CSS
+* Javascript
+* Python
 
-____
+##### Packages Installed
 
-#### Frameworks, Libraries, Technologies and Programs used
+* Django 5.1.4
+* djngo-crsipy-fomrs 1.12.0
+* dj-database-url 0.5.0
+* dj3-cloudinary-storage 0.0.6
+* django-allauth 65.3.0
+* django-countries 7.6.1
+* django-summernote 0.8.20.0
+* gunicorn 23.0.0
+* psycopg2 2.9.10
+* whitenoise 6.8.2
+* stripe 11.4.1
+
+A full list of the installed pakcages can be found in the requirements.txt file of this project.
+
+##### Technologies and Programs used
+
+* Git - used for version control
+* GitHub - used to sotre this project code
+* Gitpod - used for writing the code of this project
+* Heroku - used for deployment of this project
+* CI's PostgreSQL - used for the database for this project
+* Uizard - for the wireframes created for this project
+* LucidChart - used to create the database diagram
+* PEP8 - used to validate Python code
+* W3C - used to validate all the HTML & Custom CSS code
+* JSHint - used to validate the javascript
+* Google Dev Tools - used throughout development for testing and debugging
+* FontAwesome Icons - used for the icons in the project
+* Google Fonts - for the fonts used within this project
+* Canva Colours - for the colour palette of this project
+* Cloudinary - for storing the image files for this project
+* Am I responsive - to display the website on various device sizes
+* Stripe- for payment processing
+* Gmail - for sending confirmation emails
+* Mailchimmp - for collect subscriber emails
+
 
 <br>
 
@@ -940,14 +974,131 @@ Please see all testing here: [TESTING.md](TESTING.md)
 ____
 
 ### Deployment
+
 #### Forking the GitHub Repository
+
+By forking the GitHub repository you can make a copy of the original repository to your own GitHub account. You can view and make changes to this copy, without affecting the original repository.
+Use the following steps to copy a repository:
+1.	Log in to your GitHub account or sign up.
+2.	Navigate to the GitHub Repository of this project, [abigail-ryan/the-skin-guru](https://github.com/abigail-ryan/the-skin-guru)
+3.	At the top right of the Repository, just below your profile picture, find the "Fork" button.
+4.	You should now have a copy of the original repository in your own GitHub account.
+5.	Changes made to the forked repository can be merged with the original repository via a pull request.
+
+
 #### Clone the GitHub Repository
+
+1. Log in to Github
+2. Navigate to the GitHub Repository of this project, [abigail-ryan/the-skin-guru](https://github.com/abigail-ryan/the-skin-guru)
+3. Click on the code button, select whether you would like to clone with HTTPS, SSH or GitHub CLI and copy the link shown.
+4. Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
+5. Type the following command in the terminal ‘git clone’ (after, you will need to paste the link you copied in step 3 above)
+6. Set up a virtual environment (this step is not required if you are using the Code Institute Template in GitPod as this will already be set up for you).
+7. Install the packages from the requirements.txt file - run Command pip3 install -r requirements.txt
+8. Set up your env.py file and copyin your API URL’s ans SECRET KEYS.
+9. Ensure your env.py file is placed in you .gitignore file before pushing your code to Github.
+
 #### Django Project Setup
+
+1. Install Django and supporting libraries:
+ * pip3 install 'django<4' gunicorn
+ * pip3 install dj_database_url psycopg2
+ * pip3 install dj3-cloudinary-storage
+2. Create a requirements.txt file and add all installed libraries to it with the command pip3 freeze --local > requirements.txt
+3. Create a new Django project - django-admin startproject project_name.
+4. Create a new app - python3 mangage.py startapp app_name
+5. Add 'app_name', to list of INSTALLED_APPS in settings.py 
+6. Create a superuser for the project to allow Admin access and enter credentials: python3 manage.py createsuperuser
+7. Migrate the changes with command: python3 manage.py migrate
+8. Create an env.py file to store all protected data such as the DATABASE_URL and SECRET_KEY. The env.py file must be added to your gitignore file so that protected information is not pushed to public viewing on GitHub. 
+9. Replace DATABASES with:
+ * DATABASES = {
+    'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
+  }
+10. Set up the templates directory in settings.py:
+ * Under BASE_DIR enter TEMPLATES_DIR = os.path.join(BASE_DIR, ‘templates’)
+ * Update TEMPLATES = 'DIRS': [TEMPLATES_DIR] with:
+   * os.path.join(BASE_DIR, 'templates'),
+   * os.path.join(BASE_DIR, 'templates', 'allauth')
+11. Create the media, static and templates directories in top level of this project file in your IDE workspace.
+12. Create a Procfile for Heroku deployment with the following placed within it: web: gunicorn your_project_name.wsgi
+13. Make the necessary migrations again.
+
+
 #### Database Creation
+
+CI's PostgreSQL was used to create the database for this project.
+1. Input your email address, submit and wait for the database to be created.
+2. Copy the link that was sent to the email address provided. Place the value within your DATABASE_URL in your env.py file and follow the below instructions to place it in your Heroku Config Vars.
+
+
 #### Cloudinary
+
+Cloudinary was used to host the images for The Skin Guru.
+
+1. Set up a new account at Cloudinary and add your Cloudinary API environment variable to your env.py and Heroku Config Vars. 
+2. In your project workspace:
+ * Add Cloudinary libraries to INSTALLED_APPS in settings.py
+ * Add to env.py and link up with settings.py.
+
+
 #### Deploying to Heroku
+
+1. Log in to Heroku or create an account if you are a new user.
+2. In the Heroku Dashboard, navigate to the 'New' button and select 'Create New App'.
+3. Enter an app name and choose your region. Click 'Create App'.
+4. 4.In the Deploy tab, click on the 'Settings', reach the 'Config Vars' section and click 'Reveal Config Vars'. Add the following: 
+ * CLOUDINARY_URL: cloudinary://....
+ * DATABASE_URL:postgres://...
+ * DISABLE_COLLECTSTATIC of value '1' (N.B Remove this Config Var before deployment)
+ * SECRET_KEY and any value
+ * STRIPE_PUBLIC_KEY: pk_test_....
+ * STRIPE_SECRET_KEY: sk_test....
+ * STRIPE_WH_SECRET: whsec_.....
+ * EMAIL_HOST_PASSWORD: password value
+ * EMAIL_HOST_USER: email value
+5. Add the Heroku host name into ALLOWED_HOSTS in your projects settings.py file -> ['herokuappname', ‘localhost’, ‘8000 port url’].
+6. Once you have set up the required files (requirements.txt and Procfile), set DEBUG=False, save your project, add, commit and push the data to GitHub.
+7. Go to the 'Deploy' tab and choose GitHub as the Deployment method.
+8. Search for the repository name, select the branch that you would like to build from, and click the 'Connect' button.
+9. Choose from 'Automatic' or 'Manual' deployment options. Click 'Deploy Branch'.
+10. Once the build has finished, click the 'View' link to bring you to your deployed site. If you receive any errors, Heroku will display a reason in the app build log for you to investigate. DISABLE_COLLECTSTATIC  and PORT:8000 can now be removed from the Config Vars.
+
+_
+
 #### Gmail
+
+1. Setup a Gmail Account that will be used to send the emails from your store.
+2. Log in and go to to Settings -> Other Google Account Settings -> Accounts -> Import -> Other Account Settings
+3. Activate 2-Step Verification
+4. Once verified access App Passwords -> Other -> enter a name for the password, eg your_project_name or Django.
+5. Click Create, then copy the 16 digit password.
+6. In your settings.py add the following Email Settings:
+    ```
+    if 'DEVELOPMENT' in os.environ:
+        EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+        DEFAULT_FROM_EMAIL = 'your new gmail address goes here'
+    else:
+        EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+        EMAIL_USE_TLS = True
+        EMAIL_PORT = 587
+        EMAIL_HOST = 'smtp.gmail.com'
+        EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
+        EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
+        DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
+        ```
+7. Add EMAIL_HOST_PASSWORD, EMAIL_HOST_USER and their values to your env.py file(if you've created one) and Heroku Config Vars.
+
+
 #### Stripe
+
+1. Create a Stripe account and log in.
+2. In the Stripe Dashboard go to Developers -> Get your test API keys.
+3. Add your STRIPE_PUBLIC_KEY and STRIPE_SECRET_KEY to your env.py, connect to your settings.py using your environment variables and then add to into your Heroku Config Vars.
+4. Include Stripe Webhooks to create a failsafe if a customer exits the checkout process during payment authorisation. In Stripe's Dashboard -> Developers -> Webhooks -> Add Endpoint: 'herokuapp url/checkout/wh'
+5. Choose Retrieve all events, then click Add Endpoint.
+6. Add your STRIPE KEYS to your env.py, settings.py and Heroku Config Vars.
+
 
 <br>
 
