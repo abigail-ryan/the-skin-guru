@@ -808,7 +808,7 @@ In the adminn panel, admin have access to all the orders, contact forms, comment
 #### Stripe Webhooks
 
 Throughout development I was having issues with guest checkouts not receiving order confirmation emails and payment_intent_success failuers in my stripe dashboard.
-The issue was fixed and now both guest checkouts and logged in user checkouts are all successfull.
+The issue was fixed and now both guest checkouts and logged in user checkouts are all successfull. See reference to this in TESTING.md file.
 
 **Guest Checkout**
 
@@ -936,7 +936,7 @@ Through a subscription form in the footer, the website implements a newsletter s
 
 The intention with the newsletter would be to update customers when new products are added to the site and new skincare articles are published, and also to send discount codes to newsletter subscribers.
 
-I have not implemented a Thank You email to send once users sign up, howver I have created a template of the email that I would send if The Skin Guru was a real store.
+I have not implemented a Thank You email to send once users subscribe, howver I have created a template of the email that I would send if The Skin Guru was a real store.
 
 ![Screenshot of The Skin Guru Thanks for Subscribing email](documentation/theskinguru-mailchimp-email.png) 
 
@@ -1118,7 +1118,7 @@ Cloudinary was used to host the images for The Skin Guru.
         EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
         DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
         ```
-7. Add EMAIL_HOST_PASSWORD, EMAIL_HOST_USER and their values to your env.py file(if you've created one) and Heroku Config Vars.
+7. Add EMAIL_HOST_PASSWORD, EMAIL_HOST_USER and their values to your env.py file (if you've created one) and Heroku Config Vars.
 
 
 #### Stripe
@@ -1149,7 +1149,7 @@ ____
 * As mentioned earlier in this README, all article content was generated with the help of [perplexity.ai](https://www.perplexity.ai/), and edited by me. This content is purely for demonstrative purposes only.
 * All article images were sourced from Pexels, see attributions below.
 * All product details were source directly from the brands websites, see links below.
-* The hero Section Image and The Skun Guru's own brand products images were generated using [DeepAI](https://deepai.org/machine-learning-model/text2img)
+* The hero Section Image and The Skun Guru's own brand products images were generated using [DeepAI](https://deepai.org/machine-learning-model/text2img).
 
 <details>
 <summary>Brand Links</summary>
