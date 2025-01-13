@@ -1,5 +1,5 @@
 # The Skin Guru
-[View my live site here](https://)
+[View my live site here](https://the-skin-guru-6ce126511380.herokuapp.com/)
 
 The Skin Guru is an e-commerce platform designed for teens and young adults to explore and purchase skincare products. The website offers a comprehensive online shopping experience tailored to young skincare enthusiasts. Unregistered users can browse the entire store catalog, explore a variety of skincare products, read informative blog posts about skincare tips and trends, and view detailed product information. The site provides full access to product descriptions, pricing, purchasing and general site content without requiring account creation. Registered users gain additional benefits by creating a personal account. 
 
@@ -517,7 +517,7 @@ The articles page displays the articles to users, from most recent to oldest.
 
 **Individual Article Page**
 
-Each article details some product recomendations, skincare routines and links back to the product categories.
+Each article details some product recomendations, skincare routines and links back to the product categories. The articles contents were written with the help of AI and edited by me to suit the style and tone of The Skin Guru's messaging. All article content is purely for demonstartive purposes only.
 
 ![Screenshot of individual article page](documentation/individual-article-desktop.png)
 
@@ -652,7 +652,7 @@ Users can delete their comments, and are presented with a confirmation pop up to
 
 **Adding a review**
 
-Users who have purchased a product can leave a review, but only if they have purchased that specific product. This ensures only genuine and verified reviews can be left under products on the site.
+Registerd Users who have purchased a product can leave a review, but only if they have purchased that specific product. This ensures only genuine and verified reviews can be left under products on the site.
 
 ![Screenshot of adding a review if user has not purchased](documentation/add-review-no-purchase-desktop.png)
 
@@ -794,7 +794,7 @@ In the adminn panel, admin have access to all the orders, contact forms, comment
 
 <br>
 
-#### Strripe Webhooks
+#### Stripe Webhooks
 
 Throughout development I was having issues with guest checkouts not receiving order confirmation emails and payment_intent_success failuers in my stripe dashboard.
 The issue was fixed and now both guest checkouts and logged in user checkouts are all successfull.
@@ -818,6 +818,13 @@ The issue was fixed and now both guest checkouts and logged in user checkouts ar
 ____
 
 ### Future Features
+
+For Future development of this porject I would like to add the following:
+* Add a Skin Type Quiz, where users who are unnsure of their skin type can answer a series of questions and receive personalised product recommendations.
+* Add a disappearing pop up that shows current users on the site that “Someone just purchased X product…shop now” encouraging more conversions.
+* Add allowing users to upload images with their reviews.
+* Add a loyalty/rewards program where registered users receive points for every purchase that can be redeemed in coupons next time they shop.
+* Add a discount coupon feature to the site enabling the newsletters recipients to avail of special discounts.
 
 <br>
 
