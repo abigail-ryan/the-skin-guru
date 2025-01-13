@@ -7,14 +7,14 @@ Return to the [README.md](README.md) file.
 ## Contents
 
 * [HTML Validation](#html-validation)
-* [CSS Validation](#css-validation-using-w3c-validation)
-* [JS Validation](#css-validation-using-w3c-validation)
+* [CSS Validation](#css-validation)
+* [JS Validation](#css-validation)
 * [Pep8 Validation](#pep8-validation)
 * [Lighthouse scores using Chrome Dev Tools](#lighthouse-scores-using-chrome-dev-tools)
 * [Device Testing and Browser Compability Testing](#device-testing-and-browser-compatibility-testing)
 * [Manual Testing](#manual-testing)
     * [User Stories testing](#user-stories-testing)
-    * [User Input testing](#user-stories-testing)
+    * [User Input testing](#user-input-testing)
 * [Bugs](#bugs)
 
 <br>
@@ -185,6 +185,64 @@ CI Python Linter was used to validate the Python files. Some minor line lenght i
 ___
 
 ### Lighthouse scores using Chrome Dev Tools
+
+
+<details>
+<summary>DESKTOP</summary>
+<br>
+
+| Page | Lighthouse Score |
+| ---- | ------ | 
+| Home | ![Screenshot of the Skin Guru lighthouse testing - desktop home page](documentation/lighthouse-home-page-desktop.png) |
+| All Products | ![Screenshot of the Skin Guru lighthouse testing - desktop all products page](documentation/lighthouse-all-products-desktop.png) |
+| Individual Product | ![Screenshot of the Skin Guru lighthouse testing - desktop individual product page](documentation/lighthouse-individual-product-desktop.png) |
+| All Articles | ![Screenshot of the Skin Guru lighthouse testing - desktop all articles page](documentation/lighthouse-all-articles-desktop.png) |
+| Individual Article | ![Screenshot of the Skin Guru lighthouse testing - desktop individual article page](documentation/lighthouse-individual-article-desktop.png) |
+| Profile | ![Screenshot of the Skin Guru lighthouse testing - desktop profile page](documentation/lighthouse-my-profile-desktop.png) |
+| Wishlist | ![Screenshot of the Skin Guru lighthouse testing - desktop wishlist page](documentation/lighthouse-my-wishlist-desktop.png) |
+| Contact | ![Screenshot of the Skin Guru lighthouse testing - desktop contact page](documentation/lighthouse-contact-page-desktop.png) |
+| Delivery | ![Screenshot of the Skin Guru lighthouse testing - desktop delivery page](documentation/lighthouse-delivery-info-desktop.png) |
+
+</details>
+
+<br>
+
+<details>
+<summary>MOBILE</summary>
+<br>
+
+| Page | Lighthouse Score |
+| ---- | ------ | 
+| Home | ![Screenshot of the Skin Guru lighthouse testing - mobile home page](documentation/lighthouse-home-page-mobile.png) | 
+|All Products  | ![Screenshot of the Skin Guru lighthouse testing - mobile all products page](documentation/lighthouse-all-products-mobile.png) |
+| Individual Product | ![Screenshot of the Skin Guru lighthouse testing - mobile individual prouct page](documentation/lighthouse-individual-product-mobile.png) |
+| All Articles | ![Screenshot of the Skin Guru lighthouse testing - mobile all articles page](documentation/lighthouse-all-articles-mobile.png) |
+| Individual Article | ![Screenshot of the Skin Guru lighthouse testing - mobile individual article page](documentation/lighthouse-individual-article-mobile.png) |
+| Profile | ![Screenshot of the Skin Guru lighthouse testing - mobile profile page](documentation/lighthouse-my-profile-mobile.png) |
+| Wishlist | ![Screenshot of the Skin Guru lighthouse testing - mobile wishlist page](documentation/lighthouse-my-wishlist-mobile.png) |
+| Contact | ![Screenshot of the Skin Guru lighthouse testing - mobile contact page](documentation/lighthouse-contact-page-mobile.png) |
+| Delivery | ![Screenshot of the Skin Guru lighthouse testing - mobile Delivery page](documentation/lighthouse-delivery-info-mobile.png) |
+
+</details>
+
+<br>
+
+<details>
+<summary>Best Practices Issues</summary>
+<br>
+
+| Page | Lighthouse Score |
+| ---- | ------ | 
+| Https Issues  | ![Screenshot of the Skin Guru lighthouse testing best practices - https issues](documentation/lighthouse-best-practices-warnings.png) | 
+| Cookies Issues | ![Screenshot of the Skin Guru lighthouse testing best practices - cookies issues](documentation/lighthouse-cookies-warnings.png) |
+|
+
+As shown in the screenshots above, the use of third party cookies is causing my best practices score to be so low. This is across all pages. There is also https issues coming from the Cloudinary hosted images. I will look into how to get around these issues for future development of this project.
+
+</details>
+
+<br>
+
 ___
 
 ### Device Testing and Browser Compatibility Testing
@@ -213,7 +271,7 @@ ___
 
 ### Manual Testing
 
-#### User Story Testing
+#### User Stories Testing
 
 | Epic | User | User Story | Acceptance Criteria Met   | Tested    | PASS/FAIL |
 |---------------|---------------|---------------|---------------|------------------|------------------|
