@@ -817,6 +817,28 @@ The issue was fixed and now both guest checkouts and logged in user checkouts ar
 
 ![Screenshot of logged in user checkout webhooks success](documentation/logged-in-stripe-webhooks-success.png)
 
+<br>
+
+
+____
+
+### Security Features
+
+#### User Authentication
+
+* Django Allauth was installed to provided a secure set of features for managing user authentication, registration, and account management.
+
+#### Login Security
+
+* @login_required decorator was added to views that are for account holders only to ensure that a user must be logged in to access certain views. 
+* If a user who is not authenticated tries to access a view that uses this decorator, they will be redirected to the login page.
+
+#### CSRF Protection
+
+* Django provides built-in protection against Cross-Site Request Forgery (CSRF) attacks. CSRF tokens are generated for each user session, and they are required to submit forms or perform state-changing actions. When a user logs out, the session and associated CSRF token are invalidated, making it difficult for an attacker to forge a valid request using a copied URL.
+
+<br>
+
 ____
 
 ### Future Features
