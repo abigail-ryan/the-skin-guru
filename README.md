@@ -249,6 +249,8 @@ ____
 The Skin Guru was developed using an agile methology. I used Github Projects Board to manage the development of this project, which can be [found here.](https://github.com/users/abigail-ryan/projects/4)
 I prioritised my features for this site using the MoSCoW Method, ensuring critical elements required for the MVP had the most focus by adding in MUST-HAVE, SHOULD-HAVE, COULD-HAVE and later adding WONT-HAVE labels, as well as adding Epic’s and User, Regitered User and Admin labels to categorise each user story correctly. This helped me complete each section of my site without losing track of or focus on the most critical requirements.
 
+However, I did complete all could have and should have user stories and ensured my site had the functionality I intended it to have from the start.
+
 ![Screenshot of The Skin Guru Github Project Board](documentation/theskinguru-project-board.png)
 
 
@@ -474,9 +476,13 @@ The Navbar also contains the search box allowing users to search the site using 
 
 #### All Products Page
 
-The all products page showcases all the sites products, with the articles displayed on the right hand side (articles are displayed at the bottom on mobiles).
+The all products page showcases all the sites products, with the articles (all) displayed on the right hand side (articles are displayed at the bottom on mobiles).
 
 ![Screenshot of Footer section](documentation/all-products-desktop.png)
+
+When a user clicks one of the Shop by Skin Type menu links, the relevant products and relevant article are displayed to the user.
+
+![Screenshot of shop by oily skin type products filter](documentation/shop-by-oily-skin-type-desktop.png)
 
 **Sort by dropdown**
 
