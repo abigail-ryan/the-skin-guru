@@ -186,6 +186,92 @@ ___
 
 ### Manual Testing
 
+#### User Story Testing
+
+| Epic | User | User Story | Acceptance Criteria Met   | Tested    | PASS/FAIL |
+|---------------|---------------|---------------|---------------|------------------|------------------|
+| Home Page & Navigation |
+| | As a Site User (all users) |
+|  |  | I can view the site's home page so that I can understand what the site is for. | Yes | Yes | PASS |
+|  |  | I can use the navigation menu so that I can easily make my way around the site | Yes | Yes | PASS |
+|  |  | I can use the search bar so that I can search for a specific item. | Yes | Yes | PASS |
+|  |  | I can shop products by “Skin Type” or “Product Type” so that I can view all available products in that category. (site inlcudes Shop by Brand) | Yes | Yes | PASS |
+|  |  | I can create an account easily from the navbar so that I can log in to the site. | Yes | Yes | PASS |
+|  |  |  I can log in to my account easily from the navbar so that I can manage my account. | Yes | Yes | PASS |
+|  |  | I can click the Cart button in the navbar so that I can view the products in my cart | Yes | Yes | PASS |
+| | As a Registered User |
+|  |  | I can access my Wishlist from the navbar so that I can view the products in my wishlist. | Yes | Yes | PASS |
+| Regristration |
+| | As a Site User (all users) |
+|  |  | I can register an account  so that I can manage my order history, add products to my wishlist, save my personal details for faster checkout, leave a review on products I’ve purchased, add comments to blogs | Yes | Yes | PASS |
+| | As a Registered User |
+|  |  | I can edit my personal details on my account so that I can keep them up to date. | Yes | Yes | PASS |
+| Products |
+| | As a Site User (all users) |
+|  |  | I can sort the products displayed on each product page so that I can filter the products to improve my search criteria | Yes | Yes | PASS |
+|  |  |  I can click an individual product so that I can view its details | Yes | Yes | PASS |
+|  |  |  I can click a -/+ button on a products details page so that I can manage the quantity of the product I want to add to the cart | Yes | Yes | PASS |
+|  |  |  I can click “Add to cart” button on a products details page so that I can add to the product to the cart to purchase | Yes | Yes | PASS |
+| | As a Site Admin |
+|  |  | I can add a product to my site so that I can increase the range of products available on the site. | Yes | Yes | PASS |
+|  |  | I can edit existing products so that I can change the products description, price or image etc. | Yes | Yes | PASS |
+|  |  | I can delete a product from my site so that I can remove it from sale. | Yes | Yes | PASS |
+| Cart |
+| | As a Site User (all users) |
+|  |  | I can adjust quantities of products in my cart so that I can change the quantity of the product that I wish to purchase | Yes | Yes | PASS |
+|  |  | I can click "remove" on a product in my cart so that I can have the product removed from my cart before checkout. | Yes | Yes | PASS |
+| Checkout |
+| | As a Site User (all users) |
+|  |  | I can go to checkout so that I can complete my purchase | Yes | Yes | PASS |
+|  |  | I can view my order before checkout so that I can confirm my items for purchase. | Yes | Yes | PASS |
+|  |  | I can enter/update my delivery details so that I can provide the correct delivery and contact information. | Yes | Yes | PASS |
+|  |  | I can view my order summary details so that I can review my order after it is placed. | Yes | Yes | PASS |
+|  |  | I can receive an email after purchase so that I can have confirmation and record of my purchase | Yes | Yes | PASS |
+| | As a Registered User |
+|  |  | I can see my previously saved details already populated so that I can complete my purchases faster | Yes | Yes | PASS |
+| Blog Articles |
+| | As a Site User (all users) |
+|  |  | I can read blog articles so that I can stay up to date with the latest skincare information. | Yes | Yes | PASS |
+|  |  | I can view comments on articles so that I can see the conversation around the articles subject. | Yes | Yes | PASS |
+| | As a Registered User |
+|  | I can add comments to articles so that I can join in the conversation. | I can see  | Yes | Yes | PASS |
+|  | I can edit/update/delete my comments so that I can manage my comments on blog articles | I can see  | Yes | Yes | PASS |
+| | As a Site Admin |
+|  |  | I can create, read, update, delete Blog Articles so that I can manage my content | Yes | Yes | PASS |
+|  |  | I can approve/decline comments so that I can manage the comments section  | Yes | Yes | PASS |
+| Contact Form |
+| | As a Site User (all users) |
+|  |  | I can fill out a contact form so that I can contact the business with any queries I may have | Yes | Yes | PASS |
+| | As a Site Admin |
+|  |  | I can store contact form submissions so that I can review them | Yes | Yes | PASS |
+|  |  | I can mark contact form submissions as read so that I can see how many I still need to process | Yes | Yes | PASS |
+| Product Reviews |
+| | As a Site User (all users) |
+|  |  | I can view reviews on a product so that I can see other users feedback. | Yes | Yes | PASS |
+| | As a Registered User |
+|  |  | I can create a review on a product I have purchased so that I can give give feedback to the site owners and other users. | Yes | Yes | PASS |
+|  |  | I can edit/update/delete my review so that I can manage my reviews. | Yes | Yes | PASS |
+| | As a Site Admin |
+|  |  | I can approve/decline reviews so that I can filter out negative reviews. | Yes | Yes | PASS |
+| Wishlist |
+| | As a Registered User |
+|  |  | I can click the 'Add to Wishlist' button so that I can keep a record of my favourite items | Yes | Yes | PASS |
+|  |  | I can click the 'Wishlist’ heart icon so that I can see all the products in my Wishlist (changed to a link in the My Account dropdown menu) | Yes | Yes | PASS |
+|  |  | I can click the 'Remove' button so that I can remove a product from my Wishlist. | Yes | Yes | PASS |
+|  |  |  I can click the 'Add to cart' button so that I can add the product to my cart from in my Wishlist | No | No | Will implement in future versions |
+| Newsletter |
+| | As a Site User (all users) |
+|  |  | I can enter my email into the newsletter form so that I can receive marketing emails about new products, promotions and skincare tips. | Yes | Yes | PASS |
+| Emails |
+| | As a Registered User |
+|  |  | I can receive a confirmation email upon registering an account  so that I can verify my account | Yes | Yes | PASS |
+
+
+
+<br>
+
+___
+
 #### User Input Testing
 
 **Navbar**
@@ -362,3 +448,15 @@ ___
 |  | CRUD Functionality |  Admin has full crud functionalit for all feature of the site | PASS |
 |  | Comments & Reviews |  Admin can approve or decline reviews and comments | PASS |
 |  | Contact Forms |  Admin can mark contact fomrs as read | PASS |
+
+**Defensive Redirects**
+
+| Page/Section | User Action    | Expected Result    | PASS/FAIL |
+|---------------|---------------|------------------|------------------|
+| URL |  |  |  |
+|  | Type in profiles URL when user is not authorised | Redirect to Sign In page | PASS |
+|  | Type in wishlist URL when user is not authorised | Redirect to Sign In page | PASS |
+
+<br>
+
+___
