@@ -34,6 +34,7 @@ ____
   * [Imagery](#imagery)
 * [Database ERD](#database-erd)
 * [Project Features](#project-features)
+* [Security Features](#security-features)
 * [Future Features](#future-features)
 * [Marketing](#marketing)
 	* [Content Marketing](#content-marketing)
@@ -42,7 +43,7 @@ ____
   * [Email](#email)
 * [Technologies Used](#technologies-used)
   * [Languages](#languages)
-  * [Frameworks, Libraries, Technologies and Programs used](#frameworks-libraries-technologies-and-programs-used)
+  * [Technologies and Programs used](#technologies-and-programs-used)
 * [Testing](#testing)
 * [Deployment](#deployment)
   * [Forking the GitHub Repository](#forking-the-github-repository)
@@ -51,6 +52,8 @@ ____
   * [Database Creation](#database-creation)
   * [Cloudinary](#cloudinary)
   * [Deploying to Heroku](#Deploying-to-heroku)
+  * [Gmail](#gmail)
+  * [Stripe](#stripe)
 * [Credits](#credits)
   * [Code References](#code-references)
   * [Content and Media References](#content-and-media-references)
@@ -373,7 +376,7 @@ ____
 
 ### Design
 
-#### Color Scheme
+#### Colour Scheme
 For The Skin Guru, the color palette was chosen to capture the essence of youthful energy and showcase brigh attractive colors:
 
 * **Hot Pink** (#FFAEBC): Radiating vibrant energy, this bold shade embodies the spirited and confident nature of our young target audience.
@@ -960,7 +963,7 @@ ____
 
 A full list of the installed pakcages can be found in the requirements.txt file of this project.
 
-##### Technologies and Programs used
+#### Technologies and Programs used
 
 * Git - used for version control
 * GitHub - used to sotre this project code
@@ -1086,7 +1089,7 @@ Cloudinary was used to host the images for The Skin Guru.
 9. Choose from 'Automatic' or 'Manual' deployment options. Click 'Deploy Branch'.
 10. Once the build has finished, click the 'View' link to bring you to your deployed site. If you receive any errors, Heroku will display a reason in the app build log for you to investigate. DISABLE_COLLECTSTATIC  and PORT:8000 can now be removed from the Config Vars.
 
-_
+
 
 #### Gmail
 
