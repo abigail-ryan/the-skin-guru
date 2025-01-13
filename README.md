@@ -943,6 +943,20 @@ ____
 
 ### Credits
 
+#### Code References
+
+* Code Institute's I Think Therefore I Blog & Boutique Ado walkthrough material.
+* Amy Richardsons project [Everneed](https://github.com/amylour/everneed/tree/main) for the Wishlist App code, which I adapted for this project.
+* Jamie T's project [Chem-eShop](https://github.com/JamieT966/project-portfolio-5) for the Reviews code, which I adapted for this project.
+
+
+#### Content and Media References
+
+* As mentioned earlier in this README, all article content was generated with the help of [perplexity.ai](https://www.perplexity.ai/), and edited by me. This content is purely for demonstrative purposes only.
+* All article images were sourced from Pexels, see attributions below.
+* All product details were source directly from the brands websites, see links below.
+* The hero Section Image and The Skun Guru's own brand products images were generated using [DeepAI](https://deepai.org/machine-learning-model/text2img)
+
 <details>
 <summary>Brand Links</summary>
 <br>
@@ -975,16 +989,16 @@ ____
 </details>
 
 <br>
-____
-
-#### Code References
-#### Content and Media References
-
-<br>
 
 ____
 
 ### Acknowledgements
+
+I would like to thank the following:
+
+* My mentor, Mitko Bachvarov, for his time, help and suggestions throughout this project.
+* My C.I. Cohort Facilitator, Lewis Dillon, for his supportive resources and encouragement throughout.
+My family for their help testing my project and offering valuable user feedback.
 
 <br>
 
