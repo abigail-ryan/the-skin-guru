@@ -457,6 +457,17 @@ ___
 |  | Type in profiles URL when user is not authorised | Redirect to Sign In page | PASS |
 |  | Type in wishlist URL when user is not authorised | Redirect to Sign In page | PASS |
 
+**Custome Error Pages**
+
+| Page/Section | User Action    | Expected Result    | PASS/FAIL |
+|---------------|---------------|------------------|------------------|
+| 404 Error Page  |  |  |  |
+|  | Type in URL that does not exist | Custom 404 Error page is displayed  PASS |
+|  | Click on 'Home' button | Redirects to Home page | PASS |
+| 500 Error Page |  |  |  |
+|  | Server error | Custom 500 Error page is displayed | PASS |
+|  | Click on 'Home' button | Redirects to Home page | PASS |
+
 <br>
 
 ___
