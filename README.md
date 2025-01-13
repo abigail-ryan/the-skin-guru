@@ -3,6 +3,8 @@
 
 The Skin Guru is an e-commerce platform designed for teens and young adults to explore and purchase skincare products. The website offers a comprehensive online shopping experience tailored to young skincare enthusiasts. Unregistered users can browse the entire store catalog, explore a variety of skincare products, read informative blog posts about skincare tips and trends, and view detailed product information. The site provides full access to product descriptions, pricing, purchasing and general site content without requiring account creation. Registered users gain additional benefits by creating a personal account. 
 
+![Screenshot of The Skin Guru responsiveness ](documentation/theshinguru-responsiveness.png)
+
 These users can:
 * View and track their complete order history
 * Save favorite products to a wishlist for future reference
@@ -912,7 +914,17 @@ I have not implemented a Thank You email to send once users sign up, howver I ha
 ____
 
 ### Technologies Used
+
+<br>
+
+____
+
 #### Languages
+
+<br>
+
+____
+
 #### Frameworks, Libraries, Technologies and Programs used
 
 <br>
@@ -998,7 +1010,7 @@ I would like to thank the following:
 
 * My mentor, Mitko Bachvarov, for his time, help and suggestions throughout this project.
 * My C.I. Cohort Facilitator, Lewis Dillon, for his supportive resources and encouragement throughout.
-My family for their help testing my project and offering valuable user feedback.
+* My family for their help testing my project and offering valuable user feedback.
 
 <br>
 
