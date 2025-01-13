@@ -620,6 +620,10 @@ Profiles are automatically created for each user upon successful registration. W
 
 ![Screenshot of profile page - no orders](documentation/my-profile-no-orders-desktop.png)
 
+When users have made orders they can access them in the Profile dashboard and are shows the checkout success page, with an alert lettinng them know this is a past order.
+
+![Screenshot of profile order history page](documentation/order-history-page-desktop.png)
+
 **My Wishlist**
 
 ![Screenshot of wishlist page](documentation/wishlist-page-desktop.png)
@@ -719,6 +723,10 @@ I used my own email address - theskinguru.info@gmail.com which was set up for th
 **Profile details updated success**
 
 ![Screenshot of profile update success message](documentation/profile-update-msg.png)
+
+**Order History Alert**
+
+![Screenshot of order hisrtoy alert message](documentation/order-history-alert-msg.png)
 
 **Add to wishlist success**
 
