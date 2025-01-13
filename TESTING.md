@@ -37,7 +37,7 @@ I checked all pages of the site in this way and the results are below:
 | HTML Page | Errors | Warnings | Screenshot |
 | ---- | ------ | -------- | -------- | 
 | Home | None | None | As above |
-| All products | None | None | ![Screenshot of The Skin Guru - HTML Validation all products page](documentation/all-products-page-html-validation.png) |
+| All Products | None | None | ![Screenshot of The Skin Guru - HTML Validation all products page](documentation/all-products-page-html-validation.png) |
 | Product details | None | None | ![Screenshot of The Skin Guru - HTML Validation product detaikls page](documentation/product-details-page-html-validation.png) |
 | All Articles | None | None | ![Screenshot of The Skin Guru - HTML Validation All Articles page](documentation/all-products-page-html-validation.png) |
 | Article Details | None | None | ![Screenshot of The Skin Guru - HTML Validation Article Details page](documentation/article-details-page-html-validation.png) |
@@ -63,7 +63,7 @@ ____
 
 ### CSS Validation
 
-My direct input CSS Validation checks returned no errors. There were warnings present on the deployed url input, howvere these relate to mailchimp and boostrap and do not have any effect on my code.
+My direct input CSS Validation checks returned no errors. There were warnings present on the deployed url input, however these relate to mailchimp and boostrap and do not have any effect on my code.
 
 ![Screenshot of The Skin Guru - CSS Validation deployed url](documentation/the-skinguru-deployed-url-css-val.png) 
 
@@ -111,7 +111,7 @@ ____
 
 #### Pep8 Validation
 
-CI Python Linter was used to validate the Python files. Some minor line lenght isuues, missing lines, and trailing white space errors were raised and fixed in all .py files before final deployment.
+CI Python Linter was used to validate the Python files. Some minor line lenght isues, missing lines, and trailing white space errors were raised and fixed in all .py files before final deployment.
 
 ![Screenshot of The Skin Guru - PEP8 Validation - minor errors](documentation/pep8-minor-errors.png) 
 
@@ -146,7 +146,7 @@ CI Python Linter was used to validate the Python files. Some minor line lenght i
 | Contact App | admin.py | None | ![Screenshot of The Skin Guru - Pep8 Validation admin.py](documentation/contact-admin-py.png) |
 |  | apps.py | None | ![Screenshot of The Skin Guru - Pep8 Validation apps.py](documentation/contact-apps-py.png) |
 |  | forms.py | None | ![Screenshot of The Skin Guru - Pep8 Validation forms.py](documentation/contact-forms-py.png) |
-|  | modles.py | None | ![Screenshot of The Skin Guru - Pep8 Validation modles.py](documentation/contact-models-py.png) |
+|  | models.py | None | ![Screenshot of The Skin Guru - Pep8 Validation modles.py](documentation/contact-models-py.png) |
 |  | urls.py | None | ![Screenshot of The Skin Guru - Pep8 Validation urls.py](documentation/contact-urls-py.png) |
 |  | views.py | None | ![Screenshot of The Skin Guru - Pep8 Validation views.py](documentation/contact-views-py.png) |
 | ---- | ------ | -------- | -------- | 
@@ -157,12 +157,12 @@ CI Python Linter was used to validate the Python files. Some minor line lenght i
 | Products App | admin.py | None | ![Screenshot of The Skin Guru - Pep8 Validation admin.py](documentation/products-admin-py.png) |
 |  | apps.py | None | ![Screenshot of The Skin Guru - Pep8 Validation apps.py](documentation/products-apps-py.png) |
 |  | forms.py | None | ![Screenshot of The Skin Guru - Pep8 Validation fomrs.py](documentation/products-forms-py.png) |
-|  | modles.py | None | ![Screenshot of The Skin Guru - Pep8 Validation mmodles.py](documentation/products-models-py.png) |
+|  | models.py | None | ![Screenshot of The Skin Guru - Pep8 Validation mmodles.py](documentation/products-models-py.png) |
 |  | urls.py | None | ![Screenshot of The Skin Guru - Pep8 Validation urls.py](documentation/products-urls-py.png) |
 |  | views.py | None | ![Screenshot of The Skin Guru - Pep8 Validation views.py](documentation/products-views-py.png) |
 | ---- | ------ | -------- | -------- | 
 | Profiles App | apps.py | None | ![Screenshot of The Skin Guru - Pep8 Validation apps.py](documentation/profiles-apps-py.png) |
-|  | fomrs.py | None | ![Screenshot of The Skin Guru - Pep8 Validation forms.py](documentation/profiles-forms-py.png) |
+|  | forms.py | None | ![Screenshot of The Skin Guru - Pep8 Validation forms.py](documentation/profiles-forms-py.png) |
 |  | models.py | None | ![Screenshot of The Skin Guru - Pep8 Validation models.py](documentation/profiles-models-py.png) |
 |  | urls.py | None | ![Screenshot of The Skin Guru - Pep8 Validation urls.py](documentation/profiles-urls-py.png) |
 |  | views.py | None | ![Screenshot of The Skin Guru - Pep8 Validation views.py](documentation/profiles-views-py.png) |
@@ -170,7 +170,7 @@ CI Python Linter was used to validate the Python files. Some minor line lenght i
 | Wishlist | admin.py | None | ![Screenshot of The Skin Guru - Pep8 Validation admin.py](documentation/wishlist-admin-py.png) |
 |  | apps.py | None | ![Screenshot of The Skin Guru - Pep8 Validation apps.py](documentation/wishlist-apps-py.png) |
 |  | contexts.py | None | ![Screenshot of The Skin Guru - Pep8 Validation contexts.py](documentation/wishlist-contexts-py.png) |
-|  | modles.py | None | ![Screenshot of The Skin Guru - Pep8 Validation models.py](documentation/wishlist-models-py.png) |
+|  | models.py | None | ![Screenshot of The Skin Guru - Pep8 Validation models.py](documentation/wishlist-models-py.png) |
 |  | signals.py | None | ![Screenshot of The Skin Guru - Pep8 Validation signals.py](documentation/wishlist-signals-py.png) |
 |  | urls.py | None | ![Screenshot of The Skin Guru - Pep8 Validation urls.py](documentation/wishlist-urls-py.png) |
 |  | views.py | None | ![Screenshot of The Skin Guru - Pep8 Validation views.py](documentation/wishlist-views-py.png) |
@@ -253,7 +253,7 @@ The Skin Guru was tested on the following:
 
 | Device | Features Tested | Issues |
 | ---- | ------ | -------- | 
-| Realme 11 Pro+ | All feeatures tested | None |
+| Realme 11 Pro+ | All features tested | None |
 | Huawei P20 Pro | All features tested | None |
 | Acer Laptop | All features tested | None |
 | Koorui Desktop | All features tested | None |
@@ -261,7 +261,7 @@ The Skin Guru was tested on the following:
 **Browsers**
 | Browser | Features Tested | Issues |
 | ---- | ------ | -------- | 
-| Chrome | All feeatures tested | None |
+| Chrome | All features tested | None |
 | Opera | All features tested | None |
 | Edge | All features tested | None |
 
@@ -367,12 +367,12 @@ ____
 |  | Click on Logo | Redirect to Home Page | PASS |
 |  | Click on ‘Shop by All products’  | Redirect to all products page | PASS |
 | Shop by Skin Type | Click on ‘Shop by Skin Type’ | Dropdown reveals Skin Type menu items  | PASS |
-|  | Click on ‘Dry Skin’ | Redirect to products page showing only dry skin products | PASS |
-|  | Click on ‘Oily Skin’ | Redirect to products page showing only oily skin products | PASS |
-|  | Click on ‘Combination Skin’ | Redirect to products page showing only combination skin products | PASS |
-|  | Click on ‘Normal Skin’ | Redirect to products page showing only normal skin products | PASS |
-|  | Click on ‘Snecitive Skin’ | Redirect to products page showing only sensitive skin products | PASS |
-|  | Click on ‘All Skin Types’ | Redirect to products page showing only all skin types products | PASS |
+|  | Click on ‘Dry Skin’ | Redirect to products page showing only dry skin products + relevant article | PASS |
+|  | Click on ‘Oily Skin’ | Redirect to products page showing only oily skin products + relevant article | PASS |
+|  | Click on ‘Combination Skin’ | Redirect to products page showing only combination skin products + relevant article | PASS |
+|  | Click on ‘Normal Skin’ | Redirect to products page showing only normal skin products + relevant article | PASS |
+|  | Click on ‘Snecitive Skin’ | Redirect to products page showing only sensitive skin products + relevant article | PASS |
+|  | Click on ‘All Skin Types’ | Redirect to products page showing only all skin types products + relevant article | PASS |
 | Shop by Product Type | Click on ‘Shop by Product Type’ | Dropdown reveals Product Type menu items  | PASS |
 |  | Click on ‘Cleanser’ | Redirect to products page showing only cleanser category | PASS |
 |  | Click on ‘Toner’ | Redirect to products page showing only toner category | PASS |
@@ -396,7 +396,7 @@ ____
 | My Account - Logged out | Click on ‘My Account’ icon | Dropdown reveals Register/Sign In options  | PASS |
 |  | Click on ‘Register’ | Redirect to register page | PASS |
 |  | Click on ‘Sign In’ | Redirect to sign in page | PASS |
-| My Account - Logged In | Click on ‘My Account’ icon | Dropdown reveals My profile, My Wishlist & Logout options  | PASS |
+| My Account - Logged In | Click on ‘My Account’ icon | Dropdown reveals My Profile, My Wishlist & Logout options  | PASS |
 |  | Click on ‘My Profile’ | Redirect to users profile page | PASS |
 |  | Click on ‘My Wishlist’ | Redirect to wishlist page | PASS |
 |  | Click on ‘Log out’ | Redirect to confirm log out page | PASS |
