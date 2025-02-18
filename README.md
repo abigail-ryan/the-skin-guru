@@ -873,7 +873,9 @@ Our customers are teens and young adults seeking their first skincare products o
 * **Online Platforms:**
 Our target audience primarily engages on TikTok, Instagram & with less usage across Facebook.
 * **User Needs and Content Strategy:**
-We aim to provide skincare products specifically designed for young skin. To address the trend of young people using products meant for mature skin, we'll create easily digestible blog articles highlighting the benefits of The Skin Guru's products and educating users on proper skincare routines.
+We aim to provide skincare products specifically designed for young skin. To address the trend of young people using products meant for mature skin, we'll create easily digestible blog articles highlighting the benefits of The Skin Guru's products and educating users on proper skincare routines. This approace will help to build trust and brand loyalty, which can lead to increased product sales.
+* **Revenue Generating Strategy**
+As mentioned above, The Skin Guru will sell products directly to its customers via the website which will generate the majority of its revenue. Additional measure will include offering loyalty discounts to customers via email marketing, as well as generating sales from influencer marketing as further outlined below. Also, incorporating user-generated content and testimonials from teenage customers will not only help to build social proof and further strengthen the brands credibility, it will be crucial for community building and sustaining the brands long-term sucess in the skincare industry. The combination of targeted products and educational content will help customers become more informed about proper skincare and trust the brand, resulting in them being more likely to purchase The Skin Guru's products.
 * **Sales and Promotions:**
 We'll offer seasonal sales and discounts, communicating these offers through social media posts and our newsletter.
 * **Marketing Budget and Approach:**
