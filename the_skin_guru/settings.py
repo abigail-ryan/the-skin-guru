@@ -26,15 +26,15 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-8ay4c+g0$&we+3f7@uf9t2bq%d)k&o!5(_tmp0q(61wxv--)ux'
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['the-skin-guru-6ce126511380.herokuapp.com', '8000-abigailryan-theskinguru-yssz3vpl1n6.ws.codeinstitute-ide.net',]
+ALLOWED_HOSTS = ['the-skin-guru-6ce126511380.herokuapp.com', '127.0.0.1',]
 
 
-CSRF_TRUSTED_ORIGINS = ['https://8000-abigailryan-theskinguru-yssz3vpl1n6.ws.codeinstitute-ide.net']
+CSRF_TRUSTED_ORIGINS = ['https://the-skin-guru-6ce126511380.herokuapp.com', 'http://127.0.0.1']
 
 SESSION_COOKIE_SAMESITE = 'None'
 SESSION_COOKIE_SECURE = True
