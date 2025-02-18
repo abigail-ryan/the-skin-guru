@@ -1,8 +1,8 @@
 from django.shortcuts import render
 from articles.models import Post
 
-# Create your views here.
 
+# Create your views here.
 def index(request):
     """
     A view to return the index page with article listings
@@ -15,6 +15,6 @@ def index(request):
 
     return render(request, 'home/index.html', context)
 
+
 def delivery_info(request):
     return render(request, 'home/delivery-info.html')
-

@@ -6,6 +6,10 @@ from cloudinary.models import CloudinaryField
 
 # Create your models here.
 class Category(models.Model):
+    """
+    A category model for adding a new category
+    of products
+    """
 
     class Meta:
         verbose_name_plural = 'Categories'
@@ -21,6 +25,10 @@ class Category(models.Model):
 
 
 class Brand(models.Model):
+    """
+    A brnad model for adding a new brand
+    to the store
+    """
     name = models.CharField(max_length=254)
     friendly_name = models.CharField(max_length=254, null=True, blank=True)
 
@@ -32,6 +40,10 @@ class Brand(models.Model):
 
 
 class SkinType(models.Model):
+    """
+    A skin type model for adding a new skin type option
+    to the store
+    """
     name = models.CharField(max_length=254)
     friendly_name = models.CharField(max_length=254, null=True, blank=True)
 
@@ -43,6 +55,11 @@ class SkinType(models.Model):
 
 
 class Product(models.Model):
+    """
+    A product model for adding
+    a new product to the store,
+    inlcuding category, brand and skin type models
+    """
     category = models.ForeignKey(
         'Category', null=True, blank=True,
         on_delete=models.SET_NULL)
@@ -68,6 +85,10 @@ class Product(models.Model):
 
 
 class Review(models.Model):
+    """
+    A review model for users to add a review to
+    a product they have purchased
+    """
     product = models.ForeignKey(
         'products.Product', on_delete=models.CASCADE, related_name='reviews')
     user = models.ForeignKey(
