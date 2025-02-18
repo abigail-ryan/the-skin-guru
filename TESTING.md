@@ -15,6 +15,7 @@ Return to the [README.md](README.md) file.
 * [Manual Testing](#manual-testing)
     * [User Stories testing](#user-stories-testing)
     * [User Input testing](#user-input-testing)
+* [Security Features](#security-features)
 * [Bugs](#bugs)
 
 <br>
@@ -552,6 +553,14 @@ ____
 | 500 Error Page |  |  |  |
 |  | Server error | Custom 500 Error page is displayed | PASS |
 |  | Click on 'Home' button | Redirects to Home page | PASS |
+
+<br>
+
+___
+
+### Security Features
+
+My SECRET_KEY was accidentally hard coded into the the project settings file and committed to GitHub, causing a security vulnerability. I have resolved this by moving my SECRET_KEY into my env.py file and have generated a new key value using [Djecrety](https://djecrety.ir/), a django secret key generator.
 
 <br>
 
