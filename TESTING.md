@@ -560,7 +560,7 @@ ___
 
 ### Security Features
 
-My SECRET_KEY was accidentally hard coded into the the project settings file and committed to GitHub, causing a security vulnerability. I have resolved this by moving my SECRET_KEY into my env.py file and have generated a new key value using [Djecrety](https://djecrety.ir/), a django secret key generator.
+My SECRET_KEY was accidentally hard coded into the the project settings file and committed to GitHub, causing a security vulnerability. I have resolved this by moving my SECRET_KEY into my env.py file and have generated a new key value using [Djecrety](https://djecrety.ir/), a django secret key generator, and have also updated the SECRET_KEY value in my Heroku Config Vars. 
 
 <br>
 
