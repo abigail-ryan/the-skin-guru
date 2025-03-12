@@ -10,22 +10,27 @@ from checkout.models import Order
 @login_required
 def profile(request):
     """ Display the user's profile. """
-
     profile = get_object_or_404(UserProfile, user=request.user)
+    template = 'profiles/profile.html'
+
+    # Initialize orders here (outside of conditional blocks)
+    orders = profile.orders.all()
 
     if request.method == 'POST':
         form = UserProfileForm(request.POST, instance=profile)
         if form.is_valid():
             form.save()
             messages.success(request, 'Information updated successfully')
+        else:
+            messages.error(
+                request,
+                'Update failed. Please check the form for errors.')
+    else:
+        form = UserProfileForm(instance=profile)
 
-    form = UserProfileForm(instance=profile)
-    orders = profile.orders.all()
-
-    template = 'profiles/profile.html'
     context = {
         'form': form,
-        'orders': orders,
+        'orders': orders,  # Now always available
         'on_profile_page': True
     }
 
