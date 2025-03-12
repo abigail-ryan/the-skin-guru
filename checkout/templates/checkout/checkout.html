@@ -91,7 +91,11 @@
                         {{ order_form.county | as_crispy_field }}
                         {{ order_form.postcode | as_crispy_field }}
                         {{ order_form.country | as_crispy_field }}
-                        {{ order_form.phone_number | as_crispy_field }}
+                        <div class="form-group">
+                            <label for="id_phone_number">Phone Number:</label>
+                            <input type="tel" name="phone_number" class="form-control" required id="id_phone_number" placeholder="+1234567890">
+                            <small id="phone-number-error" class="form-text text-danger"></small>
+                        </div>
                         <div class="form-check form-check-inline float-right mr-0">
 							{% if user.is_authenticated %}
 								<label class="form-check-label" for="id-save-info">Save this delivery information to my profile</label>
@@ -154,4 +158,36 @@
     {{ stripe_public_key|json_script:"id_stripe_public_key" }}
     {{ client_secret|json_script:"id_client_secret" }}
     <script src="{% static 'checkout/js/stripe_elements.js' %}"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const phoneNumberInput = document.getElementById('id_phone_number');
+            const errorMessageElement = document.getElementById('phone-number-error');
+
+            phoneNumberInput.addEventListener('blur', function (event) {
+                validatePhoneNumber(event.target);
+            });
+
+            function validatePhoneNumber(input) {
+                const phoneNumber = input.value.replace(/\D/g, '');
+                
+                if (phoneNumber.length < 10 || phoneNumber.length > 15) {
+                    input.classList.add('is-invalid');
+                    errorMessageElement.textContent = 'Phone number must be between 10 and 15 digits.';
+                    return false;
+                } else {
+                    input.classList.remove('is-invalid');
+                    errorMessageElement.textContent = '';
+                    return true;
+                }
+            }
+
+            document.getElementById('payment-form').addEventListener('submit', function(event) {
+                if (!validatePhoneNumber(phoneNumberInput)) {
+                    event.preventDefault();
+                    phoneNumberInput.focus();
+                }
+            });
+        });
+    </script>
 {% endblock %}

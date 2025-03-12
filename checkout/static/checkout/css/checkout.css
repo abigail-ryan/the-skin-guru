@@ -1,3 +1,19 @@
+/*Phone number validation */
+.form-control,
+.form-control:focus {
+  box-shadow: 0 1px 3px 0 #A0E7E5;
+}
+
+.is-invalid {
+  border-color: #dc3545;
+}
+
+.invalid-feedback {
+  color: #dc3545;
+  display: block;
+  margin-top: 0.25rem;
+}
+
 /* Stripe payment form styling */
 .StripeElement,
 .stripe-style-input {
