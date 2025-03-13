@@ -565,6 +565,10 @@ Users are prompted to sign in or create an account to save their details.
 
 ![Screenshot of checkout page](documentation/checkout-desktop.png)
 
+Within the checkout form there is phone number validation which requires users to input only digits, and a phone number with a minimum of 10 and max of 15 digits. Below shows the inline error message shown if a user tries to input text, or less/more digits than allowed. The user is notified of the error before clicking through to complete their order.
+
+![Screenshot of checkout page - phone number validation](documentation\checkout-phone-num-validation.png)
+
 **Checkout Success Page**
 
 After users have successfully made their order they are brought to the checkout success page which includes a success message at the top of the page and also details their order summary, and enncourages users to stay on the site with the Read our latest articles CTA.
@@ -630,6 +634,10 @@ The product now shows the user the option to add to their wishlist, which is aut
 Profiles are automatically created for each user upon successful registration. When a user updates their information here, it will be prepopulated in the checkout page when they go to make a purchase. Alternatively, if users visit checkout first, they can save their details to their profile, which will then show up here on the profile page.
 
 ![Screenshot of profile page - no orders](documentation/my-profile-no-orders-desktop.png)
+
+Within the profile form there is phone number validation which requires users to input only digits, and a phone number with a minimum of 10 and max of 15 digits. Below shows the error message shown as well as a notification in the top right corner alerting the user there is an error in the form if they have tried to save their phone number field with text, or less/more digits than allowed.
+
+![Screenshot of profile page - phone number validation](documentation\profile-phone-num-validation.png)
 
 When users have made orders they can access them in the Profile dashboard and are shows the checkout success page, with an alert lettinng them know this is a past order.
 
