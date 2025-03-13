@@ -441,6 +441,7 @@ ____
 | Verify Email Page  |  |  |  |
 |  |  Click Confirm button | Redirects user to sign in page, success message | PASS |
 | My Profile Page  |  |  |  |
+|  |  Input Phone Number | Validated upon input, will only accept phone number with min of 10 and max of 15 digits | PASS |
 |  |  Click Update information button | Information saved, success message | PASS |
 |  |  Click order History links | Redirect to users past order confirmation, aleert message | PASS |
 | My Wishlist Page  |  |  |  |
@@ -518,7 +519,7 @@ ____
 |  |  Input County | Not required, prepopulated if logged in & saved | PASS |
 |  |  Input Postal Code| Not required, prepopulated if logged in & saved | PASS |
 |  |  Input Coutry | Required, prepopulated if logged in & saved, dropdown selection | PASS |
-|  |  Input Phone Number | Required, prepopulated if logged in & saved | PASS |
+|  |  Input Phone Number | Required, prepopulated if logged in & saved. validated upon input, will only accept phone number with min of 10 and max of 15 digits | PASS |
 |  |  Click Register/Sign in to save info links | Redirects to Register or Sign In pages | PASS |
 |  |  Check Save info box  | Autoselected when logged in, saves details to users profile | PASS |
 |  |  Input Card Details | Required, validates on input | PASS |
