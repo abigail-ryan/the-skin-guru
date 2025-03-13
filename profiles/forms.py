@@ -14,7 +14,6 @@ class UserProfileForm(forms.ModelForm):
                 )
             ),
         ],
-        required=False
     )
 
     class Meta:

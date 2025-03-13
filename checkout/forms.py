@@ -14,7 +14,6 @@ class OrderForm(forms.ModelForm):
                 )
             ),
         ],
-        required=False
     )
 
     class Meta:
