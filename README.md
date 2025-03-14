@@ -1152,6 +1152,8 @@ ____
 * Code Institute's I Think Therefore I Blog & Boutique Ado walkthrough material.
 * Amy Richardsons project [Everneed](https://github.com/amylour/everneed/tree/main) for the Wishlist App code, which I adapted for this project.
 * Jamie T's project [Chem-eShop](https://github.com/JamieT966/project-portfolio-5) for the Reviews code, which I adapted for this project.
+* [Django Docs](https://docs.djangoproject.com/en/5.1/ref/forms/validation/) & [Horilla](https://www.horilla.com/blogs/how-to-validate-forms-with-django/) for addding phone number field validation code to profiles and checkout forms.
+* [MDN Web Docs - JavaScript Documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript) for the checkout form phone number realtime validation.
 
 
 #### Content and Media References
