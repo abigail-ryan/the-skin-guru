@@ -94,15 +94,16 @@ I checked my JavaScript code using JSHint, and input a variation of the followin
  
 
 <details>
-<summary>All CSS Validation</summary>
+<summary>All JS Validation</summary>
 <br>
 
 | JS File | Errors | Warnings | Screenshot |
 | ---- | ------ | -------- | -------- | 
-| comments.js | None | None | ![Screenshot of The Skin Guru - CSS Validation comments.js](documentation/comments-js-validation.png) |
-| countryfield.js | None | None | ![Screenshot of The Skin Guru - CSS Validation countryfield.js](documentation/countryfields-js-validation.png) |
+| comments.js | None | None | ![Screenshot of The Skin Guru - JS Validation comments.js](documentation/comments-js-validation.png) |
+| countryfield.js | None | None | ![Screenshot of The Skin Guru - JS Validation countryfield.js](documentation/countryfields-js-validation.png) |
 | reviews.js | None | None | ![Screenshot of The Skin Guru - CSS Validation reviews.js](documentation/reviews-js-validatioon.png) |
-| stripe_elements.js | None | None | ![Screenshot of The Skin Guru - CSS Validation stripe_elements.js](documentation/stripe_elements-js-validation.png) |
+| stripe_elements.js | None | None | ![Screenshot of The Skin Guru - JS Validation stripe_elements.js](documentation/stripe_elements-js-validation.png) |
+| phone_number_validation.js | None | None | ![Screenshot of The Skin Guru - JS Validation phone_number_validation.js](documentation\phone-number-validation-jshint-validation.png) |
 
 </details>
 
